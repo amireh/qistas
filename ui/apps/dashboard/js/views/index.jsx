@@ -4,48 +4,14 @@ define(function(require) {
   var K = require('constants');
   var _ = require('lodash');
   var moment = require('moment');
-  var Editor = require('jsx!./editor');
-  var Popup = require('jsx!components/popup');
-  var $ = require('jquery');
+  var PrayerEditorMixin = require('jsx!../mixins/prayer_editor');
+  var Emblem = require('jsx!./index/prayer_emblem');
 
   var findWhere = _.findWhere;
-  var classSet = React.addons.classSet;
-
-  var Emblem = React.createClass({
-    render: function() {
-      var className = { 'PrayerScore': true };
-      var normalizedScore = this.props.normalizedScore;
-
-      if (this.props.score) {
-        className['is-scored'] = true;
-        normalizedScore = normalizedScore * 100;
-
-        if (normalizedScore < 25) {
-          className['score-poor'] = true;
-        }
-        else if (normalizedScore < 50) {
-          className['score-good'] = true;
-        }
-        else if (normalizedScore < 75) {
-          className['score-excellent'] = true;
-        }
-        else {
-          className['score-perfect'] = true;
-        }
-      }
-      else {
-        className['is-missing'] = true;
-      }
-
-      return (
-        <span className={classSet(className)}>
-          {this.props.score || 0}
-        </span>
-      );
-    }
-  });
 
   var Index = React.createClass({
+    mixins: [ PrayerEditorMixin ],
+
     getDefaultProps: function() {
       return {
         monthPrayers: [],
@@ -56,24 +22,6 @@ define(function(require) {
     getInitialState: function() {
       return {
       };
-    },
-
-    componentDidUpdate: function(prevProps, prevState) {
-      if (!this.state.editedCell) {
-        this.hideEditor();
-      }
-      else if (
-        this.state.editedPrayerType !== prevState.editedPrayerType ||
-        this.state.editedPrayerDate !== prevState.editedPrayerDate
-      ) {
-        if (this.state.editedPrayerType && this.state.editedPrayerDate) {
-          this.showEditor(
-            this.state.editedPrayerType,
-            this.state.editedPrayerDate,
-            this.state.editedCell
-          );
-        }
-      }
     },
 
     render: function() {
@@ -103,36 +51,6 @@ define(function(require) {
           </table>
         </div>
       );
-    },
-
-    renderEditor: function() {
-      var state = this.state;
-      var editedPrayer;
-      var editorProps;
-
-      if (this.state.editedPrayerType) {
-        var day = moment(state.editedPrayerDate, K.API_DATE_FORMAT).date();
-        var dayPrayers = this.props.monthPrayers[day-1];
-
-        editedPrayer = dayPrayers.filter(function(prayer) {
-          return (
-            // prayer.normalizedDate === state.editedPrayerDate &&
-            prayer.type === state.editedPrayerType
-          );
-        })[0];
-      }
-
-      return Popup({
-        ref: "editorPopup",
-        reactivePositioning: true,
-        content: Editor,
-        type: this.state.editedPrayerType,
-        date: this.state.editedPrayerDate,
-        children: <span hidden />,
-        prayer: editedPrayer,
-        onClose: this.stopEditing,
-        onChange: this.repositionPopup
-      });
     },
 
     renderContentRow: function(dayPrayers, dayIndex) {
@@ -172,39 +90,13 @@ define(function(require) {
       );
     },
 
-    edit: function(prayerId, date, e) {
-      e.preventDefault();
+    getPrayer: function(type, date) {
+      var day = moment(date, K.API_DATE_FORMAT).date();
+      var dayPrayers = this.props.monthPrayers[day-1];
 
-      if (this.state.editedCell === e.target) {
-        this.stopEditing();
-      }
-      else {
-        this.setState({
-          editedPrayerType: prayerId,
-          editedPrayerDate: date,
-          editedCell: e.target
-        });
-      }
-    },
-
-    showEditor: function(prayerId, date, el) {
-      var popup = this.refs.editorPopup;
-      var api = popup.proxy('getApi');
-
-      api.set('position.target', $(el));
-      api.show();
-      api.reposition();
-    },
-
-    stopEditing: function() {
-      this.replaceState({});
-    },
-
-    hideEditor: function() {
-      this.refs.editorPopup.close();
-    },
-    repositionPopup: function() {
-      this.refs.editorPopup.reposition();
+      return dayPrayers.filter(function(prayer) {
+        return prayer.type === type;
+      })[0];
     }
   });
 

@@ -2,6 +2,10 @@ class Prayer < ActiveRecord::Base
   belongs_to :user
 
   before_save do
+    self.in_mosque = false if !in_congregation
+    self.with_sunnah_on_time = false if !with_sunnah
+    self.with_full_preceding_sunnah = false if !with_preceding_sunnah
+
     self.score = calculate_score
   end
 
