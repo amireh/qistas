@@ -1,0 +1,24 @@
+.pika-select {
+  display: none;
+}
+
+.pika-label {
+  font-size: 17.5px;
+  font-weight: normal;
+}
+
+.pika-title {
+  .pika-label {
+    font-size: 13.5px;
+  }
+}
+
+.pika-prev, .pika-next {
+  // hide the text, use arrows
+  color: transparent;
+  font-size: 0;
+
+  &:after {
+    color: @foreground;
+  }
+}

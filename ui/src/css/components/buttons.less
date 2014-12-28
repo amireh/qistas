@@ -1,0 +1,466 @@
+@import "../helpers";
+@import "../layouts/base";
+
+.btn {
+  display: inline-block;
+
+  padding: 4px 12px;
+  line-height: 20px;
+  min-height:  30px;
+
+  margin: 0;
+  vertical-align: middle;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  border: none;
+
+  .kickass-shadow(0 -2px rgba(0,0,0,0.2) inset);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+  .transition(background-color 0.1s ease-out);
+}
+
+.btn:active, .btn-active {
+  box-shadow: none;
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  box-shadow: none;
+  cursor: default;
+  pointer-events: none;
+}
+
+.btn:hover, .btn-hover, .btn:focus {
+  text-decoration: none;
+}
+
+.btn-bordered {
+  // reset the bottom shadow since we'll be using actual borders:
+  box-shadow: none;
+
+  border: 1px solid rgba(0,0,0,0.15);
+  border-bottom-color: rgba(0,0,0,0.3);
+}
+
+/**
+ * ===========================================================================
+ * DEFAULT BUTTON: GREY
+ * ===========================================================================
+ */
+.btn-default {
+  text-shadow: none;
+  background-color: #f4f4f4;
+  color: @foreground;
+
+  &.btn-bordered {
+    border-bottom-color: #c3c3c3;
+  }
+}
+
+.btn-default:hover,
+.btn-default-hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default-active,
+.btn-default:disabled {
+  background-color: @button-default-hover;
+}
+
+/**
+ * ===========================================================================
+ * PRIMARY BUTTON: BLUE
+ * ===========================================================================
+ */
+.btn-primary {
+  background-color: @button-blue;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary-hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary-active,
+.btn-primary:disabled {
+  background-color: @button-blue-hover;
+}
+/**
+ * ===========================================================================
+ * WARNING BUTTON: ORANGE
+ * ===========================================================================
+ */
+.btn-warning {
+  color: #ffffff;
+  background-color: @button-orange;
+}
+
+.btn-warning:hover,
+.btn-warning-hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning-active,
+.btn-warning:disabled
+{
+  background-color: @button-orange-hover;
+}
+
+/**
+ * ===========================================================================
+ * DANGER BUTTON: RED
+ * ===========================================================================
+ */
+.btn-danger, .popover.erratic {
+  color: #ffffff;
+  background-color: @button-red;
+}
+
+.btn-danger:hover,
+.btn-danger-hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger-active,
+.btn-danger:disabled {
+  background-color: @button-red-hover;
+}
+
+/**
+ * ===========================================================================
+ * SUCCESS BUTTON: GREEN
+ * ===========================================================================
+ */
+.btn-success {
+  color: #ffffff;
+  background-color: @button-green;
+}
+.btn-success:hover,
+.btn-success-hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success-active,
+.btn-success:disabled {
+  background-color: @button-green-hover;
+}
+
+/**
+ * ===========================================================================
+ * INFO BUTTON: LIGHT BLUE
+ * ===========================================================================
+ */
+.btn-info {
+  color: #ffffff;
+  background-color: @button-info;
+}
+
+.btn-info:hover,
+.btn-info-hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info-active,
+.btn-info:disabled {
+  background-color: @button-info-hover;
+}
+
+/**
+ * ===========================================================================
+ * NAVIGATION BUTTONS
+ * ===========================================================================
+ */
+
+.btn-next, .btn-prev {
+  position: relative;
+}
+
+.btn-next {
+  .border-radius(0 2px 2px 0);
+  padding-right:  10px;
+  padding-left:   10px;
+}
+
+.btn-prev {
+  .border-radius(2px 0 0 2px);
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
+.btn-next .icon-arrow-right-2,
+.btn-prev .icon-arrow-left-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  text-align: center;
+  display: inline-block;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.btn-next .icon-arrow-right-2 {
+  right: 2px;
+}
+
+.btn-prev .icon-arrow-left-2 {
+  left: 2px;
+}
+
+/**
+ * ===========================================================================
+ * LINK BUTTON: TRANSPARENT
+ * ===========================================================================
+ */
+.btn-link {
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: @link_fg;
+  text-shadow: none;
+  line-height: inherit;
+  font-size: inherit;
+  height: auto;
+  min-height: inherit;
+}
+
+.btn-link:hover,
+.btn-link-hover {
+  text-decoration: underline;
+  background: none;
+}
+
+/**
+ * ===========================================================================
+ * DROPDOWN BUTTON + CHOSEN SUPPORT
+ * ===========================================================================
+ */
+.btn-dropdown {
+  .appearance(none);
+
+  // text-shadow: none;
+  padding: 0 ;
+  width: auto;
+  line-height: 26px;
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left;
+  .disable-selection;
+
+  .chosen-single {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  &.chosen-container-active.chosen-with-drop {
+    .chosen-single {
+      border-color: transparent;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .chosen-drop {
+      left: -1px;
+      right: -1px;
+      width: auto;
+    }
+  }
+
+  &.btn-mini {
+    .chosen-single {
+      height: 24px;
+      line-height: 22px;
+    }
+
+    .chosen-drop {
+      margin-top: 2px;
+    }
+
+    .btn-dropdown-anchor {
+      line-height: 24px;
+      height: 24px;
+      padding: 0 4px;
+    }
+  }
+
+  > .heading {
+    padding: 0 @whitespace;
+    position: relative;
+    z-index: 100;
+    height: 24px;
+  }
+
+  .dropdown-menu {
+    margin-top: 0px;
+    padding-top: 5px;
+    box-shadow: 1px 2px 3px 0 #aaa;
+    border-radius: 0 2px 2px 2px;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .btn {
+    .btn-block();
+    font-size: 11px;
+    line-height: 1;
+    font-weight: bold;
+    // text-shadow: none;
+  }
+
+  &.chosen-with-drop,
+  &.open {
+    border-bottom: none;
+    border-radius: 2px 2px 0 0;
+    background: white;
+
+    > .heading {
+      border-bottom: 1px solid white;
+    }
+  }
+
+  /**
+   * If you mark a button.dropdown-toggle with ".with-arrow", then it will
+   * contain a down-arrow icon at its right edge with a soft padding between
+   * the button's label and the icon.
+   */
+  &.with-arrow {
+    padding-right: @whitespace * 3;
+
+    &:after {
+      .iconify(@icon-arrow-down);
+      // padding-left: 5px;
+      pointer-events: none;
+      font-size: 16px;
+      color: #888;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: @whitespace;
+      line-height: inherit;
+    }
+  }
+}
+
+.btn-dropdown.add-on {
+  margin-left: 5px;
+}
+
+.btn-dropdown-anchor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 @whitespace;
+  pointer-events: none;
+  line-height: 27px;
+  font-size: 16px;
+  color: #888;
+}
+
+/**
+ * ===========================================================================
+ * BUTTON SIZERS
+ * ===========================================================================
+ */
+.btn-stretch {
+  width: 100%;
+}
+
+.btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  font-weight: normal;
+  height: auto;
+}
+.btn-huge {
+  font-weight: normal;
+  padding: 16px 25px;
+  font-size: 21.5px;
+  height: auto;
+}
+
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+.btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  height: auto;
+  line-height: 2;
+}
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+.btn-mini {
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 24px;
+  height: 24px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+button.btn-block {
+  width: 100%;
+}
+
+/**
+ * ===========================================================================
+ * BUTTON GROUPS
+ * ===========================================================================
+ */
+.btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn.loading {
+  .disabled();
+}
+
+.btn.prepended-icon {
+  [class*="icon"], [class*="emblem"] {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+/**
+ * ===========================================================================
+ * ACCESSIBILITY BUTTONS: NO APPEARANCE
+ * ===========================================================================
+ */
+.btn-a11y {
+  .appearance(none);
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  height: inherit;
+  font-weight: inherit;
+  padding: 0;
+}

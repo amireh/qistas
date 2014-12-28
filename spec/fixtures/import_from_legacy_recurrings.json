@@ -1,0 +1,129 @@
+{
+  "recurrings": [
+    {
+      "id": 30351,
+      "amount": "0.145E2",
+      "currency": "USD",
+      "note": "Muddakir.org",
+      "type": "Recurring",
+      "occured_on": "2013-11-02T00:00:00+00:00",
+      "created_at": "2013-11-02T14:29:01+00:00",
+      "account_id": 1,
+      "payment_method_id": 1,
+      "flow_type": "negative",
+      "frequency": "yearly",
+      "recurs_on": null,
+      "last_commit": null,
+      "active": true,
+      "currency_rate": "0.71E0",
+      "recurring_id": null,
+      "every": 1,
+      "weekly_days": [],
+      "monthly_days": [],
+      "yearly_months": [
+        11
+      ],
+      "yearly_day": 2
+    },
+    {
+      "id": 25447,
+      "amount": "0.999E1",
+      "currency": "USD",
+      "note": "Dropbox",
+      "type": "Recurring",
+      "occured_on": "2013-10-18T00:00:00+00:00",
+      "created_at": "2013-10-18T14:32:37+00:00",
+      "account_id": 1,
+      "payment_method_id": 3,
+      "flow_type": "negative",
+      "frequency": "monthly",
+      "recurs_on": null,
+      "last_commit": "2013-11-18T00:00:00+00:00",
+      "active": true,
+      "currency_rate": "0.71E0",
+      "recurring_id": null,
+      "every": 1,
+      "weekly_days": null,
+      "monthly_days": [
+        18
+      ],
+      "yearly_months": null,
+      "yearly_day": null
+    },
+    {
+      "id": 19127,
+      "amount": "0.7E1",
+      "currency": "JOD",
+      "note": "Car wash by guard",
+      "type": "Recurring",
+      "occured_on": "2013-10-02T00:00:00+00:00",
+      "created_at": "2013-10-02T09:14:38+00:00",
+      "account_id": 2,
+      "payment_method_id": 4,
+      "flow_type": "negative",
+      "frequency": "monthly",
+      "recurs_on": null,
+      "last_commit": "2013-11-23T00:00:00+00:00",
+      "active": true,
+      "currency_rate": "0.71E0",
+      "recurring_id": null,
+      "every": 1,
+      "weekly_days": null,
+      "monthly_days": [
+        23
+      ],
+      "yearly_months": null,
+      "yearly_day": null
+    },
+    {
+      "id": 13321,
+      "amount": "0.196E3",
+      "currency": "JOD",
+      "note": "Car loan",
+      "type": "Recurring",
+      "occured_on": "2013-09-22T00:00:00+00:00",
+      "created_at": "2013-09-22T08:03:20+00:00",
+      "account_id": 2,
+      "payment_method_id": 4,
+      "flow_type": "negative",
+      "frequency": "monthly",
+      "recurs_on": null,
+      "last_commit": "2013-11-28T00:00:00+00:00",
+      "active": true,
+      "currency_rate": "0.71E0",
+      "recurring_id": null,
+      "every": 1,
+      "weekly_days": null,
+      "monthly_days": [
+        28
+      ],
+      "yearly_months": null,
+      "yearly_day": null
+    },
+    {
+      "id": 10216,
+      "amount": "0.509E3",
+      "currency": "JOD",
+      "note": "Salary",
+      "type": "Recurring",
+      "occured_on": "2013-09-13T00:00:00+00:00",
+      "created_at": "2013-09-13T13:13:40+00:00",
+      "account_id": 2,
+      "payment_method_id": 37,
+      "flow_type": "positive",
+      "frequency": "monthly",
+      "recurs_on": null,
+      "last_commit": "2013-11-28T00:00:00+00:00",
+      "active": true,
+      "currency_rate": "0.71E0",
+      "recurring_id": null,
+      "every": 1,
+      "weekly_days": null,
+      "monthly_days": [
+        28
+      ],
+      "yearly_months": null,
+      "yearly_day": null
+    }
+  ]
+}

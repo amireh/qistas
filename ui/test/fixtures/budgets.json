@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Saving for a house",
+    "currency": "USD",
+    "goal": "savings_control",
+    "resetted_at": null,
+    "created_at": "2014-04-19T08:54:23.284Z",
+    "every": 1,
+    "interval": "months",
+    "quantifier": 25,
+    "is_ratio": true,
+    "icon": "home-3",
+    "next_reset": "2014-05-19T00:00:00.000Z",
+    "completion": 11,
+    "total": 10,
+    "overflow": 0,
+    "underflow": 80.53,
+    "user_id": 1,
+    "payment_method_id": null,
+    "account_id": 8003,
+    "category_ids": [],
+    "transaction_ids": [
+      40765
+    ],
+    "href": "/users/1/budgets/1",
+    "links": {
+      "user": "/users/1",
+      "transactions": "/budgets/1/transactions"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Just saving",
+    "currency": "JOD",
+    "goal": "savings_control",
+    "resetted_at": null,
+    "created_at": "2014-04-19T09:19:22.058Z",
+    "every": 1,
+    "interval": "months",
+    "quantifier": 10,
+    "is_ratio": false,
+    "icon": "garden",
+    "next_reset": "2014-05-19T00:00:00.000Z",
+    "completion": 100,
+    "total": 10,
+    "overflow": 0,
+    "underflow": 0,
+    "user_id": 1,
+    "payment_method_id": null,
+    "account_id": 8003,
+    "category_ids": [],
+    "transaction_ids": [
+      40765
+    ],
+    "href": "/users/1/budgets/3",
+    "links": {
+      "user": "/users/1",
+      "transactions": "/budgets/3/transactions"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Saving for a train and some really wild things.",
+    "currency": "USD",
+    "goal": "savings_control",
+    "resetted_at": null,
+    "created_at": "2014-04-19T09:05:34.717Z",
+    "every": 1,
+    "interval": "weeks",
+    "quantifier": 1,
+    "is_ratio": true,
+    "icon": "train",
+    "next_reset": "2014-04-26T00:00:00.000Z",
+    "completion": 100,
+    "total": 10,
+    "overflow": 6.38,
+    "underflow": 0,
+    "user_id": 1,
+    "payment_method_id": null,
+    "account_id": 8003,
+    "category_ids": [],
+    "transaction_ids": [
+      40765
+    ],
+    "href": "/users/1/budgets/2",
+    "links": {
+      "user": "/users/1",
+      "transactions": "/budgets/2/transactions"
+    }
+  }
+]

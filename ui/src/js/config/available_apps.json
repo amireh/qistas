@@ -1,0 +1,77 @@
+[
+  {
+    "name": "imports",
+    "title": "Import Data",
+    "href": "/imports",
+    "navigation_link": false
+  },
+  {
+    "name": "recurrings",
+    "title": "Recurrings",
+    "href": "/recurrings",
+    "navigation_link": false
+  },
+  {
+    "name": "settings",
+    "title": "Settings",
+    "href": "/settings",
+    "navigation_link": false
+  },
+  {
+    "name": "feed",
+    "title": "Feed",
+    "href": "/feed",
+    "navigation_link": false
+  },
+  {
+    "name": "dashboard",
+    "title": "Dashboard",
+    "href": "/dashboard",
+    "navigation_link": false
+  },
+  {
+    "name": "budgets",
+    "title": "Budgets",
+    "href": "/budgets",
+    "navigation_link": false
+  },
+  {
+    "name": "accounts",
+    "title": "Accounts",
+    "href": "/accounts",
+    "navigation_link": false
+  },
+  {
+    "name": "planner",
+    "title": "planner",
+    "href": "/planner",
+    "navigation_link": false
+  },
+  {
+    "name": "guest",
+    "title": "Guest",
+    "href": "/",
+    "navigation_link": false,
+    "top_level": true,
+    "entry_scripts": [
+      "welcome",
+      "about",
+      "privacy",
+      "terms",
+      "security",
+      "login",
+      "signup",
+      "reset_password",
+      "change_password"
+    ]
+  },
+  {
+    "name": "development",
+    "development_only": true
+  },
+
+  {
+    "name": "reports",
+    "navigation_link": false
+  }
+]

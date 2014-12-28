@@ -1,0 +1,268 @@
+#transaction_listing {
+  .segment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /** Compact mode */
+  &.compact {
+    .tx-occured-on, .tx-pm, .tx-note, .tx-attachments, .tx-splits {
+      display: none;
+    }
+
+    .tx-amount {
+      display: inline-block;
+    }
+
+    .tx-currency {
+      margin-left: 5px;
+    }
+
+    .tx-categories {
+      display: inline-block;
+      margin-top: 0;
+      vertical-align: middle;
+      margin-right: 5px;
+
+      &:before {
+        top: 7px;
+      }
+    }
+  }
+
+  /** No segment mode */
+  &.no-header {
+    margin-top: 10px;
+
+    .segment-header { display: none; }
+
+    .segment {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .tx-occured-on {
+      display: inline-block;
+    }
+  }
+
+  .segment-header {
+    font-weight: bold;
+    font-size: 13px;
+
+    .balance {
+      opacity: 0;
+      .transition(opacity 0.15s ease-in 0s);
+    }
+  }
+
+  .segment:hover {
+    .segment-header .balance {
+      opacity: 1;
+    }
+  }
+
+  // In monthly drilldown, the occured-on text is redundant when
+  // 'Group by Dates' option is set, so we hide it
+  &.no-occurrence {
+    .tx-occured-on {
+      display: none;
+    }
+  }
+
+  &.drilldown-today,
+  &.drilldown-yesterday {
+    .segment-header .balance {
+      display: none;
+    }
+  }
+
+  footer {
+    margin: 10px 0;
+    text-align: center;
+    border-top: none;
+    padding: @whitespace 0;
+  }
+}
+
+.tx-listing {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tx-listing-entry {
+  position: relative;
+  padding: 10px 10px 10px 50px;
+  border-bottom: 1px dashed #eee;
+  list-style: none;
+
+  &.is-active, &:hover {
+    background-color: rgba(0,0,0,0.05);
+  }
+
+  &.is-upcoming {
+    opacity: 0.75;
+  }
+
+  &.is-transfer {
+    .tx-emblem:before { color: @orange-alt; }
+  }
+}
+
+.tx-upcoming-notice {
+  margin: 0;
+}
+
+.tx-categories {
+  .ellipsify();
+
+  font-weight: bold;
+  display: block;
+  max-width: 80%;
+
+  &:before {
+    position: absolute;
+    left: 10px;
+    font-size: 24px;
+  }
+}
+
+.tx-amount-data {
+  // position: absolute;
+  // right: 10px;
+  // top: 10px;
+  // left: 70%;
+  text-align: right;
+
+  .mobile-only({
+    left: 50%;
+  });
+}
+
+.tx-amount {
+  // line-height: 40px;
+  font-weight: bold;
+  display: block;
+}
+
+.tx-pm {
+  .inline();
+  .ellipsify();
+  font-weight: bold;
+  line-height: 1;
+  vertical-align: middle;
+
+  // Work-around for retina where one pixel gets chopped off by hidden overflow
+  padding-right: 1px;
+  right: -1px;
+}
+
+.tx-pm-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -1px;
+  width: 3px;
+  opacity: 0.5;
+
+  // &:after {
+  //   content: "";
+  //   .fullscreen;
+  //   display: block;
+  //   background: rgba(255,255,255,0.75);
+  // }
+}
+
+.tx-currency {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.tx-pm,
+.tx-note,
+.tx-occured-on,
+.tx-attachments,
+.tx-account,
+.tx-upcoming-notice {
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.tx-note {
+  @icon-width: 16px;
+  display: block;
+
+  white-space: normal;
+  padding-left: @icon-width;
+
+  &:before {
+    color: #888;
+    width: @icon-width;
+    margin-left: -@icon-width;
+  }
+
+  &.empty {
+    display: none;
+  }
+}
+
+.tx-account {
+  font-weight: bold;
+  margin-left: 5px;
+  color: @mute-fg;
+}
+
+.tx-attachments {
+  margin-right: 5px;
+  color: @red;
+
+  ul {
+    .inline;
+    margin: 0;
+    list-style: none;
+    padding: 0 0 0 3px;
+    vertical-align: top;
+  }
+}
+
+.with-sidebar {
+  .tx-currency,
+  .tx-pm {
+    display: inline-block;
+  }
+}
+
+.tx-left-side {
+  display: inline-block;
+  width: 70%;
+}
+
+.tx-right-side {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tx-splits {
+  font-size: 11px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+
+  .split-amount {
+    font-weight: bold;
+    margin-left: 3px;
+  }
+
+  .split-memo {
+    .ellipsify;
+    .inline;
+    vertical-align: top;
+
+    max-width: 100px;
+  }
+}

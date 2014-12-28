@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@vendor-path: "../../vendor/css";
+
+@import "helpers";
+@import "layouts/base";
+@import "dimensions";
+
+@import "@{vendor-path}/bootstrap/bootstrap-rtl";
+
+@import "regions/navbar-rtl";
+@import "regions/content-rtl";
+
+body.rtl {
+  direction: rtl;
+
+  .pull-right {
+    float: left;
+  }
+  .pull-left {
+    float: right;
+  }
+
+  .text-left {
+    text-align: right;
+  }
+  .text-right {
+    text-align: left;
+  }
+
+
+  [data-collapser] {
+    &:after {
+      right: auto;
+      left: 10px;
+    }
+  }
+
+  .btn[data-collapser] {
+    padding-left: 25px;
+    padding-right: 5px;
+
+    &:after {
+      padding-right: 5px;
+      padding-left: 0;
+
+      right: auto;
+      left: 5px;
+
+      border-right: 1px solid rgba(0,0,0,0.1);
+      border-left: none;
+    }
+  }
+
+  .btn-demo {
+    margin-right: 64px;
+    margin-left: 0;
+  }
+
+  #landing .greeting .auth-actions .sign-in {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .close-dialog-button {
+    right: auto;
+    left: 0;
+  }
+
+  .greeting .header-logo {
+    i {
+      margin-right: -78px;
+      margin-left: 0;
+    }
+  }
+
+}

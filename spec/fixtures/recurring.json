@@ -1,0 +1,16 @@
+{
+  "name": "hackabyte.com",
+  "amount": 14.95,
+  "currency": "USD",
+  "category_ids": [],
+  "payment_method_id": null,
+  "flow_type": "positive",
+  "frequency": "daily",
+  "every": 1,
+  "active": true,
+  "weekly_days": null,
+  "monthly_days": null,
+  "yearly_day": null,
+  "yearly_months": null,
+  "created_at": null
+}

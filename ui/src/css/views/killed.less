@@ -1,0 +1,52 @@
+body.state-killed,
+body.state-rc404 {
+  .widget {
+    display: none;
+  }
+
+  #killed {
+    text-align: center;
+
+    hr {
+      border: none;
+    }
+  }
+}
+body.state-rc404 {
+  #address_404 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+
+  body.state-killed,
+  body.state-rc404 {
+    #content_wrapper {
+      .fullscreen();
+    }
+
+    #killed {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -166px;
+      width: 620px;
+      margin-left: -310px;
+    }
+  }
+
+  body.state-rc404 {
+    #killed {
+      margin-top: -83px;
+      margin-left: -203px;
+      width: auto;
+    }
+  }
+}
+

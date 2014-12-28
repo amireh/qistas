@@ -1,0 +1,24 @@
+.icon-picker {
+  white-space: normal;
+
+  input:not(:checked) {
+    cursor: pointer;
+  }
+
+  input:checked + i {
+    color: @button-green;
+  }
+
+  label:hover input:not(:checked) + i,
+  input:focus:not(:checked) + i {
+    color: @button-blue;
+  }
+}
+
+.qtip .icon-picker {
+  .mobile-only({
+    width: 120px;
+    overflow: auto;
+    .touch-scrolling;
+  });
+}

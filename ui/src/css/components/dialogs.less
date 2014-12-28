@@ -1,0 +1,321 @@
+@dialog-title-height: 51px;
+@mobile-dialog-title-height: @mobile-toolbar-height;
+@dialog-actions-height: 45px;
+@dialog-nav-width: 160px;
+@dialog-offset-top: 55px;
+@dialog-border-radius: 3px;
+
+body.with-dialog {
+  #dialogs {
+    display: block;
+    z-index: 10;
+  }
+}
+
+#dialogs {
+  display: none;
+  z-index: -1;
+}
+
+.dialog {
+  background: inherit;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0 0 @dialog-border-radius @dialog-border-radius;
+
+  &.scrollable {
+    .fullscreen();
+
+    .dialog-main {
+      .fullscreen();
+    }
+
+    .dialog-content {
+      .fullscreen();
+      overflow: auto;
+    }
+
+    .dialog-title + .dialog-main {
+      top: @dialog-title-height - 2px;
+    }
+  }
+
+  &.no-padding {
+    .dialog-content { padding-top: 0; padding-bottom: 0; }
+  }
+
+  &.with-bottom-actions {
+    .dialog-content {
+      bottom: 55px;
+    }
+
+    .dialog-actions {
+      position: absolute;
+      bottom: 0;
+      height: 55px;
+      overflow: auto;
+      left: 0;
+      right: 0;
+      padding: 10px @whitespace;
+      background: #f4f4f4;
+      border-radius: 0 0 3px 3px;
+
+      /**
+       * Markup required:
+       *
+       * <div class="dialog-actions">
+       *   <button class="btn btn-prev icon-arrow-left"></button>
+       *   <button class="btn btn-next icon-arrow-right"></button>
+       * </div>
+       */
+      .btn-prev, .btn-next {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 60px;
+        font-size: 24px;
+        line-height: 40px;
+        height: auto;
+      }
+
+      .btn-next {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+
+  &.thin-dialog {
+    @content-width: 219px;
+
+    width: 320px;
+    text-align: center;
+
+    .dialog-content {
+      padding-left:  50px;
+      padding-right: 50px;
+    }
+
+    hr {
+      border: none;
+      height: 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .icon-pibi-framed {
+      display: block;
+      margin-bottom: 20px;
+      pointer-events: none;
+
+      .flip-y();
+    }
+  }
+
+}
+
+.close-dialog-button {
+  position: absolute;
+  top:    0;
+  bottom: 0;
+  right:  0;
+
+  line-height: 1;
+  z-index: 2;
+  cursor: pointer;
+  padding: 0 @whitespace;
+  border: none;
+
+  background-color: transparent;
+
+  &:hover {
+    color: @hover-color;
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+  }
+}
+
+.dialog-title {
+  position: relative;
+  padding: 0 @whitespace;
+  margin: 0;
+  font-weight: normal;
+
+  font-size: 14.5px;
+  line-height: @dialog-title-height;
+  z-index: 1;
+
+  height: @dialog-title-height - 2px;
+  background: #eee;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  box-shadow: 0 1px 0 0 #ccc;
+  .vlinear-gradient(to bottom; #eee, #e4e4e4);
+}
+
+.dialog-actions {
+  margin-top: 10px;
+  padding: 10px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1);
+  text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  #dialogs {
+    // top: 0;
+  }
+
+  body.member #dialogs {
+    // top: @mobile-content-offset-top;
+  }
+
+  .dialog {
+    z-index: 10;
+    .touch-scrolling;
+
+    &.scrollable {
+      position: absolute;
+      top: @mobile-content-offset-top;
+      right: @mobile-content-offset-right;
+      bottom: @mobile-content-offset-bottom;
+      left: @mobile-content-offset-left;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .dialog-title + .dialog-main {
+        top: @mobile-dialog-title-height - 2px;
+      }
+    }
+
+    &.thin-dialog {
+      width: auto;
+    }
+
+    &.with-title {
+      top: 0;
+    }
+  }
+
+  .dialog-title {
+    padding: @mobile-whitespace;
+    font-size: 15px;
+    height: @mobile-dialog-title-height;
+    border-radius: 0;
+    z-index: 10;
+  }
+
+  .close-dialog-button {
+    padding: @mobile-whitespace;
+  }
+
+  .dialog-nav {
+    background-color: inherit;
+  }
+
+  .dialog-content {
+    padding: @mobile-whitespace;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  // When a dialog is shown, don't allow any clicks through to the main content,
+  // and cover the background with a dark shade.
+  body.with-dialog {
+    &:after {
+      .fullscreen();
+      content: "";
+      position: fixed;
+      z-index: 9;
+      background: rgba(0,0,0,0.5);
+    }
+
+    #main {
+      z-index: -1 !important;
+      pointer-events: none;
+      .disable-selection;
+    }
+  }
+
+  #dialogs {
+    display: none;
+    z-index: -1;
+
+    position: fixed;
+    top:    50%;
+    left:   50%;
+    right: auto;
+    bottom: auto;
+    width: 600px;
+    height: 560px;
+    margin-left: -300px;
+    margin-top: -280px;
+
+    .transition(
+      ~"top 0.25s ease-in-out 0s,",
+      ~"margin-top 0.25s ease-in-out 0s"
+    );
+
+    &.large-dialog {
+      height: auto;
+      margin-top: 0;
+      top: 30px;
+      bottom: 30px;
+    }
+  }
+
+  .dialog {
+    overflow: hidden;
+    background: white;
+    .kickass-shadow;
+  }
+
+  .dialog-nav {
+    width: 160px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    border-right: 1px solid #ddd;
+    background: #eee;
+    box-shadow: -1px 0 1px #f4f4f4 inset;
+    border-radius: 0 0 0 4px;
+
+    a, header {
+      display: block;
+      line-height: 32px;
+      white-space: nowrap;
+      padding: 0 @whitespace;
+      color: @mute-fg;
+    }
+
+    header {
+      padding: @whitespace/2 @whitespace;
+    }
+
+    a {
+      &.active, &:hover {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      i {
+        position: absolute;
+        right: @whitespace;
+      }
+    }
+  }
+
+  .dialog-nav + .dialog-content {
+    margin-left: 160px;
+  }
+
+  .dialog-content {
+    padding: @whitespace;
+    border-radius: 0 0 @dialog-border-radius @dialog-border-radius;
+  }
+}

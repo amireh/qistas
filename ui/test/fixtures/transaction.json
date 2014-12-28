@@ -1,0 +1,39 @@
+{
+  "note": "Hey there.",
+  "id": 40778,
+  "type": "income",
+  "amount": 5,
+  "currency": "USD",
+  "occurred_on": "2014-01-25T00:00:00.000Z",
+  "category_ids": [ 1 ],
+  "payment_method_id": 1,
+  "recurring_id": null,
+  "spouse_id": null,
+  "attachments": [
+    {
+      "filename": ".jshint.html",
+      "filesize": 45246,
+      "id": 55,
+      "created_at": "2014-01-26T09:46:03+00:00",
+      "href": "/transactions/40778/attachments/55"
+    },
+    {
+      "filename": "tests.html",
+      "filesize": 7526,
+      "id": 56,
+      "created_at": "2014-01-26T09:46:05+00:00",
+      "href": "/transactions/40778/attachments/56"
+    },
+    {
+      "filename": ".jshint.html",
+      "filesize": 45246,
+      "id": 57,
+      "created_at": "2014-01-26T09:46:07+00:00",
+      "href": "/transactions/40778/attachments/57"
+    }
+  ],
+  "href": "/accounts/1/transactions/40778",
+  "links": {
+    "attachments": "/transactions/40778/attachments"
+  }
+}

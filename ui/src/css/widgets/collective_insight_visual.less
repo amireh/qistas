@@ -1,0 +1,50 @@
+#collective_insight_visual {
+  text-align: center;
+
+  .breadcrumb {
+    width: 600px;
+    height: 70px;
+  }
+
+  .legend-container {
+    position: absolute;
+    top: @whitespace;
+    right: @whitespace;
+    width: 80px;
+  }
+
+  .breadcrumb text, #legend text {
+    font-weight: 600;
+    fill: #fff;
+  }
+
+  #chart {
+    position: relative;
+  }
+
+  #chart path {
+    stroke: #fff;
+  }
+
+  #explanation {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -70px;
+    width: 140px;
+    text-align: center;
+    color: #666;
+    z-index: -1;
+  }
+
+  #percentage {
+    font-size: 2.5em;
+  }
+
+  .actions {
+    padding: @whitespace 0;
+    margin-top: @whitespace;
+    border-top: 1px solid #ddd;
+  }
+}

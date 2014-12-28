@@ -1,0 +1,45 @@
+@media screen and (max-width: 480px) {
+  #theme_picker { display: none; }
+}
+
+#theme_picker {
+  .dropdown-toggle {
+    .theme-thumbnail {
+      img {
+        height: 24px;
+        width:  24px;
+        // vertical-align: middle;
+      }
+    }
+  }
+
+  img {
+    vertical-align: top;
+  }
+
+  ul {
+    width: 230px;
+    overflow: auto;
+    max-height: 240px;
+    margin-top: 0;
+    padding: 10px;
+
+    li {
+      width:  24px;
+      height: 24px;
+      display: inline-block;
+      border: 1px solid transparent;
+      padding: 1px;
+      margin: 5px 0 0 5px;
+      &.active, &:hover {
+        .kickass-shadow;
+        border-color: rgba(0,0,0,0.5);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .theme-thumbnail {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,181 @@
+.tx-editor {
+  position: static;
+  .disable-selection;
+
+  .tx-note-editor {
+    width: 100%;
+    resize: none;
+    height: 52px;
+    font-family: inherit;
+  }
+
+  .input-append {
+    width: 100%;
+    margin: 0;
+  }
+
+  // > form,
+  // > form > fieldset {
+  //   width: 100%;
+  //   max-width: 340px;
+  //   margin: 0;
+  // }
+
+  .tx-frequency {
+    label {
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @currency-picker-width: 100px;
+
+  .amount-group {
+    position: relative;
+    padding-right: @currency-picker-width;
+
+    .chosen-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    [name="amount"] {
+      width: 100%;
+    }
+  }
+} /* .sidebar .tx-editor */
+
+.sidebar .item-value[type="text"] {
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin: 0;
+  height: auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+#tx_occurence_widget {
+  border-radius: 3px;
+  padding-bottom: 10px;
+  height: 237px;
+}
+
+
+#inactive_rtx_alert {
+  position: absolute;
+  bottom: 100%;
+  top: auto;
+  left: 10px;
+  right: 10px;
+}
+
+.tx-editor .tx-note-editor {
+  font-size: 11px;
+}
+
+#rtx_editor .tx-note-editor {
+  margin-bottom: 10px;
+}
+
+#rtx_editor .sidebar-label {
+  height: auto;
+}
+
+#frequency_recurrence_container > div:first-child {
+  margin-top: 10px;
+}
+
+#sidebar {
+  #yearly_frequency_recurrence .chosen-container {
+    margin-left: -8px;
+  }
+}
+
+.rtx-editor {
+  .sidebar-label.marginless {
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 20px;
+    height: auto;
+  }
+}
+
+.mobile-only({
+  .tx-editor .amount-group {
+    padding-right: 0;
+    position: static;
+
+    [name="amount"] {
+      margin-bottom: 5px;
+    }
+
+    select {
+      width: 100%;
+    }
+  }
+});
+
+.desktop-only({
+  .tx-editor .amount-group {
+    [name="amount"] {
+      &:not(:focus):not(:active) {
+        border-right-color: transparent;
+      }
+    }
+  }
+});
+
+.tx-amount-splits {
+  .margined();
+
+  > div {
+    margin: @whitespace/2 0;
+
+    .form-input {
+      margin-right: 5px;
+    }
+  }
+
+  .tx-split-amount {
+    width: 177px;
+  }
+
+  .remove-split-btn {
+    font-size: 12px;
+  }
+
+  .tx-split-remainder {
+    margin-left: 5px;
+
+    &.invalid {
+      color: @button-red;
+    }
+  }
+
+  .split-overflow-warning {
+    background: lighten(@orange, 25%);
+    border-radius: 2px;
+    padding: 3px 5px;
+    display: block;
+    margin: @whitespace 0;
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+
+#TxEditor__TypePicker .skinned-radio {
+  margin-right: 5px;
+}
+
+#TxEditor__Transfers {
+  .account-picker {
+    float: right;
+  }
+
+  .form-label__fixed-width-caption {
+    margin-bottom: 5px;
+  }
+}

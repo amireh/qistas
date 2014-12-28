@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+@base-url: "/assets";
+@images-url: "@{base-url}/images";
+@icons-url: "@{base-url}/images/icons";
+@fonts-url: "@{base-url}/fonts";
+@stylesheets-url: "@{base-url}/stylesheets";
+@fonts-path: "../../www/assets/fonts";
+@vendor-path: "../../vendor/css";
+
+@import "@{vendor-path}/normalize";
+// @import "@{vendor-path}/main";
+@import "@{vendor-path}/pikaday";
+@import "@{vendor-path}/chosen";
+@import "@{vendor-path}/bootstrap/bootstrap";
+@import "@{vendor-path}/bootstrap/bootstrap-responsive";
+// @import "@{vendor-path}/guide";
+// @import "@{vendor-path}/jquery.contextMenu";
+@import "@{vendor-path}/jquery.qtip.less";
+@import "@{vendor-path}/humane";
+@import "@{vendor-path}/dropzone";
+@import "@{vendor-path}/snap";
+
+@import "ext/pikaday";
+@import "ext/humane";
+@import "ext/qtip";
+@import "ext/snap";
+
+@import "print";
+@import "dimensions";
+@import "colorscheme";
+@import "helpers";
+@import "animations";
+@import "fonts";
+@import "typography";
+@import "forms";
+@import "icons";
+
+@import "layouts/base";
+@import "layouts/mobile";
+@import "layouts/tablet";
+@import "layouts/desktop";
+
+// @import "themes/all";
+
+@import "components/buttons";
+@import "components/toolbars";
+@import "components/dropdowns";
+@import "components/textual_dropdowns";
+@import "components/dialogs";
+@import "components/collapsible";
+@import "components/list_views";
+@import "components/chosen";
+@import "components/popups";
+@import "components/loading_indicator";
+@import "components/progress_bars";
+@import "components/progress_button";
+@import "components/save_button";
+@import "components/date_picker";
+@import "components/confirmation_popup";
+@import "components/help_tooltip";
+@import "components/days_of_month";
+@import "components/notification_center";
+@import "components/backlog";
+@import "components/journal";
+@import "components/notifications";
+@import "components/calendar";
+@import "components/attachment_editor";
+@import "components/charts";
+@import "components/upcoming_recurrings";
+@import "components/favorite_budgets";
+@import "components/balance";
+@import "components/main_menu"; // statusbar's
+
+@import "regions/main";
+// @import "regions/toolbar";
+@import "regions/navbar";
+@import "regions/content";
+// @import "regions/statusbar";
+// @import "regions/sidebar";
+
+@import "views/loading";
+@import "views/guest";
+@import "views/signup";
+@import "views/_oauth_links";
+@import "views/dashboard";
+
+@import "widgets/date_period";
+
+@scrollbar-radius: 0;
+
+body {
+  font: 13px Arial, "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  color: @foreground;
+
+  &.member {
+    background: #fafafa;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+// ::-webkit-scrollbar {
+//   width:  10px;
+//   height: 10px;
+// }
+// ::-webkit-scrollbar-button:start:decrement,
+// ::-webkit-scrollbar-button:end:increment  {
+//   height: 0px;
+//   width: 0;
+//   display: block;
+//   background-color: transparent;
+// }
+
+// ::-webkit-scrollbar-track-piece  {
+//   background-color: #eee;
+//   -webkit-border-radius: @scrollbar-radius;
+// }
+
+// ::-webkit-scrollbar-thumb:vertical {
+//   height: 30px;
+
+//   background-color: rgba(0, 0, 0, 0.25);
+//   border: 3px solid #eee;
+
+//   -webkit-border-radius: @scrollbar-radius;
+//   &:hover {
+//     background-color: rgba(0,0,0,0.35);
+//   }
+// }
+
+// ::-webkit-scrollbar-thumb:horizontal {
+//   width: 20px;
+//   background-color: rgba(0, 0, 0, 0.25);
+//   border: none;
+//   // border: 1px solid rgba(255,255,255,0.075);
+//   -webkit-border-radius: @scrollbar-radius;
+// }
+
+.chromeframe {
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1;
+  background: #ddd;
+  margin: 0;
+}
+
+.scrollable, .scrollable-content {
+  .touch-scrolling();
+}
+
+.scrollable-content {
+  overflow-y: auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid @low_contrast_border;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0;
+  line-height: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  cursor: text;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18.5px;
+}
+
+[data-action] {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: @link_fg;
+
+  &:focus {
+    .mark-focused();
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    border: none;
+  }
+
+  &.unstyled {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.offline .visible-offline {
+  display: block;
+}
+.online .visible-offline {
+  display: none;
+}
+.offline [data-online="hide"] {
+  display: none;
+}
+
+.offline [data-online="disable"] {
+  .disabled();
+}
+
+.offline section[data-online="disable"] {
+  opacity: 1;
+
+  &:after {
+    display: block;
+    content: "This section is not available in offline mode.";
+    position: absolute;
+    left:   0;
+    right:  0;
+    top:    0;
+    bottom: 0;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    color: @foreground;
+  }
+}
+
+.member-region         { display: none; }
+.member .member-region { display: block; }
+
+body.member {
+  #thehaxbutton {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  &.distraction-free #thehaxbutton {
+    color: @green;
+  }
+  &.distraction-free-really #thehaxbutton {
+    color: @red;
+  }
+}
+
+.negative { color: @red-alt; }
+.positive { color: @button-green; }
+
+.restrict-overflow {
+  position: relative;
+  overflow: hidden;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+.spacer {
+  margin-top: @whitespace;
+}
+
+@import "platforms/mobile" screen and (max-width: 480px);
+@import "../../apps/dashboard/css/main";

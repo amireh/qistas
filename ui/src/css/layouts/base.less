@@ -1,0 +1,25 @@
+@whitespace: 15px;
+@region-spacing: 10px;
+
+@statusbar-height: 50px;
+@navbar-width: 100px;
+@actionbar-height: 60px;
+
+@navbar-width: 100px;
+
+@sidebar-width: 360px;
+@sidebar-height: 240px;
+@sidebar-margin: 20px;
+@sidebar-header-height: 0;
+@sidebar-footer-height: 61px;
+@sidebar-top-offset: @actionbar-height;
+
+@content-margin: 20px;
+@content-width: ~"100% - @{navbar-width} - @{content-margin}";
+@content-with-sidebar-width: ~"@{content-width} - @{sidebar-width} - ( @{sidebar-margin} * 2 )";
+@content-with-sidebar-offset: @sidebar-width;
+
+@widget-hpadding: 20px;
+
+@actionbar-vpadding: 10px;
+@actionbar-hpadding: @widget-hpadding;

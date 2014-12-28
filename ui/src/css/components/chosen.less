@@ -1,0 +1,109 @@
+@import "../helpers";
+@import "../icons";
+
+.chosen-control() {
+  background: @combo-control-button-background;
+  border-left: 1px solid @combo-border-color;
+}
+
+.chosen-container.with-arrow {
+  position: relative;
+
+  .arrow-block() {
+    position: absolute;
+    right:  1px;
+    top:    1px;
+    bottom: 1px;
+    display: block;
+    pointer-events: none;
+    width: 26px;
+    z-index: 1;
+  }
+
+  &.chosen-with-drop {
+    .chosen-drop {
+      padding-top: 5px;
+      border-top: 1px solid @combo-border-color;
+    }
+  }
+
+  &:hover, &.chosen-with-drop {
+    .chosen-single {
+      background: #f4f4f4;
+    }
+  }
+
+  // This is basically the :focus equivalent for Chosen.
+  &.chosen-container-active {
+    .chosen-single {
+      border-color: @focus-border-color;
+    }
+
+    &.chosen-with-drop {
+      .chosen-single {
+        border-color: #ddd;
+      }
+    }
+  }
+
+  &:before {
+    // .transition(width 0.25s ease-out 0s);
+    .arrow-block();
+    content: '';
+    // background: #eee;
+    // border-left: 1px solid #ccc;
+    .chosen-control();
+  }
+
+  &:after {
+    .iconify(@icon-arrow-down);
+    .arrow-block();
+    line-height: 28px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &.chosen-with-drop:before {
+    width: 0;
+    border-left-color: transparent;
+  }
+
+  /**
+   * This is for embedding inside an .input-prepend or .input-append block.
+   *
+   * Here's an example markup:
+   *
+   *   <div class="input-append">
+   *     <input type="text" />
+   *     <select class="add-on with-arrow text-left"></select>
+   *   </div>
+   */
+  &.add-on {
+    padding: 0;
+
+    &.text-left {
+      text-align: left;
+    }
+  }
+
+  .search-choice-close {
+    top: 0;
+    right: 26px;
+    bottom: 0;
+    color: inherit;
+    font-size: 10px;
+    line-height: 28px;
+    width: 26px;
+    height: inherit;
+    text-align: center;
+    .chosen-control();
+
+    &:hover {
+      background: @hover-background;
+    }
+
+    &:before {
+      .iconify(@icon-undo);
+    }
+  }
+}

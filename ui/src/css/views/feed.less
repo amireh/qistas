@@ -1,0 +1,30 @@
+#feedView {
+  .actions {
+    margin: 20px 0;
+  }
+}
+
+.toolbar-expense-btn, .toolbar-income-btn {
+  .icon-minus, .icon-plus {
+    &:before {
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      color: white;
+      box-shadow: 0 1px 0 1px rgba(0,0,0,0.125) inset;
+      font-size: 8px;
+    }
+  }
+}
+
+.toolbar-income-btn {
+  .icon-plus:before {
+    background: @button-green;
+  }
+}
+
+.toolbar-expense-btn {
+  .icon-minus:before {
+    background: @button-red;
+  }
+}

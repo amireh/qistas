@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+plato \
+  -d doc/coverage \
+  -r \
+  -l .jshintrc \
+  -t 'Pibi.js' \
+  -x ".jsx|.json|src/js/config/initializers/debug.js|src/js/util/diff.js|src/js/main.js" \
+  src/js/ \
+  tmp/compiled/

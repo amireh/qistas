@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": 47229,
+      "name": "Activities",
+      "icon": "default",
+      "user_id": 2
+    },
+    {
+      "id": 47226,
+      "name": "Allowance",
+      "icon": "default",
+      "user_id": 2
+    },
+    {
+      "id": 103269,
+      "name": "Bank Fees",
+      "icon": "bank",
+      "user_id": 2
+    },
+    {
+      "id": 27,
+      "name": "Bill - Electricity",
+      "icon": "home-2",
+      "user_id": 2
+    },
+    {
+      "id": 98411,
+      "name": "Bill - Gas",
+      "icon": "default",
+      "user_id": 2
+    },
+    {
+      "id": 56,
+      "name": "Bill - Internet",
+      "icon": "household",
+      "user_id": 2
+    },
+    {
+      "id": 127,
+      "name": "Bill - Water",
+      "icon": "default",
+      "user_id": 2
+    },
+    {
+      "id": 8,
+      "name": "Bills",
+      "icon": "bills",
+      "user_id": 1
+    },
+    {
+      "id": 356,
+      "name": "Candy",
+      "icon": "fun",
+      "user_id": 1
+    },
+    {
+      "id": 125,
+      "name": "Domains",
+      "icon": "travel",
+      "user_id": 1
+    }
+  ]
+}

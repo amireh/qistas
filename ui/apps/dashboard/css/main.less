@@ -1,0 +1,65 @@
+#PrayerEditor {
+
+}
+
+.PrayerEditor__DateController {
+  display: block;
+  padding-bottom: @whitespace;
+  margin-bottom: @whitespace;
+}
+
+.PrayerEditor__PrayerTypes {
+  width: 120px;
+
+  .skinned-radio {
+    display: block;
+  }
+}
+
+.PrayerEditor__PrayerOptions {
+  .skinned-checkbox {
+    display: block;
+  }
+}
+
+.PrayerEditor__PrayerTypes,
+.PrayerEditor__PrayerOptions {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.PrayerEditor__PrayerOptions:not(:empty) + .PrayerEditor__Actions {
+  margin-top: @whitespace;
+  border-top: 1px solid @border-color;
+  padding-top: @whitespace;
+}
+
+.PrayerEditor__Actions {
+  text-align: right;
+}
+
+.ig-indent {
+  padding-left: @whitespace;
+}
+
+.PrayerScore {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 2px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+
+  &.is-missing {
+    color: @red;
+    background: #eee;
+    // opacity: 0.5;
+  }
+
+  &.is-scored {
+    background: @green;
+  }
+}

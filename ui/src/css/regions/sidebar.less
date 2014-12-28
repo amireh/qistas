@@ -1,0 +1,214 @@
+body.distraction-free-really.with-sidebar #sidebar {
+  top: @desktop-actionbar-height;
+}
+
+.sidebar-label {
+  display: block;
+  position: relative;
+  margin: 10px -@whitespace;
+  height: 30px;
+
+  background: #eee;
+  padding: 0 @whitespace;
+
+  line-height: 28px;
+
+  &, button {
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 white;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #777;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+
+  .item-value {
+    text-align: right;
+    font-size: 11px;
+    // line-height: inherit;
+    color: #aaa;
+    letter-spacing: 1px;
+    font-weight: normal;
+    position: absolute;
+    right:  @whitespace;
+    top:    0;
+    display: block;
+    width: 160px;
+    .ellipsify();
+
+    * {
+      vertical-align: middle;
+    }
+  }
+
+  button {
+    .appearance(none);
+    border: none;
+    background: none;
+    color: inherit;
+    height: auto;
+    padding: 0;
+    text-align: left;
+  }
+
+  &.sidebar-popup-toggle {
+    cursor: pointer;
+    color: @link_fg;
+
+    &:hover,
+    &.active {
+      // color: @blue;
+      background: transparent;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #sidebar {
+    position: absolute;
+    top: @mobile-content-offset-top;
+    right: @mobile-content-offset-right;
+    bottom: @mobile-content-offset-bottom;
+    left: @mobile-content-offset-left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 @mobile-whitespace;
+  }
+
+  .sidebar-content {
+    position: relative;
+  }
+
+  .sidebar-label {
+    &.sidebar-popup-toggle {
+      .item-value {
+        right: @mobile-whitespace*2;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+  /** Sidebar layout **/
+
+  #sidebar {
+    position: fixed;
+    top: @desktop-sidebar-top-offset;
+    right: 0;
+    // height: @sidebar-height;
+    bottom: 0;
+    // padding: 0 10px;
+    background: #f4f4f4;
+    width: @desktop-sidebar-width;
+    display: none;
+    border-radius: 0 0 2px 0;
+  }
+
+  body.with-sidebar #sidebar {
+    display: block;
+    z-index: 1;
+  }
+
+  .sidebar-field-hint {
+    color:     #aaa;
+    font-size: 11px;
+  }
+
+  .renderable {
+    position: absolute;
+    right:  0;
+    left:   0;
+
+    border-color: rgba(0, 0, 0, 0.05);
+    // border: 1px solid rgba(0, 0, 0, 0.15);
+    // border-top: none;
+    // box-shadow: 1px 1px 0 rgba(255,255,255,0.75) inset;
+
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+
+  .sidebar-content {
+    top: 0;
+    bottom: @sidebar-footer-height;
+
+    overflow: auto;
+    padding: 0 @whitespace;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+
+  .sidebar-actions {
+    height: @sidebar-footer-height;
+    bottom: 0;
+    padding: @whitespace;
+    @primary-group-width: @desktop-sidebar-width * 0.7;
+
+    .primary-group {
+      position: absolute;
+      left: @whitespace;
+      top: @whitespace;
+      right: @desktop-sidebar-width - @primary-group-width;
+      bottom: @whitespace;
+    }
+
+    .secondary-group {
+      position: absolute;
+      text-align: right;
+      // left: @primary-group-width + @whitespace;
+      top: @whitespace;
+      right: @whitespace;
+      bottom: @whitespace;
+    }
+  }
+}
+
+.mobile-only({
+  @actions-height: 80px;
+
+  .sidebar-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: @actions-height;
+    padding: 0 @mobile-whitespace;
+    padding-bottom: @actions-height;
+    overflow: auto;
+    .touch-scrolling();
+  }
+
+  .sidebar-actions {
+    padding: @mobile-whitespace @mobile-whitespace;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: @actions-height;
+    background: #eee;
+    border-top: 1px solid #ddd;
+
+    .secondary-group {
+      margin-top: @mobile-whitespace;
+
+      .btn + .btn {
+        margin-left: @mobile-whitespace;
+      }
+    }
+  }
+});

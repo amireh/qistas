@@ -1,0 +1,394 @@
+@media screen and (min-width: 979px) {
+  .landing-splash {
+    /*width: 920px;*/
+  }
+}
+
+
+// body.guest {
+//   overflow-x: hidden;
+// }
+
+.guest {
+  .loader {
+    display: none;
+  }
+
+  .breaker {
+    height: 33px;
+    background: url("@{images-url}/divider.png") center center no-repeat;
+    margin: @whitespace 0 @whitespace 0;
+    display: block;
+  }
+}
+
+.landing-splash {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  font-weight: normal;
+
+  text-align: center;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0;
+  padding-top:    30px;
+  padding-bottom: 30px;
+}
+
+.btn-demo {
+  position: absolute;
+  top: 10px;
+  margin-left: 64px;
+}
+
+.oauth-links {
+  .label {
+    &:hover {
+      background: #e67e22;
+    }
+  }
+}
+
+.guest {
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", cursive;
+    font-weight: normal;
+  }
+}
+
+#landing {
+  section {
+    margin-bottom: 30px;
+    // padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+
+  // p {
+  //   font-size: 15px;
+  // }
+
+  .greeting {
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    text-align: center;
+    font-size: 15px;
+    /*.calc(min-height, percentage(1));*/
+
+    h1 {
+      position: relative;
+    }
+
+    hr {
+      box-shadow: 0 4px 15px 0 #ddd;
+      border-color: #EEE;
+    }
+
+    .auth-actions {
+      position: relative;
+
+      .sign-in {
+        position: absolute;
+        margin-left: 5px;
+        top: 10px;
+      }
+    }
+    .oauth-links {
+      margin-top: 10px;
+      position: relative;
+      display: inline-block;
+
+      &:before {
+        content: 'Or...';
+        position: absolute;
+        left: -50px;
+        /*top: 1px;*/
+      }
+    }
+  }
+}
+
+#landing #features {
+  position: relative;
+  z-index: 1;
+
+
+  .feature-icon {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .feature {
+    width: 300px;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 40px 0;
+  }
+
+  .feature-content {
+    font-size: 13px;
+  }
+
+  .feature-content h3 {
+    // font-family: inherit;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.cross-platform-section {
+  p {
+    max-width: 240px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.platform-emblems a {
+  display: inline-block;
+
+  width: 90px;
+  height: 70px;
+  padding: 10px 0;
+  vertical-align: top;
+
+  .transition(color, 0.25s, ease, 0);
+
+  &:hover {
+    color: orange;
+  }
+}
+
+.static-links {
+  a {
+    margin-right: 10px;
+  }
+}
+
+.copyright a {
+  margin: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  #landing .greeting {
+    padding: 0;
+
+    .header-logo {
+      display: block;
+
+      i {
+        display: block;
+        font-size: 96px;
+        font-weight: normal;
+        // margin-top: -32px;
+      }
+    }
+  }
+
+  #guest_nav {
+    text-align: right;
+
+    a {
+      display: inline-block;
+      font-size: 12px;
+      padding: 0 @mobile-whitespace/2;
+      line-height: @mobile-toolbar-height;
+      color: inherit;
+    }
+  }
+
+  .cross-platform-section {
+    position: relative;
+
+    text-shadow: 0px 1px 0 rgba(255,255,255,0.5);
+  }
+  .platform-emblems a {
+    color: white;
+  }
+
+  #multiplatform {
+    margin-bottom: 15px;
+  }
+
+  .guest #footer_legal {
+    text-align: center;
+    padding-bottom: @whitespace;
+
+    .logo {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+  .greeting .header-logo {
+    position: absolute;
+    display: inline-block;
+
+    i {
+      display: block;
+      position: absolute;
+      top: 0;
+      margin-left: -112px;
+      margin-top: -26px;
+      font-size: 96px;
+      font-weight: normal;
+      // .flip-y();
+    }
+  }
+  #guest_nav {
+    text-align: right;
+    margin-top:     20px;
+    margin-bottom: -20px;
+
+    a {
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 10px;
+
+      &.active {
+        font-style: italic;
+        color: inherit;
+        cursor: default;
+      }
+    }
+  }
+
+  .landing-meme {
+    margin: 20px 0 40px 0;
+  }
+
+  #guest_footer {
+    padding: @whitespace 0;
+
+    .copyright {
+      position: absolute;
+      right: 0;
+      top: @whitespace;
+    }
+  }
+}
+
+#footer_legal {
+  position: relative;
+  padding: @whitespace 0 0;
+  margin-top: @whitespace;
+  border-top: 1px solid #EEE;
+}
+
+.footer-links-heading {
+  display: block;
+  margin: 10px 0;
+}
+.footer-link {
+  display: block;
+}
+
+.static-links,
+.social-links {
+  vertical-align: middle;
+}
+
+.social-links a {
+  display: inline-block;
+  color: #aaa;
+  margin-left: 5px;
+
+  &:hover {
+    color: @orange;
+  }
+
+}
+
+.graded {
+  height: @whitespace * 3;
+  background: url("@{images-url}/divider.png") center center no-repeat;
+}
+
+.pricing {
+  margin-bottom:30px;
+}
+
+.pricing .plan {
+  display: inline-block;
+  background:#fff;
+  box-shadow:none;
+  border: 1px solid #ddd;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.pricing .plan.highlighted {
+  box-shadow:rgba(0,0,0,0.2) 1px 1px 3px;
+  padding-top:38px;
+  padding-bottom:38px;
+  color: inherit;
+}
+
+.pricing .plan ul {
+  margin-left: 0;
+}
+
+.pricing .plan ul li {
+  text-align: left;
+  padding:8px 0;
+  border-bottom:1px solid #eee;
+}
+
+.pricing .plan h4 {
+  text-align:center;
+}
+
+#comodo_badge {
+  position: absolute;
+}
+
+.acknowledgement {
+  h4 {
+    font-size: 14px;
+    font-family: inherit;
+    // font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: -10px;
+  }
+}
+
+.about h3 {
+  // font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+
+  &:after {
+    content :"";
+    display: block;
+    width: 25%;
+    margin: 10px auto;
+    border-bottom: 1px dotted #ccc;
+  }
+}
+
+#landing .column {
+  width: 480px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+#landing #transaction_listing {
+  text-align: left;
+  font-size: 13px;
+  padding-top: 0;
+  margin-bottom: @whitespace;
+
+  h3 {
+    display: none;
+  }
+
+  .tx-pm-color {
+    display: none;
+  }
+}

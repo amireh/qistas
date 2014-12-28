@@ -1,0 +1,44 @@
+#sidebar .transaction-filters {
+  .blocky-heading {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  .category-picker {
+    max-height: 140px;
+    label {
+      width: 100%;
+    }
+
+    span {
+      font-size: inherit;
+    }
+  }
+
+  .recurrence-picker .day-calendar {
+    width: auto;
+
+    label {
+      min-width: inherit;
+      width: 14%;
+
+      &:last-child {
+        width: 55%;
+      }
+    }
+  }
+
+  .pm-picker {
+    max-width: @sidebar-width;
+    max-height: 140px;
+
+    label {
+      margin: 0;
+    }
+
+    i {
+      display: none;
+    }
+  }
+}

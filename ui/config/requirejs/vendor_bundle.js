@@ -1,0 +1,1 @@
+module.exports = Object.keys(require('./vendor_paths'));

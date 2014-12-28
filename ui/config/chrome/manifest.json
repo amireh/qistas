@@ -1,0 +1,26 @@
+{
+  "name": "Pibi",
+  "description": "Personal financing - simple and stylish.",
+  "version": "2.5.5",
+  "manifest_version": 2,
+  "app": {
+    "urls": [
+      "https://api.pibiapp.com/",
+      "https://cloud.pibiapp.com/",
+      "https://www.pibiapp.com/"
+    ],
+    "launch": {
+      "web_url": "https://www.pibiapp.com/login"
+    }
+  },
+
+  "icons": {
+    "128": "assets/images/icons/chrome_96x96_padded.png"
+  },
+
+  "offline_enabled": true,
+
+  "permissions": [
+    "unlimitedStorage"
+  ]
+}

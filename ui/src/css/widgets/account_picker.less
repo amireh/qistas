@@ -1,0 +1,142 @@
+.account-picker {
+  @height: @desktop-statusbar-height + 2px;
+  @font-size: 11px;
+
+  display: inline-block;
+  position: relative;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  width: @desktop-navbar-width;
+  font-size: @font-size;
+
+  span.active-account {
+    .disable-selection;
+    .inline;
+    .ellipsify();
+    width: 100%;
+    margin-right: 30px;
+    padding-left: 15px;
+    vertical-align: middle; /** for the dropdown arrow */
+  }
+
+  .btn-dropdown {
+    border: none;
+    // border-right: 1px solid rgba(0, 0, 0, 0.05);
+    // border-radius: 2px 0 0 2px;
+    border-radius: 0;
+    height: @height - 2px;
+    line-height: @height - 2px;
+    box-shadow: none;
+    font-size: @font-size;
+    position: relative;
+    z-index: 11;
+  }
+
+  .dropdown-menu {
+    min-width: 320px;
+    max-width: 480px;
+    // margin-left: -1px;
+    padding-top: 0;
+    border-color: #ccc;
+    border-left: none;
+    padding-bottom: 0;
+
+    &:before, &:after { display: none; }
+
+    .list-item {
+      color: @foreground;
+      line-height: 30px;
+      height: auto;
+      white-space: nowrap;
+      position: relative;
+      .ellipsify();
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      // the balance
+      .stick-right {
+        top: 0;
+        right: @whitespace;
+      }
+    }
+
+    .list-separator {
+      line-height: 30px;
+      border: none;
+    }
+  }
+
+  .account-balance {
+    position: absolute;
+    right: -140px;
+    top: 0;
+    width: 120px;
+    line-height: @height - 2px;
+    font-weight: bold;
+  }
+
+  .balance {
+    font-weight: bold;
+  }
+}
+
+// When embedded inside a toolbar:
+#toolbar .account-picker {
+  background: #f4f4f4;
+
+  .chosen-container.with-arrow:after {
+    line-height: inherit;
+    right: @whitespace;
+    width: auto;
+  }
+
+  .chosen-container.with-arrow:before {
+    border-color: #f4f4f4;
+    background: none;
+  }
+
+  .chosen-single {
+    line-height: inherit;
+    height: @toolbar-button-height;
+    background: none;
+    border-color: #ddd;
+    background: none;
+    font-weight: normal;
+    padding: 0 @whitespace;
+  }
+
+  // This is basically the :focus equivalent for Chosen.
+  .chosen-container.chosen-container-active {
+    .chosen-single {
+      // border-color: @dark-blue;
+    }
+
+    &.chosen-with-drop {
+      .chosen-single {
+        background: white;
+        // border-color: transparent;
+      }
+    }
+  }
+
+  .chosen-drop {
+    background: #f4f4f4;
+    // border: none;
+  }
+
+  .chosen-results li {
+    padding-left: 10px;
+    // padding-right: @whitespace;
+  }
+
+  &.mode-simple {
+    .chosen-container {
+      width: 100%;
+      line-height: @toolbar-button-height;
+    }
+  }
+}

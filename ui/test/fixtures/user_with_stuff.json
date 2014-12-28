@@ -1,0 +1,36 @@
+{
+    "id": 1,
+    "name": "Ahmad",
+    "email": "ahmad@amireh.net",
+    "password": "helloWorld",
+    "categories": [
+        {
+            "id": 1,
+            "name": "Bills",
+            "icon": "bills"
+        },
+        {
+            "id": 2,
+            "name": "Gas",
+            "icon": "gas-pump"
+        },
+        {
+            "id": 3,
+            "name": "House",
+            "icon": "household"
+        }
+    ],
+    "payment_methods": [
+        {
+            "id": 1,
+            "name": "Cash",
+            "color": "00FF00",
+            "default": true
+        },
+        {
+            "id": 2,
+            "name": "Credit Card",
+            "color": "FF0000"
+        }
+    ]
+}

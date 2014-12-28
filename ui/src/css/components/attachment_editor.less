@@ -1,0 +1,30 @@
+#attachment_editor {
+  ol {
+    margin: @whitespace 0 @whitespace @whitespace*2;
+    position: relative;
+
+    li {
+      line-height: 24px;
+    }
+  }
+
+  .delete-attachment {
+    position: absolute;
+    right: 0;
+  }
+
+  &[disabled] {
+    .dropzone {
+      display: none;
+    }
+  }
+}
+
+.popup-content #attachment_editor {
+  height: 240px;
+  width: 320px;
+
+  &[disabled] {
+    height: auto;
+  }
+}

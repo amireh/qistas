@@ -1,0 +1,61 @@
+.month-activity-chart {
+  .bar.expense {
+    fill: @button-red;
+  }
+
+  .bar.income {
+    fill: @button-green;
+  }
+
+  .y.axis {
+    fill: @mute-fg;
+
+    .tick:first-of-type {
+      display: none;
+    }
+
+    path.domain {
+      display: none;
+    }
+  }
+
+  .x_grid {
+    stroke: rgba(0,0,0,0.05);
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    stroke-dasharray: 3, 2;
+    stroke-linecap: round;
+
+    &:first-of-type {
+      display: none;
+    }
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: crispEdges;
+  }
+
+  .bar {
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis {
+    fill: @mute-fg;
+    font-size: 11px;
+
+    path, line {
+      display: none;
+    }
+
+    .is-today {
+      font-weight: bold;
+    }
+  }
+
+  .empty_bar {
+    fill: none;
+  }
+}

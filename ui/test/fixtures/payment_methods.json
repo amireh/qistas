@@ -1,0 +1,1 @@
+[{"id":"1","name":"Cash","color":"99CC00","default":true,"href":"http://192.168.1.101:9122/users/1/payment_methods/1"},{"id":"3","name":"Credit Card","color":"FFBB33","default":false,"href":"http://192.168.1.101:9122/users/1/payment_methods/3"}]

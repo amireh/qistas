@@ -1,0 +1,649 @@
+es:
+  about: Acerca de
+  accept: Aceptar
+  account: Cuenta
+  active: Activa
+  all_rights_reserved: Todos los derechos reservados
+  all_transactions: Todas las transacciones
+  amount: Monto
+  any: Cualquiera
+  apple: Manzana
+  apply: Aplicar
+  back: Regresar
+  bad_date_period: "No es un per\xEDodo de tiempo valido.\n"
+  balance: >
+    Balance
+  calendar:
+    apr: Abr
+    aug: Ago
+    dec: Dic
+    feb: Feb
+    jan: Ene
+    jul: Jul
+    jun: Jun
+    mar: Mar
+    may: May
+    nov: Nov
+    oct: Oct
+    sep: Sep
+  cancel: Cancelar
+  capture_delivery_method: "M\xE9todo de env\xEDo"
+  capture_mail: "Enviar a un correo electr\xF3nico"
+  capture_push: Guardar en la computadora
+  categories: "Categor\xEDas"
+  category: "Categor\xEDa"
+  connection_offline: "Fuera de l\xEDnea"
+  connection_online: "En l\xEDnea"
+  currencies: Monedas
+  currency: Moneda
+  custom: Personalizado
+  daily: Diario
+  date_period_title: "Seleccione un per\xEDodo de tiempo"
+  day_of_month: "D\xEDa del mes"
+  demo: "Demostraci\xF3n"
+  due_in: Vence el
+  edit: Editar
+  edit_account: Editar cuenta
+  errors:
+    not_found:
+      heading: "C\xF3digo 404 - No encontrado"
+      message: "No pudimos encontrar la p\xE1gina que est\xE1 buscando."
+  every: Cada
+  expense: Gasto
+  expenses: Gastos
+  expenses_and_incomes: Gastos e Ingresos
+  faq: FAQ
+  features: "Caracter\xEDsticas"
+  feedback: Comentarios
+  frequency: Frecuencia
+  frequency_daily: Diario
+  frequency_monthly: Mensual
+  frequency_weekly: Semanal
+  frequency_yearly: Anual
+  friday: Viernes
+  from: De
+  go_back: Ir al __segment__ anterior
+  go_forward: Ir al __segment__ siguiente
+  income: Ingreso
+  incomes: Ingresos
+  invalid_transfer_pairing: Las cuentas de origen y destino no pueden ser la misma.
+  last_day: Ayer
+  legend: Leyenda
+  licenses: Licencias
+  login: Entrar
+  logout: Salir
+  manage_accounts: Administrar cuentas
+  metric: "M\xE9trico"
+  monday: Lunes
+  monthly: Mensual
+  months_of_year: "Mes(ses) del A\xF1o"
+  more: "M\xE1s"
+  name: Nombre
+  new_account: Nueva cuenta
+  new_deposit: Rastrear nuevo ingreso
+  new_transfer: Transferencia de dinero (pronto)
+  new_withdrawal: Rastrear nuevo gasto
+  next_segment: Ir al siguiente __segment__
+  not_enough_data: "No hay suficientes datos para esta secci\xF3n."
+  not_verified: No verificado
+  ns_accounts:
+    form:
+      label: Nombre de la cuenta
+    new_account: Nueva cuenta
+  ns_confirmations:
+    delete_account: "Al remover esta cuenta eliminar\xE1 todos los gastos,  ingresos\
+      \ y transacciones recurrentes. \xBFEst\xE1 seguro de querer hacer esto?"
+    delete_category: "\xBFEst\xE1 seguro que quiere remover esta etiqueta?"
+    delete_payment_method: "\xBFEst\xE1 seguro que quiere remover este m\xE9todo de\
+      \ pago?"
+    delete_transaction: "\xBFEst\xE1 seguro que quiere eliminar esta transacci\xF3\
+      n?"
+    delete_user: "\xBFEst\xE1 seguro que quiere des-registrarse de Pibi?\n"
+    discarding_editor_changes: "Perder\xE1 todos los datos que no se guardaron al\
+      \ cerrar el editor \xBFEst\xE1 seguro que quiere continuar?"
+    logging_out: "\xBFEst\xE1 seguro que quiere desconectarse?"
+    long_operation: "Esta operaci\xF3n puede tomar un largo tiempo en completarse.\
+      \ Pibi no ser\xE1 capaz de responder a cualquier entrada que intente mientras\
+      \ se est\xE9 ejecutando la misma. \\n\\n\xBFEst\xE1 seguro que quiere hacer\
+      \ esto?"
+    reset_account: "\xBFEst\xE1 seguro que quiere reiniciar su cuenta?\n"
+  ns_dialogs:
+    about:
+      heading: Acerca de
+    all_changes:
+      heading: Cambios
+    auth_failure:
+      heading: "Falla en la autenticaci\xF3n"
+    change_log:
+      heading: Que hay de nuevo en __version__
+    close_dialog: Cerrar
+    connectivity_error:
+      actions:
+        continue_offline: "Continuar fuera de l\xEDnea"
+      heading: Error de conectividad
+      message: "Su conexi\xF3n a la nube de Pibi se ha perdido y no puede re-establecerse.\
+        \ Por favor verifique que est\xE1 conectado a Internet."
+      offline_available: "Puede elegir continuar trabajando en modo fuera de l\xED\
+        nea. Podr\xE1 realizar transacciones, pero estas se sincronizaran s\xF3lo\
+        \ cuando est\xE9 conectado de nuevo a Internet."
+    date_period:
+      heading: "Seleccione un per\xEDodo de tiempo"
+    email_delivery_failure:
+      address: "La direcci\xF3n que intentamos contactar: <code>__address__</code>"
+      contact_support: "Puede intentarlo de nuevo m\xE1s tarde y si el problema a\xFA\
+        n persiste, sientase libre de abrir un caso en el <a href=\"http://support.pibiapp.com\"\
+        >Centro de Soporte</a>.\n"
+      heading: "Fallo en el env\xEDo del correo electr\xF3nico"
+      message: "No pudimos enviar el correo a su buz\xF3n. Esto pudiera deberse a\
+        \ que su direcci\xF3n no puede ser alcanzada ahora mismo o que estamos teniendo\
+        \ problemas con nuestro servicio de correos."
+    faq:
+      heading: "Preguntas m\xE1s frecuentes"
+    frozen:
+      actions:
+        reload: Recargar
+        report_issue: Reportar problema
+        wait: "Espere un poco m\xE1s"
+      heading: Algo no se ve bien.
+      message: "Parece que se est\xE1 tomando demasiado tiempo la carga de datos de\
+        \ la aplicaci\xF3n. Esto pudiera deberse por alguno de los siguientes eventos:"
+      possible_actions: "En el caso de que sea #2 y #3, recargar la p\xE1gina podr\xED\
+        a ayudar, pero si no, por favor reportelo como un error presionando abajo\
+        \ el bot\xF3n de Recargar."
+      possible_cause_1: "fall\xF3 la conexi\xF3n a la nube de Pibi mientras se cargaba"
+      possible_cause_2: "su conexi\xF3n a Internet es lenta\n"
+      possible_cause_3: >
+        hay un monton de datos por ser descargados
+      possible_cause_4: "un error en la versi\xF3n actual de Pibi"
+    internal_error:
+      actions:
+        report_issue: Notifiquenos
+      heading: Error interno
+      message: >
+        An unexpected error has occured while processing your last action. Unfortunately,
+        we were unable to recover from it.
+      suggestion: Puede reportar este problema o ignorelo.
+    keyboard:
+      action: "Acci\xF3n"
+      context: Contexto
+      heading: Atajos de teclado
+      shortcut: Keybinding
+    oauth_failure:
+      actions:
+        signup: Registrarse
+      alternatives: "Alternativamente, a\xFAn puede registrarse al crear una cuenta\
+        \ en Pibi o seleccionando un servicio distinto con el cu\xE1l registrarse."
+      message: "Nuestro servidor tuvo un problema autentificando el uso de su __provider__\
+        \ de cuenta. Esto pudiera deberse a determinadas configuraciones de privacidad\
+        \ que nos previnieron de crear una cuenta para usted, algo como que su correo\
+        \ no se suministr\xF3."
+    update_available:
+      actions:
+        update: "Instalar actualizaci\xF3n"
+      heading: "Actualizaci\xF3n disponible"
+      message: "Est\xE1 disponible una nueva versi\xF3n de Pibi y ha sido descargada,\
+        \ pero se requiere de un reinicio para que los cambios hagan efecto."
+  ns_drilldown:
+    heading_monthly: >
+      Actividad de __segment__, <a href="/drilldown/__year__">__year__</a>
+    heading_yearly: >
+      Actividad de __segment__
+    jump_to_current: Ir al mes actual
+    jump_to_report: 'Ir a la vista de reporte para este __segment__ '
+    title_monthly: "__month__/__year__ Emisi\xF3n - Pibi\n"
+    title_yearly: "__year__ Emisi\xF3n - Pibi\n"
+    toolbar:
+      compact_mode: Modo compacto
+      editor_options: "Opciones de edici\xF3n"
+      filter: Filtrar y buscar en las transacciones.
+      group_by_dates: Agrupar por fechas
+      large_tagbox: Caja de etiquetas grande
+      options: "Opciones de la emisi\xF3n"
+      show_payment_methods: "Mostrar m\xE9todos de pago"
+      use_currency_symbols: "Usar s\xEDmbolos de monedas (ej: $ y no USD)"
+  ns_filters:
+    by_category: "Filtrar por categor\xEDa"
+    by_month_days: "Filtrar por d\xEDas del mes"
+    by_note: Filtrar por nota
+    by_payment_method: "Filtrar por m\xE9todo de pago"
+    by_type: Filtrar por tipo
+    by_week_days: "Filtrar por d\xEDas de a semana"
+    inverted: Invertir resultados
+  ns_journal:
+    clean: Desocupado.
+    committed: Sincronizado.
+    dirty: Pendiente. (1)
+    dirty_plural: Pendientes. (__count__)
+    failed: "Fallo en la sincronizaci\xF3n."
+    syncing: Sincronizando...
+    syncing_plural: Sincronizando...
+  ns_keybindings:
+    delete_transaction: "Remover la transacci\xF3n seleccionada."
+    edit_tx: "Editar la transacci\xF3n seleccionada."
+    next_tx: "Seleccionar la transacci\xF3n siguiente."
+    previous_tx: "Seleccionar la transacci\xF3n anterior."
+    undo: Deshacer.
+  ns_landing:
+    motto: >
+      Financiamiento personal - simple y con  <em>estilo</em>.
+    ns_cloud:
+      heading: "En d\xF3nde sea que <strong>usted</strong> est\xE9...\n"
+      p1: "Ya sea que est\xE9 en el camino usando su dispositivo m\xF3vil o en su\
+        \ computadora de escritorio, Pibi est\xE1 all\xED para usted."
+      p2: "Sus dispositivos se sincronizaran autom\xE1ticamente a el"
+      p3: Seguro y simple
+    ns_features:
+      currencies:
+        body: Seleccione de entre 166 monedas con tasas de cambio sincronizadas diariamente.
+        heading: Monedas
+      heading: >
+        <strong>Features</strong> you'll really dig.
+      multiple_accounts:
+        body: "Administrar gastos a trav\xE9s de m\xFAltiples cuentas, sin complicaciones.\n"
+        heading: "M\xFAltiples cuentas"
+      offline_mode:
+        body: "A\xFAn y cuando no est\xE9 conectado a Internet, podr\xE1 rastrear\
+          \ sus gastos y sincronizarlos luego."
+        heading: "Modo fuera de l\xEDnea"
+      organize:
+        body: "Mantengase al tanto de su actividad financiera al organizar las transacciones\
+          \ usando etiquetas y m\xE9todos de pago.\n"
+        heading: Organizar
+      recurrings:
+        body: "Siga su renta, pr\xE9stamo del carro o salario."
+        heading: Transacciones recurrentes
+      reports:
+        body: "Averig\xFCe de donde viene y a donde est\xE1 yendo la mayor parte de\
+          \ su dinero."
+        heading: Perspectivas y reportes
+      transactions:
+        body: "Ya sea que haya comprado un reluciente par de zapatos o si s\xF3lo\
+          \ le cobr\xF3 a su cliente super secreto, Pibi le ayuda a rastrear su dinero\
+          \ facilmente."
+        heading: "Gastos, ingresos, s\xF3lo nombrelo "
+    ns_getting_started:
+      heading: >
+        Comience ahora. es <strong>gratis</strong>!
+    welcome: >
+      Bienvenido a <strong>Pibi</strong>.
+  ns_main_menu:
+    changelog: "Bit\xE1cora de cambios"
+    keyboard_shortcuts: Atajos de teclado
+    refresh: Refrescar
+    settings: Configuraciones
+    sync: Sincronizar
+    undo: Deshacer
+  ns_navigation:
+    Reports: Perspectivas
+  ns_notifications:
+    account_activated: "La cuenta '__account__' ahora est\xE1 activa."
+    account_created: "Se cre\xF3 la cuenta."
+    account_data_fetching_failed: "Imposible obtener el listado de la cuenta. Por\
+      \ favor verifique su conexi\xF3n a Internet e intentelo nuevamente.\n"
+    account_deleted: "Se removi\xF3 la cuenta."
+    account_deletion_failed: "No se puede remover la cuenta en este momento, por favor\
+      \ intentelo m\xE1s tarde.\n"
+    account_reset: >
+      Su cuenta ha sido reiniciada, ahora puede comenzar de nuevo.
+    account_reset_failed: "Su cunta no puede ser reiniciada, por favor intentelo m\xE1\
+      s tarde o cree un caso de error en nuestro <a href=\"http://support.pibiapp.com\"\
+      >Centro de Soporte</a>.\n"
+    account_updated: "Se actualiz\xF3 la cuenta."
+    authorized: "\xA1Ya se encuentra conectado!"
+    bug_submission_failed: >
+      No pudimos enviar el problema posiblemente debido a un error de conectividad.
+      Por favor tomese el tiempo de enviar su requerimiento utilizando nuestro <a
+      href="http://support.pibiapp.com">Centro de Soporte</a>.
+    bug_submitted: >
+      Gracias por reportar el problema, nuestros desarrolladores han sido notificados.
+    cannot_remove_all_accounts: Por lo menos debe tener una cuenta.
+    capture:
+      failed: "Algo malo ocurri\xF3 al generar el reporte, por favor intentelo m\xE1\
+        s tarde.\n"
+      generated: "Su reporte est\xE1 listo, Haga clic en guardar.\n"
+      mailed: "Su reporte est\xE1 listo y ha sido enviado a su buz\xF3n de correos.\n"
+      mailing_failed: "El reporte no pudo ser enviado a su buz\xF3n de correos. Por\
+        \ favor intentelo m\xE1s tarde.\n"
+      requested: >
+        Por favor espere mientras generamos su reporte.
+    default_currency_changed: >
+      Su moneda predeterminada ahora es __currency__.
+    default_currency_changing_failed: "No pudimos actualizar su moneda predeterminada,\
+      \ por favor intentelo m\xE1s tarde.\n"
+    filters:
+      applied: Filtros aplicados.
+      reset: Filtros reiniciados.
+    offline_mode: "No se pudo conectar con la nube de Pibi, ahora est\xE1 en modo\
+      \ fuera de l\xEDnea.\n"
+    password_changed: "Su contrase\xF1a ha sido actualizada."
+    password_reset:
+      bad_email: "Ese correo electr\xF3nico no est\xE1 registrado en ninguna cuenta\
+        \ de Pibi."
+      sent: "Un correo electr\xF3nico esta siendo enviado a su buz\xF3n con mas instrucciones,\
+        \ por favor reviselo en un minuto.\n"
+    preferences_updated: Actualizado.
+    recurring_activated: "La recurrencia __name__ ahora est\xE1 activa.\n"
+    recurring_deactivated: "La recurrencia __name__ ahora est\xE1 inactiva.\n"
+    signing_up_failed: "Algo sucedi\xF3 al registrarse, por favor asegurese que ha\
+      \ llenado todos los campos requeridos e intentelo de nuevo.\n"
+    transaction_created: "Transacci\xF3n creada."
+    transaction_data_fetching_failed: "No pudimos obtener el listado de transacciones,\
+      \ por favor intentelo de nuevo m\xE1s tarde.\n"
+    transaction_offline_data_unavailable: "No hay datos fuera de l\xEDnea disponibles\
+      \ para esta transacci\xF3n.\n"
+    transaction_removed: "Transacci\xF3n removida."
+    transaction_restored: "Transacci\xF3n restaurada."
+    transaction_updated: "Transacci\xF3n actualizada."
+    unauthorized: Debe conectarse primero.
+    user_account_deleted: "Ya no est\xE1 registrado en Pibi. \xA1Esperamos que regrese!\n"
+    user_account_deletion_failed: "No se puedo remover su registro en este momento,\
+      \ por favor intentelo m\xE1s tarde.\n"
+  ns_queries:
+    feedback_or_help: "Env\xEDenos sus comentarios o solicite ayuda."
+    issue:
+      description: "Para ayudarnos a ayudarlo, por favor describa detalladamente en\
+        \ qu\xE9 consiste el problema y qu\xE9 estaba haciendo en el momento en que\
+        \ \xE9ste ocurri\xF3.\n"
+      include_dump: "Adjuntar datos de diagn\xF3stico de la aplicaci\xF3n\n"
+      notify_me: Notifiqueme de cualquier seguimiento en este problema
+      summary: "Breve descripci\xF3n del problema"
+  ns_recurrings:
+    editor:
+      deactive_warning: "Esta transacci\xF3n recurrente est\xE1 desactivada, elegir\
+        \ actualizarla la activara nuevamente."
+      flow_type: Tipo de flujo
+      name: Nombre y Monto
+      name_example: Salario
+    heading: Transacciones recurrentes
+    new_recurring: Nueva recurrencia
+    toolbar:
+      all_frequencies: Todas las frecuencias
+  ns_reports:
+    balance_chart_tip_heading: How is this useful?
+    balance_chart_tip_monthly: >
+      <em> This chart plots your balance during the month. A healthy finance state
+      would be represented by the bar being above 0. </em>
+    balance_chart_tip_yearly: >
+      <em> This chart shows the <strong>difference between incomes and expenses</strong>.
+      A healthy finance state would be represented by a minimal difference, ie: the
+      height of the red bars should be close to the height of the green ones. </em>
+    heading_monthly: >
+      Reports for __segment__, <a href="/reports/__year__">__year__</a>
+    heading_yearly: >
+      Reports for __segment__
+    payment_methods: >
+      This table shows how much of your finances were done using each payment method.
+    summary_average_monthly: Promedio diario
+    summary_average_yearly: Promedio mensual
+    summary_monthly: >
+      This is a summary of the total amount of expenses, incomes, and savings through
+      the month, as well as their average values across the days.
+    summary_yearly: >
+      This is a summary of the total amount of expenses, incomes, and savings through
+      the year, as well as their average values across the months.
+  ns_sessions:
+    actions:
+      reset_password: "Reiniciar mi contrase\xF1a"
+      use_existing_account: Usar una cuenta existente
+    change_password:
+      form:
+        confirm_password: "Confirmar la nueva contrase\xF1a"
+        new_password: "Introduzca una nueva contrase\xF1a"
+        reset_code: "Introduzca el C\xD3DIGO DE REINICIO"
+        submit: "Cambiar contrase\xF1a"
+      heading: "Cambiar contrase\xF1a"
+      links: "<a href=\"/signup\">Reg\xEDstrese</a> or back to <a href=\"/login\"\
+        >Entrar</a>\n"
+    login:
+      form:
+        submit: Entrar
+      heading: Entrar a Pibi
+      link_to_signup: "\xBFNo tiene una cuenta? <a href=\"/signup\">Reg\xEDstrese</a>\n"
+      use_account: O use su cuenta de Pibi
+    reset_password:
+      form:
+        email: su@correo.com
+        submit: Enviar
+      heading: "Reinicia su contrase\xF1a"
+      links: <a href="/signup">Registrese</a> o regrese a <a href="/login">Entrar</a>
+    signup:
+      create_account: O cree una.
+      form:
+        email: "Correo electr\xF3nico"
+        name: Su nombre
+        password: "Contrase\xF1a (7 caracteres min.)"
+        submit: "Reg\xEDstreses"
+      heading: "Reg\xEDstrese en Pibi"
+      link_to_login: "\xBFYa tiene una cuenta? <a href=\"/login\">Entrar</a>\n"
+  ns_settings:
+    danger_zone_warning: "\xA1Estas acciones no pueden ser desechas!\n"
+    delete_user:
+      caption: Borrar la cuenta del usuario
+      description: >
+        Borrar su cuenta de usuario de Pibi completamente.
+    reset_account:
+      caption: Reiniciar cuenta
+      description: "Al tomar esta acci\xF3n, remover\xE1 todas las transacciones en\
+        \ seguimiento en su cuenta y le permitir\xE1 comenzar de nuevo.\n"
+  ns_tooltips:
+    delete_account: Borrar esta cuenta
+    edit_account: Editar esta cuenta
+  ns_tours:
+    around_the_interface:
+      description: >
+        Learn about Pibi's interface elements, how to get to important places, and
+        what the buttons do.
+    customizing_your_account:
+      account:
+        text: >
+          <p>You can change your email and password here.</p> <p>You can also link
+          your account to your Facebook and Google accounts so you can log-in to Pibi
+          using any of them!</p>
+      currencies:
+        caption: Monedas
+        text: >
+          <p>You can track expenses and incomes in many currencies in Pibi, but you
+          must also choose a main currency as explained earlier in the Wizard.</p>
+          <p>In here you can manage everything related to those currencies.</p>
+      description: >
+        <p>This tour takes you through your account settings.</p> <p>See you how you
+        can personalize your account and take advantage of Pibi's customization features.</p>
+      main_menu:
+        text: >
+          Your account settings can be reached via the Main Menu, right here.
+      new_payment_method:
+        text: >
+          <p>To add a new payment method, you need to:</p> <ul>
+            <li>choose a meaningful name for it; like MasterCard, or PDA</li>
+            <li>choose a color to use when reporting transactions made using
+                that payment method</li>
+          </ul>
+      new_tag:
+        text: >
+          Adding a new tag is as simple as clicking this button, choosing a name,
+          and an icon.
+      payment_methods:
+        text: Here you get to customize your payment methods.
+      settings_link:
+        text: Clicking this link will take us to the settings page.
+      tags:
+        text: This section lets you add and customize the tags you use.
+    tracking_an_expense:
+      amount: >
+        Fill this in with how much money you spent.
+      currency: >
+        <p>Choose the currency that you spent the money with.</p> <p>You can change
+        the available currencies in your <a href="/settings/currencies">settings</a>.</p>
+      description: >
+        Get the action started by learning how to track some money you spent using
+        Pibi.
+      editor:
+        caption: The Transaction Editor
+        text: >
+          The editor lets you fill in a number of details, but only the amount of
+          the transaction is required.
+      new_expense:
+        text: Push the <strong>Expense</strong> button to show the editor.
+      note:
+        caption: Una nota para el futuro.
+        text: >
+          Write a small note to remind you of the expense, like 'Lunch with Pibi'.
+      occurence:
+        caption: When it happened.
+        text: >
+          Specify the day you made the expense in. By default, Pibi chooses today's
+          date for you.
+      payment_method:
+        caption: Specifying a payment method.
+        text: >
+          <p>Mark how you paid the money, like by using Cash or a Credit Card.</p>
+          <p>You can add and change your payment methods in your <a href="/settings/payment_methods">settings</a>.</p>
+      save: >
+        We're done, push this button to save the expense.
+      tags:
+        caption: Etiquetando el gasto.
+        text: >
+          <p>Since we've just had lunch together, you should tag the expense as a
+          Food expense.</p> <p><em>Tip: you can choose more than one tag when it makes
+          sense.</em></p> <p>Just like currencies and payment methods, you can customize
+          your tags in your <a href="/settings/tags">settings</a>.
+      view: >
+        <p>Congratulations! You've now added the expense to your activity feed.</p>
+        <p>Double-clicking on the transaction allows you to edit or remove it, using
+        the editor we just learned how to use.</p> <p><em>On mobile and tablet, you
+        can perform a swipe gesture to the left or right instead of clicking.</em></p>
+  ns_transfers:
+    source_account: De
+    target_account: A
+    transfer: Transferencia
+  ns_validations:
+    bad_amount: >
+      El monto debe ser un numero positivo.
+    recurrings:
+      bad_amount: >
+        El monto debe ser un numero positivo.
+      missing_every: Debe especificar la frecuencia del patron de la concurrencia
+        que debe aplicarse.
+      missing_frequency: >
+        No recurrence pattern specified. Available patterns are: daily, weekly, monthly,
+        and yearly.
+      missing_monthly_days: >
+        Monthly recurrence pattern requires at least one day of the month to track
+        the transaction on.
+      missing_note: Debe asignar un nombre a esta recurrencia.
+      missing_weekly_days: >
+        Weekly recurrence pattern requires the days of the week the transaction should
+        be tracked on.
+      missing_yearly_day: >
+        Yearly recurrence pattern requires the day of the month to track the transaction
+        on.
+      missing_yearly_months: >
+        Yearly recurrence pattern requires at least one month of the year to track
+        the transaction on.
+  ns_widgets:
+    account_picker:
+      manage: Administrar cuentas
+    bug_reporter:
+      details: Detalles
+      form:
+        details: >
+          To help us help you, please describe in detail what the issue is, and what
+          you were doing when the issue occured.
+        include_dump: "Adjuntar datos de diagn\xF3stico de la aplicaci\xF3n"
+        notify_me: >
+          Notify me of any follow-ups on this issue
+        summary: "Breve descripci\xF3n del problema"
+      heading: Reportar un problema
+      summary: Sumario
+    category_editor:
+      add_another: Agregar otra etiqueta
+    currency_listing:
+      exchange_rate: Exchange Rate
+      filter_by_iso: "Filtrar (por c\xF3digo ISO): USD"
+      heading: Monedas disponibles
+      iso_code: "C\xF3digo ISO"
+      selection_message: >
+        Select the currencies you wish to use for your transactions. Currently, we
+        support __count__ currencies.
+      symbol: "S\xEDmbolo"
+      sync_message: >
+        Our servers synchronize currency exchange rates <strong>on a daily basis </strong>.
+        You can find the current exchange rates beside the currency ISO code and symbol.
+    default_currency:
+      description: >
+        The default currency you choose will be used to display your balance as well
+        as be automatically selected whenever you create a new transaction.
+      heading: Moneda predeterminada de la cuenta
+    password_changer:
+      confirm_password: "Confirmar nueva contrase\xF1a"
+      current_password: "Introduzca la contrase\xF1a actual"
+      new_password: "Introduzca la nueva contrase\xF1a"
+      submit: "Cambiar contrase\xF1a"
+    payment_method_editor:
+      choose_color: Seleccione un color
+      choose_name: Seleccione un nombre
+      edit_payment_method: "Editar m\xE9todo de pago"
+      new_payment_method: "Nuevo m\xE9todo de pago"
+  number_of_transactions: Numero de transacciones
+  occured_on: "Ocurri\xF3 el"
+  offline_data: "Estos datos son exactamente los mismos que visualiz\xF3 la \xFAltima\
+    \ vez que estuvo en l\xEDnea con este dispositivo."
+  partners: 'Encantadores socios de Pibi:'
+  payment_method: "M\xE9todo de pago"
+  payment_methods: "M\xE9todos de pago"
+  pibi: Pibi
+  pibi_cloud: Nube de Pibi
+  previous_segment: Ir al anterior __segment__
+  privacy: Privacidad
+  recurrence: Recurrencia
+  recurrence_daily: "D\xEDas"
+  recurrence_monthly: Meses
+  recurrence_weekly: Semanas
+  recurrence_yearly: "A\xF1os"
+  resend: (Re-enviar)
+  reset: Reiniciar
+  saturday: "S\xE1bado"
+  save: Guardar
+  save_expense: Guardar gasto
+  save_income: Guardar ingreso
+  savings: Ahorros
+  security: Seguridad
+  select_months: Seleccionar mes(es)
+  sign_up: Registrarse
+  signup: Registrarse
+  social_pibi: Pibi social
+  summary: Sumarios
+  sunday: Domingo
+  support: Soporte
+  support_center: Centro de soporte
+  tag: Etiqueta
+  tags: Etiquetas
+  this_month: Mes actual
+  thursday: Jueves
+  to: A
+  tos: "T\xE9rminos del servicio"
+  total: Total
+  transactions: "1 transacci\xF3n"
+  transactions_plural: __count__ transacciones
+  transfer_complete: "Se complet\xF3 la transferencia."
+  transfer_updated: "Se actualiz\xF3 la transferencia."
+  'true': verdadero
+  tuesday: Martes
+  untagged: Sin etiquetar
+  update: Actualizar
+  update_expense: Actualizar gasto
+  update_income: Actualizar ingreso
+  user_account: Cuenta de usuario
+  warning: Advertencia
+  web_recurrings: "Puede configurar transacciones recurrentes, como su salario, pr\xE9\
+    stamos y facturas. Visite Pibi en la Web desde el navegador de su computadora\
+    \ de escritorio o laptop para administrar sus transacciones recurrentes."
+  web_reports: "Visite Pibi en la Web desde su computadora de escritorio o laptop\
+    \ para poder acceder a la informaci\xF3n financiera y reportes."
+  wednesday: "Mi\xE9rcoles"
+  week: Semana __number__
+  weekdays: "D\xEDas de la semana"
+  weekly: Semanal
+  yearly: Anual
+  'yes': Si
+

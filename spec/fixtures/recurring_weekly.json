@@ -1,0 +1,13 @@
+{
+  "name": "Weekly Recurring X",
+  "amount": 14.230,
+  "currency": "USD",
+  "category_ids": [],
+  "payment_method_id": null,
+  "flow_type": "positive",
+  "frequency": "weekly",
+  "weekly_days": [ "tuesday", "thursday" ],
+  "every": 2,
+  "active": true,
+  "created_at": "2014-02-19T00:00:00Z"
+}

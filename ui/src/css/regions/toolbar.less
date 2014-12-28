@@ -1,0 +1,95 @@
+@media screen and (max-width: 480px) {
+  #toolbar {
+    height: @mobile-toolbar-height;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .toolbar-btn, #toggle_drawer {
+    color: white;
+
+    &.active {
+      color: @button-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+  #toolbar {
+    position: fixed;
+    top:  @desktop-actionbar-top-offset;
+    background: #f4f4f4;
+    // box-shadow: -1px 2px 3px darken(@drawer-bg, 5%);
+    // .vlinear-gradient(to bottom; darken(@drawer-bg, 10%), darken(@drawer-bg, 0%));
+    left: @desktop-navbar-width;
+    right: 0;
+    // height: @desktop-actionbar-height;
+    // margin-top: @desktop-actionbar-top-offset;
+    // margin-left: @desktop-navbar-width;
+    padding: 12px @whitespace;
+    height: @desktop-actionbar-height;
+
+    padding-right: @whitespace - 5px; // negate the right margin of toolbar buttons
+    // border-radius: 2px 2px 0 0;
+    font-size: @toolbar-font-size;
+    font-weight: bold;
+    z-index: 4;
+    margin-bottom: @whitespace;
+    // padding-bottom: 0;
+    box-shadow: 0 1px 0 #ddd;
+
+    // &:empty {
+    //   height: @whitespace;
+    //   padding: 0;
+    //   margin-bottom: 0;
+    // }
+
+    // border-bottom: 1px solid rgba(0,0,0,0.1);
+    // background-color: rgba(255,255,255,0.9);
+    // box-shadow: 0 1px 2px #ddd;
+
+    .bottom-actionbar {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 7px 10px;
+    }
+
+    // .btn-group:after {
+    //   border-right: 1px solid #ddd;
+    //   box-shadow: 1px 0 #eee;
+    //   position: absolute;
+    //   top:    -5px;
+    //   bottom: -5px;
+    //   right: 0;
+    //   width: 1px;
+    //   content: "";
+    // }
+
+    // .btn-group:last-child {
+    //   padding-right: 0;
+
+    //   &:after {
+    //     display: none;
+    //   }
+    // }
+  }
+
+  .filters-form .category-picker {
+    max-width:    inherit;
+    margin: 0 10px;
+    max-height:   90px;
+  }
+
+  body.distraction-free #toolbar {
+    left: 0;
+  }
+
+  body.distraction-free-really #toolbar {
+    top: 0;
+  }
+}

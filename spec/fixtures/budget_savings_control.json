@@ -1,0 +1,7 @@
+{
+  "name": "Saving for a Car",
+  "goal": "savings_control",
+  "every": 3,
+  "interval": "days",
+  "quantifier": 50
+}

@@ -1,0 +1,46 @@
+{
+  "payment_methods": [
+    {
+      "id": 37,
+      "name": "Bank ATM",
+      "default": false,
+      "color": "D54421",
+      "user_id": 2
+    },
+    {
+      "id": 1,
+      "name": "Cash",
+      "default": true,
+      "color": "99CC00",
+      "user_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Cash",
+      "default": true,
+      "color": "99CC00",
+      "user_id": 2
+    },
+    {
+      "id": 5,
+      "name": "Cheque",
+      "default": false,
+      "color": "01B0EC",
+      "user_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Credit Card",
+      "default": false,
+      "color": "FFBB33",
+      "user_id": 1
+    },
+    {
+      "id": 6,
+      "name": "Credit Card",
+      "default": false,
+      "color": "EF7901",
+      "user_id": 2
+    }
+  ]
+}

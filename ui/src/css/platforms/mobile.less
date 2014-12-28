@@ -1,0 +1,68 @@
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+body, body.member.themed:before {
+  background-color: white;
+}
+
+body {
+  overflow: hidden;
+}
+
+body.member{
+  .snap-content {
+    &:before {
+      .fullscreen();
+      content: '';
+      height: @mobile-toolbar-height;
+      background: @blue;
+    }
+  }
+}
+
+body.guest {
+  .snap-content main {
+    padding: 0 @mobile-whitespace;
+  }
+}
+
+.snap-content {
+  background-color: white;
+}
+
+.snap-drawers {
+  background-color: #444;
+  color: #ddd;
+
+  #navbar {
+    background: #555;
+  }
+}
+
+#toggle_drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: @mobile-toolbar-height;
+  padding-bottom: 2px;
+  font-size: 16px;
+}
+
+
+#overlay_popups {
+  display: none;
+
+}
+.with-popup #overlay_popups {
+  .fullscreen();
+  top: @mobile-content-offset-top;
+
+  display: block;
+
+  z-index: 1000;
+  background: white;
+  padding: @mobile-whitespace;
+}
+

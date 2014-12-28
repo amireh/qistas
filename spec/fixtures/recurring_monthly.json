@@ -1,0 +1,13 @@
+{
+  "name": "Monthly Recurring X",
+  "amount": 20,
+  "currency": "JOD",
+  "category_ids": [],
+  "payment_method_id": null,
+  "flow_type": "positive",
+  "frequency": "monthly",
+  "monthly_days": [ 3, 24 ],
+  "every": 1,
+  "active": true,
+  "created_at": "2014-02-19T00:00:00Z"
+}

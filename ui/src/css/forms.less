@@ -1,0 +1,306 @@
+@import "icons";
+
+input:-webkit-autofill {
+  &, &:focus, &:active, &:invalid {
+    color: inherit;
+    box-shadow: 0 0 0 1000px white inset;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  display: none;
+  margin: 0;
+}
+
+:focus { .mark-focused(); }
+::-moz-focus-inner { border:0; }
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #aaa;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #aaa;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+fieldset label {
+  display: block;
+}
+
+legend, .blocky-heading {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: @whitespace;
+  font-size: 18.5px;
+  line-height: 40px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+
+  small {
+    font-size: 15px;
+    color: #999999;
+  }
+}
+
+.form-label,
+.form-button {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.form-label {
+  margin-bottom: 5px;
+}
+/*fieldset label {
+  display: block;
+}*/
+.form-input,
+.uneditable-input {
+  display: inline-block;
+  /*height: 20px;*/
+  padding: 4px 6px;
+  /*margin-bottom: 10px;*/
+  font-size: 13px;
+  line-height: 20px;
+  height: 30px;
+  color: #555555;
+  max-width: 100%;
+  .border-radius(@radius);
+  vertical-align: middle;
+}
+
+form {
+  position: relative;
+
+  &.tiny-legend {
+    legend {
+      margin: 5px 0;
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: bold;
+      border-bottom: none;
+    }
+  }
+}
+
+fieldset {
+  border: 0;
+  margin: @whitespace 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.vertical-form {
+  .form-input {
+    width: 100%;
+    margin-bottom: @whitespace;
+    padding: 4px 9px;
+    height: auto;
+    line-height: 2em;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .secondary-actions {
+    .btn {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.form-label {
+  @height: 40px;
+
+  display: block;
+  // font-weight: bold;
+  font-size: 13px;
+  margin: 10px 0;
+
+  .line-break {
+    display: block;
+    // font-weight: normal;
+    line-height: @height;
+    margin-top: -@whitespace;
+  }
+}
+
+.form-label__fixed-width-caption {
+  width: 120px;
+  display: inline-block;
+
+  &.size-small {
+    width: 60px;
+  }
+}
+
+input.spanner, .breaker {
+  width: 100%;
+  clear: both;
+}
+
+label.skinned-checkbox {
+  position: relative;
+  vertical-align: middle;
+  line-height: 28px;
+
+  input {
+    display: inline-block;
+    width: 22px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &+ span:before {
+      .iconify(@icon-checkbox-unchecked);
+      font-size: 14px;
+      height: 16px;
+      width: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: -2px 0 0 0;
+    }
+
+    &:checked + span:before {
+      content: @icon-checkbox-checked;
+    }
+  }
+
+  span {
+    pointer-events: none;
+  }
+}
+
+
+label.skinned-radio.margined {
+  span:before { margin-right: 5px; }
+}
+
+label.skinned-radio {
+  position: relative;
+  vertical-align: middle;
+  line-height: 28px;
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+
+  input:focus + span:before {
+    color: @link_fg;
+  }
+
+  input + span:before {
+    .iconify('\e439');
+    display: inline-block;
+
+    font-size: 1em;
+    width:  1em;
+    height: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    padding-right: 5px;
+    color: #666;
+  }
+
+  input:checked + span:before {
+    content: '\e438';
+  }
+
+  span {
+    display: inline-block;
+    pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  label.skinned-radio:hover input + span:before {
+    content: '\e438';
+  }
+}
+
+.form-hint {
+  font-size: smaller;
+  font-style: italic;
+}
+
+.alert.alert-with-dismiss {
+  position: relative;
+  padding-right: 28px;
+  padding-left: 28px;
+
+  > i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  .dismiss-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+/**
+ * Colorizes a label add-on when it's prepended to an input element with a light
+ * gray background and some border radius to make it look coupled to the field.
+ *
+ * E.g:
+ *
+ * <div class="input-prepend">
+ *   <label class="form-control add-on" for="number">
+ *     Your number
+ *   </label>
+ *
+ *   <input type="number" id="number" class="form-input" />
+ * </div>
+ */
+.input-prepend label.add-on {
+  background: #f4f4f4;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 11px;
+  line-height: 28px;
+  height: 30px;
+}
+
+/**
+ * Makes for a huge input box.
+ *
+ * <input type="text" class="form-input input-emphasized" />
+ */
+.input-emphasized {
+  font-size: 18px;
+  line-height: 48px;
+  width: 100%;
+  height: inherit;
+}
+
+@media screen and (max-width: 480px) {
+  // Get rid of the inner shadow inside text fields on iOS:
+  .form-input {
+    -webkit-appearance: none;
+  }
+}
+
+.input-tiny {
+  width: 48px;
+}

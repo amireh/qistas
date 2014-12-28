@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <title>Pibi.js Examples</title>
+
+    <link rel="stylesheet" type="text/css" href="/dist/pibi.css">
+
+    <script src="/vendor/js/jquery/jquery-2.0.2.js"></script>
+  </head>
+
+  <body class="state-loading guest">
+    <div id="flash_wrap"><div id="flash"></div></div>
+
+    <header id="statusbar" class="widget statusbar"></header>
+    <div id="navbar" class="widget navbar"></div>
+    <div id="actionbar" class="widget actionbar"></div>
+    <div id="content" class="content"></div>
+    <div id="sidebar" class="widget sidebar-container"></div>
+
+    <div id="loading_screen" class="loading">
+      <header><span id="loading_status"></span></header>
+
+      <div class="logo text-center crazy-flip icon-pibi-framed icon-256">
+      </div>
+
+      <small class="version">Pibi <span id="version">2.4.3</span></small>
+
+      <div id="asset_preloader"> &copy; </div>
+    </div>
+
+
+    <script>
+      function loadInlineExample(code, options, callback) {
+        var cursor = -1;
+        var markup = '';
+        window.locale = 'en';
+
+        // document.body.innerHTML = '';
+
+        if ((cursor = code.indexOf('<script>')) > -1) {
+          markup = code.substr(0, cursor);
+          code = code.substr(cursor);
+          code = code.replace(/\<\/?script\>/g, '');
+        }
+
+        if (!window.Pibi) {
+          window.Pibi = {
+            Callbacks: {
+              onStart: []
+            }
+          };
+        }
+
+        Pibi.Callbacks.onStart.push(function() {
+          if (window.location.href.match("eg-iframe.html")) {
+            Pibi.router.redirect_to('/');
+          }
+
+          try {
+            if (markup.length) {
+              $('body').append($(markup));
+            }
+
+            eval(code);
+
+            callback && callback(true);
+          } catch (e) {
+            var $error = $('<pre />');
+
+            $error
+              .append(e.message + '\n\n')
+              .append(e.stack)
+              .appendTo($('body').empty());
+
+            callback && callback(false, e);
+          }
+        });
+
+        $(function() {
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.src = "/dist/require.js";
+          s.setAttribute("data-main", "/dist/pibi.js");
+          $("head").append(s);
+
+          console.log('Injecting Pibi.js code: ');
+          console.log(s);
+        });
+      }
+    </script>
+  </body>
+</html>

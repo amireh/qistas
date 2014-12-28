@@ -1,0 +1,8 @@
+{
+  "name": "Controlling my Shopping",
+  "goal": "spendings_control",
+  "every": 1,
+  "interval": "months",
+  "quantifier": 10,
+  "is_ratio": true
+}

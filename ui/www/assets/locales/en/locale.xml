@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="about">About</string>
+  <string name="about_pibi">About</string>
+  <string name="accept">Accept</string>
+  <string name="account">Account</string>
+  <string name="activate">Activate</string>
+  <string name="active">Active</string>
+  <string name="add_account">Add Account</string>
+  <string name="all_rights_reserved">All rights reserved</string>
+  <string name="all_transactions">All Transactions</string>
+  <string name="amount">Amount</string>
+  <string name="amount_of_activity"></string>
+  <string name="any">Any</string>
+  <string name="apply">Apply</string>
+  <string name="back">Back</string>
+  <string name="bad_date_period">That\'s not a valid time period.</string>
+  <string name="balance">Balance</string>
+  <string name="cancel">Cancel</string>
+  <string name="capture_delivery_method">Delivery Method</string>
+  <string name="capture_mail">Send to email</string>
+  <string name="capture_push">Save to computer</string>
+  <string name="categories">Categories</string>
+  <string name="category">Category</string>
+  <string name="choose_icon">Choose an Icon</string>
+  <string name="connection_offline">Offline</string>
+  <string name="connection_online">Online</string>
+  <string name="currencies">Currencies</string>
+  <string name="currency">Currency</string>
+  <string name="custom">Custom</string>
+  <string name="daily">Daily</string>
+  <string name="date_period_title">Choose a time period</string>
+  <string name="day_of_month">Day of Month</string>
+  <string name="demo">Demo</string>
+  <string name="due_in">Due in</string>
+  <string name="edit">Edit</string>
+  <string name="edit_account">Edit account</string>
+  <string name="edit_category">Edit Category</string>
+  <string name="every">Every</string>
+  <string name="expense">Expense</string>
+  <string name="expenses">Expenses</string>
+  <string name="expenses_and_incomes">Expenses &amp; Incomes</string>
+  <string name="faq">FAQ</string>
+  <string name="features">Features</string>
+  <string name="feedback">Feedback</string>
+  <string name="frequency">Frequency</string>
+  <string name="frequency_daily">Daily</string>
+  <string name="frequency_monthly">Monthly</string>
+  <string name="frequency_weekly">Weekly</string>
+  <string name="frequency_yearly">Yearly</string>
+  <string name="friday">Friday</string>
+  <string name="from">From</string>
+  <string name="go_back">Go Back</string>
+  <string name="go_forward">Go to the next __segment__</string>
+  <string name="income">Income</string>
+  <string name="incomes">Incomes</string>
+  <string name="invalid_transfer_pairing">Source and target accounts can not be the same.</string>
+  <string name="last_day">Last Day</string>
+  <string name="legend">Legend</string>
+  <string name="licenses">Licenses</string>
+  <string name="login">Login</string>
+  <string name="logout">Logout</string>
+  <string name="manage_accounts">Manage accounts</string>
+  <string name="metric">Metric</string>
+  <string name="monday">Monday</string>
+  <string name="monthly">Monthly</string>
+  <string name="months_of_year">Month(s) of Year</string>
+  <string name="more">More</string>
+  <string name="name">Name</string>
+  <string name="new_account">New account</string>
+  <string name="new_category">New Category</string>
+  <string name="new_deposit">Track new income</string>
+  <string name="new_transfer">Money Transfer (coming soon)</string>
+  <string name="new_withdrawal">Track new expense</string>
+  <string name="next_segment">Go to the next __segment__</string>
+  <string name="not_enough_data">There isn\'t enough data for this section.
+</string>
+  <string name="not_verified">Not verified</string>
+  <string name="ns_accounts_form_label">Account Name</string>
+  <string name="ns_accounts_new_account">New account</string>
+  <string name="ns_calendar_apr">Apr</string>
+  <string name="ns_calendar_aug">Aug</string>
+  <string name="ns_calendar_dec">Dec</string>
+  <string name="ns_calendar_feb">Feb</string>
+  <string name="ns_calendar_jan">Jan</string>
+  <string name="ns_calendar_jul">Jul</string>
+  <string name="ns_calendar_jun">Jun</string>
+  <string name="ns_calendar_mar">Mar</string>
+  <string name="ns_calendar_may">May</string>
+  <string name="ns_calendar_nov">Nov</string>
+  <string name="ns_calendar_oct">Oct</string>
+  <string name="ns_calendar_sep">Sep</string>
+  <string name="ns_common_hello">Hello</string>
+  <string name="ns_confirmations_delete_account">Removing this account will wipe-out all the expenses, incomes, and recurrings tracked in it. Are you sure you want to do this?
+</string>
+  <string name="ns_confirmations_delete_category">Are you sure you want to remove this tag?
+</string>
+  <string name="ns_confirmations_delete_payment_method">Are you sure you want to remove this payment method?
+</string>
+  <string name="ns_confirmations_delete_transaction">Are you sure you want to delete this transaction?
+</string>
+  <string name="ns_confirmations_delete_user">Are you sure you want to un-register from Pibi?
+</string>
+  <string name="ns_confirmations_discarding_editor_changes">You will lose all unsaved changes by closing the editor, are you sure you want to continue?
+</string>
+  <string name="ns_confirmations_logging_out">Are you sure you want to logout?</string>
+  <string name="ns_confirmations_long_operation">This operation may take a long time to complete. Pibi will not be able to respond to your input in the meantime. \n\nAre you sure you want to do this?
+</string>
+  <string name="ns_confirmations_reset_account">Are you sure you want to reset your account?
+</string>
+  <string name="ns_currencies_available_currencies">Available Currencies</string>
+  <string name="ns_currencies_default_currency">Default Currency</string>
+  <string name="ns_dialogs_about_heading">About</string>
+  <string name="ns_dialogs_all_changes_heading">Changes</string>
+  <string name="ns_dialogs_auth_failure_heading">Authentication Failure</string>
+  <string name="ns_dialogs_change_log_heading">What\'s new in __version__</string>
+  <string name="ns_dialogs_close_dialog">Close</string>
+  <string name="ns_dialogs_connectivity_error_actions_continue_offline">Continue Offline</string>
+  <string name="ns_dialogs_connectivity_error_heading">Connectivity Error</string>
+  <string name="ns_dialogs_connectivity_error_message">Your connection to the Pibi Cloud has been lost and could not be re-established. Please verify that you are connected to the Internet.
+</string>
+  <string name="ns_dialogs_connectivity_error_offline_available">You can choose to continue in Offline mode. You will be able to make transactions, but they will be synced only when you\'re connected to the Internet again.
+</string>
+  <string name="ns_dialogs_date_period_heading">Choose a time period</string>
+  <string name="ns_dialogs_email_delivery_failure_address">The address we attempted to contact: &lt;code&gt;__address__&lt;/code&gt;
+</string>
+  <string name="ns_dialogs_email_delivery_failure_contact_support">You can try again later, and if the issue still persists, feel free to open a ticket at the &lt;a href=\"http://support.pibiapp.com\"&gt;Support Center&lt;/a&gt;.
+</string>
+  <string name="ns_dialogs_email_delivery_failure_heading">Email Delivery Failed</string>
+  <string name="ns_dialogs_email_delivery_failure_message">We were unable to deliver the email to your inbox. This might mean that your address is currently unreachable, or that we\'re having issues with our courier service.
+</string>
+  <string name="ns_dialogs_faq_heading">Frequently Asked Questions</string>
+  <string name="ns_dialogs_frozen_actions_reload">Reload</string>
+  <string name="ns_dialogs_frozen_actions_report_issue">Report issue</string>
+  <string name="ns_dialogs_frozen_actions_wait">Wait some more</string>
+  <string name="ns_dialogs_frozen_heading">Something doesn\'t look right.</string>
+  <string name="ns_dialogs_frozen_message">It seems like it\'s taking too long to load the application data. This could mean one of few things:
+</string>
+  <string name="ns_dialogs_frozen_possible_actions">In case of #2 and #3, reloading the page might help, but if it doesn\'t, please do report this as a bug by pushing the Reload button below.
+</string>
+  <string name="ns_dialogs_frozen_possible_cause_1">connection to the Pibi Cloud failed while loading
+</string>
+  <string name="ns_dialogs_frozen_possible_cause_2">your Internet connection is slow
+</string>
+  <string name="ns_dialogs_frozen_possible_cause_3">there\'s a lot of data to be downloaded
+</string>
+  <string name="ns_dialogs_frozen_possible_cause_4">a bug in the current version of Pibi
+</string>
+  <string name="ns_dialogs_internal_error_actions_report_issue">Notify us</string>
+  <string name="ns_dialogs_internal_error_heading">Internal Error</string>
+  <string name="ns_dialogs_internal_error_message">An unexpected error has occured while processing your last action. Unfortunately, we were unable to recover from it.</string>
+  <string name="ns_dialogs_internal_error_suggestion">You can report this issue and notify us about it, or choose to ignore it.
+</string>
+  <string name="ns_dialogs_keyboard_action">Action</string>
+  <string name="ns_dialogs_keyboard_context">Context</string>
+  <string name="ns_dialogs_keyboard_heading">Keyboard Shortcuts</string>
+  <string name="ns_dialogs_keyboard_shortcut">Keybinding</string>
+  <string name="ns_dialogs_oauth_failure_actions_signup">Sign Up</string>
+  <string name="ns_dialogs_oauth_failure_alternatives">Alternatively, you can still sign up by creating a Pibi account or by choosing a different service to sign-up with.
+</string>
+  <string name="ns_dialogs_oauth_failure_message">Our servers had an issue authenticating you using your __provider__ account. This could be caused by certain privacy settings which prevented us from creating an account for you, such as your email address not being provided.
+</string>
+  <string name="ns_dialogs_update_available_actions_update">Install Update</string>
+  <string name="ns_dialogs_update_available_heading">Update Available</string>
+  <string name="ns_dialogs_update_available_message">A new version of Pibi is available and has been downloaded, but a restart is required for the changes to take effect.
+</string>
+  <string name="ns_drilldown_heading_monthly">Activity for __segment__, &lt;a href=\"/drilldown/__year__\"&gt;__year__&lt;/a&gt;
+</string>
+  <string name="ns_drilldown_heading_yearly">Activity for __segment__
+</string>
+  <string name="ns_drilldown_jump_to_current">Go to the current month
+</string>
+  <string name="ns_drilldown_jump_to_report">Go to the Report view for this __segment__
+</string>
+  <string name="ns_drilldown_title_monthly">__month__/__year__ Feed - Pibi
+</string>
+  <string name="ns_drilldown_title_yearly">__year__ Feed - Pibi
+</string>
+  <string name="ns_drilldown_toolbar_compact_mode">Compact mode</string>
+  <string name="ns_drilldown_toolbar_editor_options">Editor Options</string>
+  <string name="ns_drilldown_toolbar_filter">Filter and search through transactions.</string>
+  <string name="ns_drilldown_toolbar_group_by_dates">Group by dates</string>
+  <string name="ns_drilldown_toolbar_jump_to_current"></string>
+  <string name="ns_drilldown_toolbar_large_tagbox">Large Tagbox</string>
+  <string name="ns_drilldown_toolbar_options">Feed Options</string>
+  <string name="ns_drilldown_toolbar_show_payment_methods">Show payment methods</string>
+  <string name="ns_drilldown_toolbar_use_currency_symbols">Use currency symbols (ie: $ and not USD)</string>
+  <string name="ns_errors_not_found_heading">Code 404 - Not Found</string>
+  <string name="ns_errors_not_found_message">We were unable to find the page you were looking for.</string>
+  <string name="ns_filters_by_category">Filter By Category</string>
+  <string name="ns_filters_by_month_days">Filter By Days Of Month</string>
+  <string name="ns_filters_by_note">Filter By Note</string>
+  <string name="ns_filters_by_payment_method">Filter By Payment Method</string>
+  <string name="ns_filters_by_type">Filter By Type</string>
+  <string name="ns_filters_by_week_days">Filter By Days Of Week</string>
+  <string name="ns_filters_inverted">Invert results</string>
+  <string name="ns_journal_clean">Idle.</string>
+  <string name="ns_journal_committed">Synced.</string>
+  <string name="ns_journal_dirty">Pending. (1)</string>
+  <string name="ns_journal_dirty_plural">Pending. (__count__)</string>
+  <string name="ns_journal_failed">Sync failed.</string>
+  <string name="ns_journal_syncing">Syncing...</string>
+  <string name="ns_journal_syncing_plural">Syncing...</string>
+  <string name="ns_keybindings_delete_transaction">Remove the selected transaction.</string>
+  <string name="ns_keybindings_edit_tx">Edit the selected transaction.</string>
+  <string name="ns_keybindings_next_tx">Select the next transaction.</string>
+  <string name="ns_keybindings_previous_tx">Select the previous transaction.</string>
+  <string name="ns_keybindings_undo">Undo.</string>
+  <string name="ns_landing_motto">Personal financing - simple and &lt;em&gt;stylish&lt;/em&gt;.
+</string>
+  <string name="ns_landing_ns_cloud_heading">Where-ever &lt;strong&gt;you&lt;/strong&gt; are...
+</string>
+  <string name="ns_landing_ns_cloud_p1">Whether you\'re on-the-go using your mobile phone, or on your desktop computer, Pibi is there for you.
+</string>
+  <string name="ns_landing_ns_cloud_p2">Your devices will automatically sync to the
+</string>
+  <string name="ns_landing_ns_cloud_p3">Safe and simple
+</string>
+  <string name="ns_landing_ns_features_currencies_body">Choose from up to 166 currencies with exchange rates synchronized on a daily basis.
+</string>
+  <string name="ns_landing_ns_features_currencies_heading">Currencies</string>
+  <string name="ns_landing_ns_features_heading">&lt;strong&gt;Features&lt;/strong&gt; you\'ll really dig.
+</string>
+  <string name="ns_landing_ns_features_multiple_accounts_body">Manage expenses across multiple accounts, hassle-free.
+</string>
+  <string name="ns_landing_ns_features_multiple_accounts_heading">Multiple Accounts</string>
+  <string name="ns_landing_ns_features_offline_mode_body">Even if you\'re not currently connected to the Internet, you can still track expenses and sync them later.
+</string>
+  <string name="ns_landing_ns_features_offline_mode_heading">Offline Mode</string>
+  <string name="ns_landing_ns_features_organize_body">Stay on top of your financial activity by organizing transactions using tags and payment methods.
+</string>
+  <string name="ns_landing_ns_features_organize_heading">Organize</string>
+  <string name="ns_landing_ns_features_recurrings_body">Track your rent, car loan, or salary.
+</string>
+  <string name="ns_landing_ns_features_recurrings_heading">Recurring Transactions</string>
+  <string name="ns_landing_ns_features_reports_body">Find out where most of your money is coming from and going.
+</string>
+  <string name="ns_landing_ns_features_reports_heading">Insights and Reports</string>
+  <string name="ns_landing_ns_features_transactions_body">Whether you\'ve bought a pair of shiny shoes or have just cashed in from your super-secret client, Pibi helps you track the money easily.
+</string>
+  <string name="ns_landing_ns_features_transactions_heading">Expenses, incomes, you name it
+</string>
+  <string name="ns_landing_ns_getting_started_heading">Get started. It\'s &lt;strong&gt;free&lt;/strong&gt;!
+</string>
+  <string name="ns_landing_welcome">Welcome to &lt;strong&gt;Pibi&lt;/strong&gt;.
+</string>
+  <string name="ns_main_menu_changelog">Changelog</string>
+  <string name="ns_main_menu_keyboard_shortcuts">Keyboard Shortcuts</string>
+  <string name="ns_main_menu_refresh">Refresh</string>
+  <string name="ns_main_menu_settings">Settings</string>
+  <string name="ns_main_menu_sync">Sync</string>
+  <string name="ns_main_menu_undo">Undo</string>
+  <string name="ns_navigation_accounts">Accounts</string>
+  <string name="ns_navigation_budgets">Budgets</string>
+  <string name="ns_navigation_expense">Expense</string>
+  <string name="ns_navigation_feed">Feed</string>
+  <string name="ns_navigation_income"></string>
+  <string name="ns_navigation_recurrings">Recurrings</string>
+  <string name="ns_navigation_reports">Insights</string>
+  <string name="ns_notifications_account_activated">Account \'__account__\' is now active.</string>
+  <string name="ns_notifications_account_created">Account has been created.
+</string>
+  <string name="ns_notifications_account_data_fetching_failed">Unable to retrieve the account listing. Please verify your Internet connectivity and try again.
+</string>
+  <string name="ns_notifications_account_deleted">Account has been removed.
+</string>
+  <string name="ns_notifications_account_deletion_failed">Unable to remove account at this time, please try again later.
+</string>
+  <string name="ns_notifications_account_reset">Your account has been reset, you can now start over.
+</string>
+  <string name="ns_notifications_account_reset_failed">Your account could not be reset, please try again later, or file a bug ticket in our &lt;a href=\"http://support.pibiapp.com\"&gt;Support Center&lt;/a&gt;.
+</string>
+  <string name="ns_notifications_account_updated">Account has been updated.
+</string>
+  <string name="ns_notifications_already_logged_in"></string>
+  <string name="ns_notifications_application_updated"></string>
+  <string name="ns_notifications_authorized">You are already logged in!</string>
+  <string name="ns_notifications_bad_date_period"></string>
+  <string name="ns_notifications_bug_submission_failed">We were unable to submit the issue possibly because of a connectivity error. Please take the time to file a bug report via our &lt;a href=\"http://support.pibiapp.com\"&gt;Support Center&lt;/a&gt;.
+</string>
+  <string name="ns_notifications_bug_submitted">Thank you for reporting the issue, our developers have been notified.
+</string>
+  <string name="ns_notifications_cannot_remove_all_accounts">You must have at least one account.</string>
+  <string name="ns_notifications_capture_delivery_failed"></string>
+  <string name="ns_notifications_capture_failed">Something went wrong generating the report for you, please try again later.
+</string>
+  <string name="ns_notifications_capture_generated">Your report is ready. Click to save.
+</string>
+  <string name="ns_notifications_capture_mailed">Your report is ready and has been delivered to your email inbox.
+</string>
+  <string name="ns_notifications_capture_mailing_failed">The report could not be emailed to your inbox. Please try again later.
+</string>
+  <string name="ns_notifications_capture_requested">Please wait while we generate the report for you.
+</string>
+  <string name="ns_notifications_category_added"></string>
+  <string name="ns_notifications_category_removed"></string>
+  <string name="ns_notifications_category_updated"></string>
+  <string name="ns_notifications_changelog_retrieval_failed"></string>
+  <string name="ns_notifications_default_currency_changed">Your default currency now is __currency__.
+</string>
+  <string name="ns_notifications_default_currency_changing_failed">We were not able to update your default currency, please try again later.
+</string>
+  <string name="ns_notifications_email_delivered"></string>
+  <string name="ns_notifications_feedback_submission_error"></string>
+  <string name="ns_notifications_feedback_submitted"></string>
+  <string name="ns_notifications_filters_applied">Filters applied.</string>
+  <string name="ns_notifications_filters_reset">Filters reset.</string>
+  <string name="ns_notifications_first_time_login"></string>
+  <string name="ns_notifications_issue_submission_failed"></string>
+  <string name="ns_notifications_issue_submitted"></string>
+  <string name="ns_notifications_last_session_sync_failed"></string>
+  <string name="ns_notifications_last_session_synced"></string>
+  <string name="ns_notifications_locked_in_demo"></string>
+  <string name="ns_notifications_logged_out"></string>
+  <string name="ns_notifications_must_be_logged_in"></string>
+  <string name="ns_notifications_oauth_login_success"></string>
+  <string name="ns_notifications_oauth_signup_failed"></string>
+  <string name="ns_notifications_offline_mode">Unable to connect to Pibi Cloud, you are now in offline mode.
+</string>
+  <string name="ns_notifications_password_changed">Your password has been updated.</string>
+  <string name="ns_notifications_password_reset_bad_email">That email is not registered to any Pibi account.
+</string>
+  <string name="ns_notifications_password_reset_sent">An email is being delivered to your inbox with further instructions, please check your inbox in a minute.
+</string>
+  <string name="ns_notifications_payment_method_created"></string>
+  <string name="ns_notifications_payment_method_removed"></string>
+  <string name="ns_notifications_payment_method_updated"></string>
+  <string name="ns_notifications_preferences_updated">Updated.</string>
+  <string name="ns_notifications_preferences_updating_failed"></string>
+  <string name="ns_notifications_recurring_activated">Recurring __name__ is now active.
+</string>
+  <string name="ns_notifications_recurring_deactivated">Recurring __name__ is now inactive.
+</string>
+  <string name="ns_notifications_report_mailed"></string>
+  <string name="ns_notifications_report_mailing_failed"></string>
+  <string name="ns_notifications_signing_up_failed">Something went wrong signing you up, please make sure you\'ve filled out all the required fields and try again.
+</string>
+  <string name="ns_notifications_transaction_created">Transaction created.</string>
+  <string name="ns_notifications_transaction_data_fetching_failed">We were unable to retrieve the transaction listing, please try later.
+</string>
+  <string name="ns_notifications_transaction_offline_data_unavailable">No offline data is available for this transaction period.
+</string>
+  <string name="ns_notifications_transaction_removed">Transaction removed.</string>
+  <string name="ns_notifications_transaction_restored">Transaction restored.</string>
+  <string name="ns_notifications_transaction_updated">Transaction updated.</string>
+  <string name="ns_notifications_transfer_complete"></string>
+  <string name="ns_notifications_transfer_updated"></string>
+  <string name="ns_notifications_unauthorized">You must log in first.</string>
+  <string name="ns_notifications_user_account_deleted">You are no longer registered to Pibi. We hope you come back!
+</string>
+  <string name="ns_notifications_user_account_deletion_failed">Unable to remove your registration at this time, please try again later.
+</string>
+  <string name="ns_notifications_user_email_verified"></string>
+  <string name="ns_queries_feedback_or_help">Give feedback or ask for help.
+</string>
+  <string name="ns_queries_issue_description">To help us help you, please describe in detail what the issue is, and what you were doing when the issue occured.
+</string>
+  <string name="ns_queries_issue_include_dump">Attach application diagnostic data
+</string>
+  <string name="ns_queries_issue_notify_me">Notify me of any follow-ups on this issue
+</string>
+  <string name="ns_queries_issue_summary">Brief issue description</string>
+  <string name="ns_recurrings_editor_deactive_warning">This recurring transaction is de-activated, choosing to update will automatically re-activate it.</string>
+  <string name="ns_recurrings_editor_flow_type">Flow type</string>
+  <string name="ns_recurrings_editor_name">Name &amp; Amount</string>
+  <string name="ns_recurrings_editor_name_example">Salary</string>
+  <string name="ns_recurrings_heading">Recurring Transactions</string>
+  <string name="ns_recurrings_new_recurring">New Recurring</string>
+  <string name="ns_recurrings_toolbar_all_frequencies">All Frequencies</string>
+  <string name="ns_reports_balance_chart_tip_heading">How is this useful?</string>
+  <string name="ns_reports_balance_chart_tip_monthly">&lt;em&gt; This chart plots your balance during the month. A healthy finance state would be represented by the bar being above 0. &lt;/em&gt;
+</string>
+  <string name="ns_reports_balance_chart_tip_yearly">&lt;em&gt; This chart shows the &lt;strong&gt;difference between incomes and expenses&lt;/strong&gt;. A healthy finance state would be represented by a minimal difference, ie: the height of the red bars should be close to the height of the green ones. &lt;/em&gt;
+</string>
+  <string name="ns_reports_heading_monthly">Reports for __segment__, &lt;a href=\"/reports/__year__\"&gt;__year__&lt;/a&gt;
+</string>
+  <string name="ns_reports_heading_yearly">Reports for __segment__
+</string>
+  <string name="ns_reports_payment_methods">This table shows how much of your finances were done using each payment method.
+</string>
+  <string name="ns_reports_summary_average_monthly">Avg. Per Day</string>
+  <string name="ns_reports_summary_average_yearly">Avg. Per Month</string>
+  <string name="ns_reports_summary_monthly">This is a summary of the total amount of expenses, incomes, and savings through the month, as well as their average values across the days.
+</string>
+  <string name="ns_reports_summary_yearly">This is a summary of the total amount of expenses, incomes, and savings through the year, as well as their average values across the months.
+</string>
+  <string name="ns_sessions_actions_reset_password">Reset my password</string>
+  <string name="ns_sessions_actions_use_existing_account">Use an existing account</string>
+  <string name="ns_sessions_change_password_form_confirm_password">Confirm new password</string>
+  <string name="ns_sessions_change_password_form_new_password">Enter new password</string>
+  <string name="ns_sessions_change_password_form_reset_code">Enter RESET CODE</string>
+  <string name="ns_sessions_change_password_form_submit">Change Password</string>
+  <string name="ns_sessions_change_password_heading">Change Password</string>
+  <string name="ns_sessions_change_password_links">&lt;a href=\"/signup\"&gt;Sign up&lt;/a&gt; or back to &lt;a href=\"/login\"&gt;Login&lt;/a&gt;
+</string>
+  <string name="ns_sessions_login_form_submit">Log In</string>
+  <string name="ns_sessions_login_heading">Sign in to Pibi</string>
+  <string name="ns_sessions_login_link_to_signup">Don\'t have an account? &lt;a href=\"/signup\"&gt;Sign up&lt;/a&gt;
+</string>
+  <string name="ns_sessions_login_use_account">Or, use your Pibi account.
+</string>
+  <string name="ns_sessions_reset_password_form_email">your@email.com</string>
+  <string name="ns_sessions_reset_password_form_submit">Send</string>
+  <string name="ns_sessions_reset_password_heading">Reset Your Password</string>
+  <string name="ns_sessions_reset_password_links">&lt;a href=\"/signup\"&gt;Sign up&lt;/a&gt; or back to &lt;a href=\"/login\"&gt;Login&lt;/a&gt;</string>
+  <string name="ns_sessions_signup_create_account">Or, create one.
+</string>
+  <string name="ns_sessions_signup_form_email">Email</string>
+  <string name="ns_sessions_signup_form_name">Your name</string>
+  <string name="ns_sessions_signup_form_password">Password (7 characters min.)</string>
+  <string name="ns_sessions_signup_form_submit">Sign up</string>
+  <string name="ns_sessions_signup_heading">Sign up to Pibi</string>
+  <string name="ns_sessions_signup_link_to_login">Already have an account? &lt;a href=\"/login\"&gt;Log in&lt;/a&gt;
+</string>
+  <string name="ns_settings_danger_zone">Danger zone</string>
+  <string name="ns_settings_danger_zone_warning">These actions cannot be un-done!
+</string>
+  <string name="ns_settings_delete_account_caption"></string>
+  <string name="ns_settings_delete_account_description"></string>
+  <string name="ns_settings_delete_user_caption">Delete user account</string>
+  <string name="ns_settings_delete_user_description">Delete your Pibi user account entirely.
+</string>
+  <string name="ns_settings_reset_account_caption">Reset account</string>
+  <string name="ns_settings_reset_account_description">Taking this action will remove all transactions tracked in your account and allow you to start from a blank state.
+</string>
+  <string name="ns_tooltips_delete_account">Delete this account</string>
+  <string name="ns_tooltips_edit_account">Edit this account</string>
+  <string name="ns_tours_around_the_interface_description">Learn about Pibi\'s interface elements, how to get to important places, and what the buttons do.
+</string>
+  <string name="ns_tours_customizing_your_account_account_text">&lt;p&gt;You can change your email and password here.&lt;/p&gt; &lt;p&gt;You can also link your account to your Facebook and Google accounts so you can log-in to Pibi using any of them!&lt;/p&gt;
+</string>
+  <string name="ns_tours_customizing_your_account_currencies_caption">Currencies</string>
+  <string name="ns_tours_customizing_your_account_currencies_text">&lt;p&gt;You can track expenses and incomes in many currencies in Pibi, but you must also choose a main currency as explained earlier in the Wizard.&lt;/p&gt; &lt;p&gt;In here you can manage everything related to those currencies.&lt;/p&gt;
+</string>
+  <string name="ns_tours_customizing_your_account_description">&lt;p&gt;This tour takes you through your account settings.&lt;/p&gt; &lt;p&gt;See you how you can personalize your account and take advantage of Pibi\'s customization features.&lt;/p&gt;
+</string>
+  <string name="ns_tours_customizing_your_account_main_menu_text">Your account settings can be reached via the Main Menu, right here.
+</string>
+  <string name="ns_tours_customizing_your_account_new_payment_method_text">&lt;p&gt;To add a new payment method, you need to:&lt;/p&gt; &lt;ul&gt;
+  &lt;li&gt;choose a meaningful name for it; like MasterCard, or PDA&lt;/li&gt;
+  &lt;li&gt;choose a color to use when reporting transactions made using
+      that payment method&lt;/li&gt;
+&lt;/ul&gt;
+</string>
+  <string name="ns_tours_customizing_your_account_new_tag_text">Adding a new tag is as simple as clicking this button, choosing a name, and an icon.
+</string>
+  <string name="ns_tours_customizing_your_account_payment_methods_text">Here you get to customize your payment methods.</string>
+  <string name="ns_tours_customizing_your_account_settings_link_text">Clicking this link will take us to the settings page.</string>
+  <string name="ns_tours_customizing_your_account_tags_text">This section lets you add and customize the tags you use.</string>
+  <string name="ns_tours_tracking_an_expense_amount">Fill this in with how much money you spent.
+</string>
+  <string name="ns_tours_tracking_an_expense_currency">&lt;p&gt;Choose the currency that you spent the money with.&lt;/p&gt; &lt;p&gt;You can change the available currencies in your &lt;a href=\"/settings/currencies\"&gt;settings&lt;/a&gt;.&lt;/p&gt;
+</string>
+  <string name="ns_tours_tracking_an_expense_description">Get the action started by learning how to track some money you spent using Pibi.
+</string>
+  <string name="ns_tours_tracking_an_expense_editor_caption">The Transaction Editor</string>
+  <string name="ns_tours_tracking_an_expense_editor_text">The editor lets you fill in a number of details, but only the amount of the transaction is required.
+</string>
+  <string name="ns_tours_tracking_an_expense_new_expense_text">Push the &lt;strong&gt;Expense&lt;/strong&gt; button to show the editor.</string>
+  <string name="ns_tours_tracking_an_expense_note_caption">A note for the future.</string>
+  <string name="ns_tours_tracking_an_expense_note_text">Write a small note to remind you of the expense, like \'Lunch with Pibi\'.
+</string>
+  <string name="ns_tours_tracking_an_expense_occurence_caption">When it happened.</string>
+  <string name="ns_tours_tracking_an_expense_occurence_text">Specify the day you made the expense in. By default, Pibi chooses today\'s date for you.
+</string>
+  <string name="ns_tours_tracking_an_expense_payment_method_caption">Specifying a payment method.</string>
+  <string name="ns_tours_tracking_an_expense_payment_method_text">&lt;p&gt;Mark how you paid the money, like by using Cash or a Credit Card.&lt;/p&gt; &lt;p&gt;You can add and change your payment methods in your &lt;a href=\"/settings/payment_methods\"&gt;settings&lt;/a&gt;.&lt;/p&gt;
+</string>
+  <string name="ns_tours_tracking_an_expense_save">We\'re done, push this button to save the expense.
+</string>
+  <string name="ns_tours_tracking_an_expense_tags_caption">Tagging the expense.</string>
+  <string name="ns_tours_tracking_an_expense_tags_text">&lt;p&gt;Since we\'ve just had lunch together, you should tag the expense as a Food expense.&lt;/p&gt; &lt;p&gt;&lt;em&gt;Tip: you can choose more than one tag when it makes sense.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Just like currencies and payment methods, you can customize your tags in your &lt;a href=\"/settings/tags\"&gt;settings&lt;/a&gt;.
+</string>
+  <string name="ns_tours_tracking_an_expense_view">&lt;p&gt;Congratulations! You\'ve now added the expense to your activity feed.&lt;/p&gt; &lt;p&gt;Double-clicking on the transaction allows you to edit or remove it, using the editor we just learned how to use.&lt;/p&gt; &lt;p&gt;&lt;em&gt;On mobile and tablet, you can perform a swipe gesture to the left or right instead of clicking.&lt;/em&gt;&lt;/p&gt;
+</string>
+  <string name="ns_transfers_source_account">From</string>
+  <string name="ns_transfers_target_account">To</string>
+  <string name="ns_transfers_transfer">Transfer</string>
+  <string name="ns_validations_bad_amount">Amount must be a positive number.
+</string>
+  <string name="ns_validations_bad_type"></string>
+  <string name="ns_validations_categories_missing_name"></string>
+  <string name="ns_validations_categories_name_too_short"></string>
+  <string name="ns_validations_categories_name_unavailable"></string>
+  <string name="ns_validations_missing_amount"></string>
+  <string name="ns_validations_payment_methods_missing_name"></string>
+  <string name="ns_validations_payment_methods_name_too_short"></string>
+  <string name="ns_validations_payment_methods_name_unavailable"></string>
+  <string name="ns_validations_recurrings_bad_amount">Amount must be a positive number.
+</string>
+  <string name="ns_validations_recurrings_missing_every">You must specify how often the recurrence pattern should be applied.
+</string>
+  <string name="ns_validations_recurrings_missing_frequency">No recurrence pattern specified. Available patterns are: daily, weekly, monthly, and yearly.
+</string>
+  <string name="ns_validations_recurrings_missing_monthly_days">Monthly recurrence pattern requires at least one day of the month to track the transaction on.
+</string>
+  <string name="ns_validations_recurrings_missing_note">You must assign a name to this recurring.
+</string>
+  <string name="ns_validations_recurrings_missing_weekly_days">Weekly recurrence pattern requires the days of the week the transaction should be tracked on.
+</string>
+  <string name="ns_validations_recurrings_missing_yearly_day">Yearly recurrence pattern requires the day of the month to track the transaction on.
+</string>
+  <string name="ns_validations_recurrings_missing_yearly_months">Yearly recurrence pattern requires at least one month of the year to track the transaction on.
+</string>
+  <string name="ns_validations_users_missing_email"></string>
+  <string name="ns_validations_users_missing_name"></string>
+  <string name="ns_validations_users_password_too_short"></string>
+  <string name="ns_widgets_account_picker_manage">Manage Accounts</string>
+  <string name="ns_widgets_bug_reporter_details">Details</string>
+  <string name="ns_widgets_bug_reporter_form_details">To help us help you, please describe in detail what the issue is, and what you were doing when the issue occured.
+</string>
+  <string name="ns_widgets_bug_reporter_form_include_dump">Attach application diagnostic data
+</string>
+  <string name="ns_widgets_bug_reporter_form_notify_me">Notify me of any follow-ups on this issue
+</string>
+  <string name="ns_widgets_bug_reporter_form_summary">Brief issue description</string>
+  <string name="ns_widgets_bug_reporter_heading">Report an Issue</string>
+  <string name="ns_widgets_bug_reporter_summary">Summary</string>
+  <string name="ns_widgets_category_editor_add_another">Add another tag</string>
+  <string name="ns_widgets_currency_listing_exchange_rate">Exchange Rate</string>
+  <string name="ns_widgets_currency_listing_filter_by_iso">Filter (by ISO code): USD</string>
+  <string name="ns_widgets_currency_listing_heading">Available Currencies</string>
+  <string name="ns_widgets_currency_listing_iso_code">ISO Code</string>
+  <string name="ns_widgets_currency_listing_selection_message">Select the currencies you wish to use for your transactions. Currently, we support __count__ currencies.
+</string>
+  <string name="ns_widgets_currency_listing_symbol">Symbol</string>
+  <string name="ns_widgets_currency_listing_sync_message">Our servers synchronize currency exchange rates &lt;strong&gt;on a daily basis &lt;/strong&gt;. You can find the current exchange rates beside the currency ISO code and symbol.
+</string>
+  <string name="ns_widgets_default_currency_description">The default currency you choose will be used to display your balance as well as be automatically selected whenever you create a new transaction.
+</string>
+  <string name="ns_widgets_default_currency_heading">Default Account Currency</string>
+  <string name="ns_widgets_password_changer_confirm_password">Confirm new password</string>
+  <string name="ns_widgets_password_changer_current_password">Enter current password</string>
+  <string name="ns_widgets_password_changer_new_password">Enter new password</string>
+  <string name="ns_widgets_password_changer_submit">Change Password</string>
+  <string name="ns_widgets_payment_method_editor_choose_color">Choose a color</string>
+  <string name="ns_widgets_payment_method_editor_choose_name">Choose a name</string>
+  <string name="ns_widgets_payment_method_editor_edit_payment_method">Edit Payment Method</string>
+  <string name="ns_widgets_payment_method_editor_new_payment_method">New Payment Method</string>
+  <string name="number_of_transactions">Number of Transactions</string>
+  <string name="occured_on">Occured on</string>
+  <string name="offline_data">This data is as accurate and up-to-date as the last time you viewed it online on this device.
+</string>
+  <string name="online">Online</string>
+  <string name="partners">Pibi\'s delightful partners:
+</string>
+  <string name="payment_method">Payment Method</string>
+  <string name="payment_methods">Payment Methods</string>
+  <string name="pibi">Pibi</string>
+  <string name="pibi_cloud">Pibi Cloud</string>
+  <string name="previous_segment">Go to the previous __segment__</string>
+  <string name="privacy">Privacy</string>
+  <string name="recurrence">Recurrence</string>
+  <string name="recurrence_daily">Days</string>
+  <string name="recurrence_monthly">Months</string>
+  <string name="recurrence_weekly">Weeks</string>
+  <string name="recurrence_yearly">Years</string>
+  <string name="report_issue">Report an issue</string>
+  <string name="resend">(Resend)</string>
+  <string name="reset">Reset</string>
+  <string name="saturday">Saturday</string>
+  <string name="save">Save</string>
+  <string name="save_expense">Save Expense</string>
+  <string name="save_income">Save Income</string>
+  <string name="savings">Savings</string>
+  <string name="security">Security</string>
+  <string name="select_months">Select month(s)</string>
+  <string name="send">Send</string>
+  <string name="settings">Settings</string>
+  <string name="sign_up">Sign up</string>
+  <string name="signup">Sign Up</string>
+  <string name="social_pibi">Social Pibi</string>
+  <string name="submit">Submit</string>
+  <string name="summary">Summary</string>
+  <string name="sunday">Sunday</string>
+  <string name="support">Support</string>
+  <string name="support_center">Support Center</string>
+  <string name="tag">Tag</string>
+  <string name="tags">Tags</string>
+  <string name="tell_us_anything">Tell us anything</string>
+  <string name="this_month">Current month</string>
+  <string name="thursday">Thursday</string>
+  <string name="to">To</string>
+  <string name="tos">Terms of Service</string>
+  <string name="total">Total</string>
+  <string name="transactions">1 transaction</string>
+  <string name="transactions_plural">__count__ transactions</string>
+  <string name="transfer_complete">Transfer complete.</string>
+  <string name="transfer_updated">Transfer updated.</string>
+  <string name="true">true</string>
+  <string name="tuesday">Tuesday</string>
+  <string name="untagged">Untagged</string>
+  <string name="update">Update</string>
+  <string name="update_expense">Update Expense</string>
+  <string name="update_income">Update Income</string>
+  <string name="user_account">User Account</string>
+  <string name="warning">Warning</string>
+  <string name="web_recurrings">You can set up transactions that recur automatically, like your salary, loans, and bills. Visit Pibi on the Web from a desktop computer or a laptop to manage your recurrings.
+</string>
+  <string name="web_reports">Visit Pibi on the Web from a desktop computer or a laptop to gain access to financial insights and reports.
+</string>
+  <string name="wednesday">Wednesday</string>
+  <string name="week">Week __number__</string>
+  <string name="weekdays">Weekdays</string>
+  <string name="weekly">Weekly</string>
+  <string name="yearly">Yearly</string>
+  <string name="yes">Yes</string>
+</resources>

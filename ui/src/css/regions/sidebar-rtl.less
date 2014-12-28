@@ -1,0 +1,30 @@
+@media screen and (min-width: @media-nonmobile) {
+  body.rtl {
+    .renderable {
+      left:  @sidebar-margin;
+      right: auto;
+    }
+  }
+}
+
+body.rtl {
+  .sidebar .item-value {
+    text-align:left;
+    right:  auto;
+    left:  18px;
+
+    &.tx-note-chars-remaining {
+      left: 0;
+      right: auto;
+    }
+  }
+
+
+  .sidebar-confirmable-toggle {
+    &:after {
+      left: 0;
+      right: auto;
+    }
+
+  }
+}

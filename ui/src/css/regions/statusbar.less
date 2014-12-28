@@ -1,0 +1,85 @@
+#statusbar {
+  position: absolute;
+  z-index: 5;
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+  #statusbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: @desktop-statusbar-width;
+    height: @desktop-statusbar-height;
+    padding: @whitespace;
+    // background: #fff;
+    // box-shadow: -1px 2px 3px darken(@drawer-bg, 5%);
+    // .vlinear-gradient(to bottom; lighten(@drawer-bg, 7%), lighten(@drawer-bg, 5%));
+
+    font-size: 11px;
+
+    .dropdown {
+      // color: inherit;
+    }
+
+    .dropdown.open {
+      .btn-dropdown {
+        // color: inherit;
+      }
+    }
+  }
+
+  .statusbar-btn {
+    .appearance(none);
+    border: none;
+    font-size: inherit;
+    background: transparent;
+    // color: white;
+    vertical-align: middle;
+
+    // Bump the z-index to 1 higher than the Dropdown menu's so that it looks
+    // seamless with the menu when it's open:
+    position: relative;
+    z-index: 11;
+
+    &:focus {
+      outline: 1px dotted @focus-border-color;
+    }
+  }
+
+  body.distraction-free-really #statusbar {
+    display: none;
+  }
+
+  #statusbar_user_name {
+    line-height: 40px;
+  }
+
+  #statusbar .account-picker {
+    margin-left: -15px;
+    border-right: 1px solid #ddd;
+
+    .dropdown-toggle {
+      padding: 0;
+    }
+  }
+
+  .Statusbar__RightSide {
+    // float: right;
+    position: absolute;
+    top: @whitespace;
+    right: @whitespace / 2;
+    // vertical-align: top;
+
+    .statusbar-btn {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+  }
+}

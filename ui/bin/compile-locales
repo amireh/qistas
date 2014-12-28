@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+#
+# Converts source YAML locale to a JSON file ready for consumption by Pibi.js /
+# the i18next engine.
+#
+# Dependencies:
+#   - gem 'json'
+#
+# Sources:
+#   - www/assets/locales/**/*.yml
+# Output:
+#   - www/assets/locales/**/*.json
+
+require 'rubygems'
+require 'yaml'
+require 'json'
+
+locale = ARGV[0]
+locale = '**' if !locale || locale.empty?
+dname = 'www/assets/locales'
+fname = 'locale'
+
+Dir.glob("#{dname}/#{locale}/#{fname}.yml").each do |source|
+  dir = File.dirname(source)
+  l   = File.basename dir
+
+  File.open(File.join(dir, "#{fname}.json"), 'w') do |out|
+    puts "Locale: #{l}"
+    out.write(YAML.load_file(source).to_json)
+    out.close
+  end
+end

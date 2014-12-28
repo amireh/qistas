@@ -1,0 +1,11 @@
+{
+    "status": "error",
+    "messages": [
+        "Amount must be a positive number."
+    ],
+    "field_errors": {
+        "amount": [
+            "Amount must be a positive number."
+        ]
+    }
+}

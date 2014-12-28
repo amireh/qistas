@@ -1,0 +1,7 @@
+strict: false
+exclude: []
+errors:
+  not_lowercase: false
+
+# vim:syntax=yaml filetype=yaml
+# sublime: x_syntax Packages/YAML/YAML.tmLanguage

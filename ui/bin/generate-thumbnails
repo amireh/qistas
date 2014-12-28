@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+#
+# Generates thumbnails for theme wallpapers using ImageMagick. Source images are
+# scanned in www/assets/images/themes. The extension in output filenames is
+# discarded, if present in the original files.
+#
+# == Usage
+#
+#   ./bin/generate-thumbnails [DIM [DEST]]
+#
+# DIM is the dimension of the thumbnails in the following format:
+#
+#   AxB
+#
+# DEST is an absolute path to the directory that will contain the thumbnails.
+#
+# == Example: create a 24x24 set of thumbnails in tmp/thumbs:
+#
+#   ./bin/generate-thumbnails 24x24 tmp/thumbs
+#
+# == Defaults
+#
+# 20x20 for dimensions, and outputs to tmp/images/themes/thumbnails
+#
+
+DIM=$1
+DEST=$2
+SRC="www/assets/images/themes/"
+
+if [ -z "${DIM}" ]; then
+  DIM="20x20"
+fi
+
+if [ -z "${DEST}" ]; then
+  DEST="tmp/images/themes/thumbnails"
+fi
+
+mkdir -p "${DEST}"
+
+for file in $(find ${SRC} -maxdepth 1 -type f); do
+  filename=$(basename $file | cut -d"." -f1)
+
+  convert "${file}" \
+    -thumbnail "${DIM}^" \
+    -gravity center \
+    -extent $DIM \
+    "${DEST}/${filename}"
+done

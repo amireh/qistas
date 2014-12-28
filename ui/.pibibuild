@@ -1,0 +1,149 @@
+{
+  "version": "2.5.5",
+  "copy": [
+    {
+      "info": "Installing Phonegap config.xml",
+      "platform": "phonegap",
+      "from": "../config/phonegap/config.xml",
+      "to": "./config.xml"
+    }
+  ],
+
+  "transform": [
+    {
+      "info": "Stopping git from ignoring built assets in `.gitignore`.",
+
+      "platform": "any",
+      "from": "www/dist",
+      "to":   "# ",
+      "in": [
+        "../.gitignore"
+      ]
+    },
+    {
+      "info": "Stopping git from ignoring built locales in `.gitignore`.",
+
+      "platform": "any",
+      "from": "locales/\\*/\\*.json",
+      "to":   "locales/*/*.yml",
+      "in": [
+        "../.gitignore"
+      ]
+    },
+
+    {
+      "info": "Rewriting assets to use relative URLs for Phonegap compatibility.",
+
+      "platform": "phonegap",
+      "from": "([^\\.])/assets",
+      "to":   "$1assets",
+      "in": [
+        "index.html",
+        "src/css/app.less",
+        "src/js/main.js",
+        "src/js/templates/guest/landing.hbs"
+      ]
+    },
+
+    {
+      "info": "Rewriting dist to use relative URLs for Phonegap compatibility.",
+
+      "platform": "phonegap",
+      "from": "/(dist|vendor)",
+      "to":   "$1",
+      "in": [
+        "index.html",
+        "src/js/core/director.js"
+      ]
+    },
+
+    {
+      "info": "Turning AppMode on.",
+
+      "platform": "phonegap",
+      "from": "(production\\: true)",
+      "to":   "$1, phonegap: true",
+      "in": [
+        "../Gruntfile.js"
+      ]
+    },
+
+    {
+      "info": "Removing other device's CSS sheets.",
+
+      "platform": "phonegap",
+      "flag":     "optimize-css",
+      "from":     "(\\@import\\s\"(widgets/.*/(?!%DEVICE%|base)|skins/(?!%DEVICE%))[^;]+;)",
+      "to":       "/* disabled in %DEVICE% build: $1 */",
+      "in": [
+        "src/css/app.less"
+      ]
+    },
+
+    {
+      "info": "Applying iOS skin.",
+
+      "platform": "phonegap",
+      "from":     "classic-ui",
+      "to":       "ios-ui",
+      "in": [
+        "src/css/app.less"
+      ]
+    },
+
+    {
+      "info": "Enable AppCache.",
+
+      "platform": "web",
+      "from": "<(html class=\"no-js\")>",
+      "to": "<$1 manifest=\"/pibi.appcache\">",
+      "in": [
+        "index.html"
+      ]
+    },
+    {
+      "info": "Using the Web JS bundle.",
+      "platform": "web",
+      "from": "pibi.js",
+      "to": "pibi-web.js",
+      "in": [
+        "index.html"
+      ]
+    },
+    {
+      "info": "Using the Mobile JS bundle.",
+      "platform": "phonegap",
+      "from": "pibi.js",
+      "to": "pibi-mobile.js",
+      "in": [
+        "index.html"
+      ]
+    },
+
+  ],
+
+  "remove": [
+    {
+      "info": "Removing asset bundles and tarballs.",
+
+      "platform": "any",
+      "files": [
+        "*.zip",
+        "*.gz"
+      ]
+    },
+
+    {
+      "info": "Removing unused static files.",
+      "platform": "phonegap",
+      "files": [
+        "robots.txt",
+        "favicon.ico",
+        "pibi.appcache",
+        "assets/images/themes",
+        "assets/images/bgs",
+        "assets/images/splash.jpg"
+      ]
+    }
+  ]
+}

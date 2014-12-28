@@ -1,0 +1,122 @@
+#asset_preloader {
+  font-family: 'Raleway', 'Pibi', 'Pibi-Emblems';
+  position: absolute;
+  width:  1px;
+  height: 0;
+  z-index: -10;
+  color: transparent;
+  font-size: 0;
+  display: block;
+  background: url("@{images-url}/divider.png") no-repeat;
+}
+
+// body.state-loading {
+//   overflow: hidden;
+//   background: none;
+
+//   #loading_screen {
+//     display: block;
+//   }
+
+//   #main, &:before {
+//     display: none;
+//   }
+
+//   .content,
+//   .widget,
+//   .overlay,
+//   #dialogs {
+//     display: none;
+//   }
+// }
+
+#loading_screen {
+  .fullscreen();
+  .disable-selection();
+  background: white;
+
+  position: fixed;
+  // display:  none;
+  z-index: 1000;
+  overflow: hidden;
+
+  header {
+    text-align: left;
+    margin: -20px 0 0 0;
+    padding: 10px 0;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 240px;
+  }
+
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height:     168px;
+    margin-top: -96px;
+    margin-left: -200px;
+    &:before {
+      line-height: 168px;
+    }
+  }
+
+  .version {
+    position: absolute;
+    bottom: auto;
+    right: auto;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+    display: block;
+    width: 240px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #loading_screen {
+    header {
+      text-align: center;
+      margin: 60px 0 0 0;
+      padding: 0;
+      font-size: 14px;
+      top: 45%;
+      left:   10px;
+      right:  10px;
+      width: auto;
+      font-style: italic;
+    }
+
+    .logo {
+      top:  50px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    .version {
+      right: 10px;
+      left: 10px;
+      top: 50%;
+      margin-top: 0;
+      border-color: #aaa;
+      width: auto;
+      text-align: center;
+      border-bottom: none;
+    }
+  }
+}
+
+// This is done in CSS because we don't want it to show up in SEO.
+#loading_status:empty {
+  &:after {
+    content: "Loading... Please wait.";
+  }
+}

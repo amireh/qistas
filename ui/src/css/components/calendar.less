@@ -1,0 +1,112 @@
+.calendar {
+  @color: #ccc;
+  @cell-height: 84px;
+  @cell-title-height: 20px; // day index
+
+  .pika-label, .pika-button {
+    background-color: transparent;
+  }
+
+  .pika-title {
+    padding: @whitespace 0;
+    text-align: left;
+
+    .pika-label {
+      font-size: 17.5px;
+      line-height: 30px;
+      padding: 0 3px;
+    }
+
+    .pika-next {
+      left: 24px;
+      right: auto;
+    }
+
+    .pika-prev:after, .pika-next:after {
+      font-size: 24px;
+    }
+
+    .navigation {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .pika-button {
+    position: absolute;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    pointer-events: none;
+    cursor: auto;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  td {
+    height: @cell-height;
+    border: 1px solid @color;
+    border-right: none;
+    background: white;
+  }
+
+  td:last-of-type {
+    border-right: 1px solid @color;
+  }
+
+  tr:nth-of-type(even) td {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  tr:last-of-type td {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .day-content {
+    margin: 0;
+    list-style-type: none;
+    padding: 0 5px;
+    font-size: 10px;
+    white-space: nowrap;
+    position: absolute;
+    overflow: auto;
+    max-width: 13.6%;
+    margin-top: -1 * @cell-title-height + 5px;
+    height: @cell-height - @cell-title-height - 2px - 5px; // 2px for borders
+    margin-left: -1px;
+  }
+
+  .day-index {
+    position: absolute;
+    margin-top: -2 * @cell-title-height + 5px;
+    margin-left: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .is-empty {
+    background: transparent;
+  }
+
+  .is-today {
+    background: fade(@active-color, 10%);
+  }
+
+  .inactive {
+    .pika-button, ol {
+      opacity: 0.65;
+    }
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+  }
+}

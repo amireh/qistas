@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Pibi.js Development Guides",
+    "items": [
+      {
+        "title": "Getting Started",
+        "name": "getting_started",
+        "description": "A small guide that gets Pibi.js running on your machine."
+      },
+      {
+        "title": "File Structure",
+        "name": "file_structure",
+        "description": "How Pibi.js is structured on the filesystem."
+      },
+      {
+        "title": "Style Guide",
+        "name": "style_guide",
+        "description": "Guidelines to follow while writing JavaScript, CSS, or i18n locales in Pibi.js."
+      },
+      {
+        "title": "Journalling",
+        "name": "journalling",
+        "description": "Enabling offline capabilities."
+      },
+      {
+        "title": "The Caching Layer",
+        "name": "caching_layer",
+        "description": "How and when objects are pulled from the cache."
+      },
+      {
+        "title": "Building",
+        "name": "building",
+        "description": "Building and deploying Pibi."
+      },
+      {
+        "title": "Kits",
+        "name": "kits",
+        "description": "CLI scripts and helpers."
+      },
+      {
+        "title": "Specs",
+        "name": "specs",
+        "description": "Writing and running Pibi specs."
+      },
+      {
+        "title": "Localization",
+        "name": "localization",
+        "description": "Translating Pibi.js views."
+      },
+
+      {
+        "title": "UI Miscellaneous",
+        "name": "ui_misc",
+        "description": "Misc things like rendering flash messages, skinning widgets, etc."
+      },
+      {
+        "title": "Usage Tours",
+        "name": "tours",
+        "description": "How to define a new tour and how to manage existing ones."
+      },
+      {
+        "title": "Building an Editor",
+        "name": "building_an_editor",
+        "description": "How to build a new editor that shows up in the sidebar for a model."
+      },
+      {
+        "title": "App Development",
+        "name": "apps",
+        "description": "How to create a stand-alone app for a specific section."
+      }
+    ]
+  }
+]

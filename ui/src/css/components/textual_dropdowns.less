@@ -1,0 +1,26 @@
+.textual-dropdown {
+  position: relative;
+
+  .title {
+    color: @mute-fg;
+  }
+
+  .dropdown-item {
+    white-space: normal;
+    line-height: 16px;
+
+    &:hover {
+      cursor: inherit;
+      background: inherit;
+    }
+  }
+
+  .dropdown-menu {
+    padding: @whitespace/2 0;
+    height: 280px;
+    overflow: auto;
+    width: 220px;
+    margin-right: -85px;
+    margin-top: 0;
+  }
+}

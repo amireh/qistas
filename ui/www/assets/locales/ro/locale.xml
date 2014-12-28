@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale code="ro" generated_at="2013-11-10 08:49:49 UTC">
+  <phrases>
+    <phrase>
+      <key>about</key>
+      <value>About</value>
+    </phrase>
+    <phrase>
+      <key>accept</key>
+      <value>Accept</value>
+    </phrase>
+    <phrase>
+      <key>account</key>
+      <value>Cont</value>
+    </phrase>
+    <phrase>
+      <key>active</key>
+      <value>Active</value>
+    </phrase>
+    <phrase>
+      <key>all_rights_reserved</key>
+      <value>All rights reserved</value>
+    </phrase>
+    <phrase>
+      <key>all_transactions</key>
+      <value>All Transactions</value>
+    </phrase>
+    <phrase>
+      <key>amount</key>
+      <value>Amount</value>
+    </phrase>
+    <phrase>
+      <key>any</key>
+      <value>Any</value>
+    </phrase>
+    <phrase>
+      <key>apple</key>
+      <value>Apple </value>
+    </phrase>
+    <phrase>
+      <key>apply</key>
+      <value>Apply</value>
+    </phrase>
+    <phrase>
+      <key>back</key>
+      <value>Back</value>
+    </phrase>
+    <phrase>
+      <key>bad_date_period</key>
+      <value>That's not a valid time period.</value>
+    </phrase>
+    <phrase>
+      <key>balance</key>
+      <value>Balanță</value>
+    </phrase>
+    <phrase>
+      <key>calendar.apr</key>
+      <value>Apr</value>
+    </phrase>
+    <phrase>
+      <key>calendar.aug</key>
+      <value>Aug</value>
+    </phrase>
+    <phrase>
+      <key>calendar.dec</key>
+      <value>Dec</value>
+    </phrase>
+    <phrase>
+      <key>calendar.feb</key>
+      <value>Feb</value>
+    </phrase>
+    <phrase>
+      <key>calendar.jan</key>
+      <value>Jan</value>
+    </phrase>
+    <phrase>
+      <key>calendar.jul</key>
+      <value>Jul</value>
+    </phrase>
+    <phrase>
+      <key>calendar.jun</key>
+      <value>Jun</value>
+    </phrase>
+    <phrase>
+      <key>calendar.mar</key>
+      <value>Mar</value>
+    </phrase>
+    <phrase>
+      <key>calendar.may</key>
+      <value>May</value>
+    </phrase>
+    <phrase>
+      <key>calendar.nov</key>
+      <value>Nov</value>
+    </phrase>
+    <phrase>
+      <key>calendar.oct</key>
+      <value>Oct</value>
+    </phrase>
+    <phrase>
+      <key>calendar.sep</key>
+      <value>Sep</value>
+    </phrase>
+    <phrase>
+      <key>cancel</key>
+      <value>Cancel</value>
+    </phrase>
+    <phrase>
+      <key>capture_delivery_method</key>
+      <value>Delivery Method</value>
+    </phrase>
+    <phrase>
+      <key>capture_mail</key>
+      <value>Send to email</value>
+    </phrase>
+    <phrase>
+      <key>capture_push</key>
+      <value>Save to computer</value>
+    </phrase>
+    <phrase>
+      <key>categories</key>
+      <value>Categories</value>
+    </phrase>
+    <phrase>
+      <key>category</key>
+      <value>Category</value>
+    </phrase>
+    <phrase>
+      <key>connection_offline</key>
+      <value>Offline</value>
+    </phrase>
+    <phrase>
+      <key>connection_online</key>
+      <value>Online</value>
+    </phrase>
+    <phrase>
+      <key>currencies</key>
+      <value>Currencies</value>
+    </phrase>
+    <phrase>
+      <key>currency</key>
+      <value>Currency</value>
+    </phrase>
+    <phrase>
+      <key>custom</key>
+      <value>Custom</value>
+    </phrase>
+    <phrase>
+      <key>daily</key>
+      <value>Daily</value>
+    </phrase>
+    <phrase>
+      <key>date_period_title</key>
+      <value>Choose a time period</value>
+    </phrase>
+    <phrase>
+      <key>day_of_month</key>
+      <value>Day of Month</value>
+    </phrase>
+    <phrase>
+      <key>demo</key>
+      <value>Demo</value>
+    </phrase>
+    <phrase>
+      <key>due_in</key>
+      <value>Due in</value>
+    </phrase>
+    <phrase>
+      <key>edit</key>
+      <value>Edit</value>
+    </phrase>
+    <phrase>
+      <key>edit_account</key>
+      <value>Edit account</value>
+    </phrase>
+    <phrase>
+      <key>errors.not_found.heading</key>
+      <value>Code 404 - Not Found</value>
+    </phrase>
+    <phrase>
+      <key>errors.not_found.message</key>
+      <value>We were unable to find the page you were looking for.</value>
+    </phrase>
+    <phrase>
+      <key>every</key>
+      <value>Every</value>
+    </phrase>
+    <phrase>
+      <key>expense</key>
+      <value>Expense</value>
+    </phrase>
+    <phrase>
+      <key>expenses</key>
+      <value>Expenses</value>
+    </phrase>
+    <phrase>
+      <key>expenses_and_incomes</key>
+      <value>Expenses &amp;amp; Incomes</value>
+    </phrase>
+    <phrase>
+      <key>faq</key>
+      <value>FAQ</value>
+    </phrase>
+    <phrase>
+      <key>features</key>
+      <value>Features</value>
+    </phrase>
+    <phrase>
+      <key>feedback</key>
+      <value>Feedback</value>
+    </phrase>
+    <phrase>
+      <key>frequency</key>
+      <value>Frequency</value>
+    </phrase>
+    <phrase>
+      <key>frequency_daily</key>
+      <value>Zilnic</value>
+    </phrase>
+    <phrase>
+      <key>frequency_monthly</key>
+      <value>Lunar</value>
+    </phrase>
+    <phrase>
+      <key>frequency_weekly</key>
+      <value>Săptămânal</value>
+    </phrase>
+    <phrase>
+      <key>frequency_yearly</key>
+      <value>Anual</value>
+    </phrase>
+    <phrase>
+      <key>friday</key>
+      <value>Friday</value>
+    </phrase>
+    <phrase>
+      <key>from</key>
+      <value>From</value>
+    </phrase>
+    <phrase>
+      <key>go_back</key>
+      <value>Go to the previous __segment__</value>
+    </phrase>
+    <phrase>
+      <key>go_forward</key>
+      <value>Go to the next __segment__</value>
+    </phrase>
+    <phrase>
+      <key>income</key>
+      <value>Income</value>
+    </phrase>
+    <phrase>
+      <key>incomes</key>
+      <value>Incomes</value>
+    </phrase>
+    <phrase>
+      <key>invalid_transfer_pairing</key>
+      <value>Source and target accounts can not be the same.</value>
+    </phrase>
+    <phrase>
+      <key>last_day</key>
+      <value>Last Day</value>
+    </phrase>
+    <phrase>
+      <key>legend</key>
+      <value>Legend</value>
+    </phrase>
+    <phrase>
+      <key>licenses</key>
+      <value>Licenses</value>
+    </phrase>
+    <phrase>
+      <key>login</key>
+      <value>Login</value>
+    </phrase>
+    <phrase>
+      <key>logout</key>
+      <value>Logout</value>
+    </phrase>
+    <phrase>
+      <key>manage_accounts</key>
+      <value>Administrare conturi</value>
+    </phrase>
+    <phrase>
+      <key>metric</key>
+      <value>Metric</value>
+    </phrase>
+    <phrase>
+      <key>monday</key>
+      <value>Monday</value>
+    </phrase>
+    <phrase>
+      <key>monthly</key>
+      <value>Monthly</value>
+    </phrase>
+    <phrase>
+      <key>months_of_year</key>
+      <value>Month(s) of Year</value>
+    </phrase>
+    <phrase>
+      <key>more</key>
+      <value>More</value>
+    </phrase>
+    <phrase>
+      <key>name</key>
+      <value>Name</value>
+    </phrase>
+    <phrase>
+      <key>new_account</key>
+      <value>Cont nou</value>
+    </phrase>
+    <phrase>
+      <key>new_deposit</key>
+      <value>Track new income</value>
+    </phrase>
+    <phrase>
+      <key>new_transfer</key>
+      <value>Transfer Bancar (în curând)</value>
+    </phrase>
+    <phrase>
+      <key>new_withdrawal</key>
+      <value>Track new expense</value>
+    </phrase>
+    <phrase>
+      <key>next_segment</key>
+      <value>Go to the next __segment__</value>
+    </phrase>
+    <phrase>
+      <key>not_enough_data</key>
+      <value>There isn't enough data for this section.
+</value>
+    </phrase>
+    <phrase>
+      <key>not_verified</key>
+      <value>Not verified</value>
+    </phrase>
+    <phrase>
+      <key>ns_accounts.form.label</key>
+      <value>Account Name</value>
+    </phrase>
+    <phrase>
+      <key>ns_accounts.new_account</key>
+      <value>New account</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.delete_account</key>
+      <value>Removing this account will wipe-out all the expenses, incomes, and recurrings tracked in it. Are you sure you want to do this?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.delete_category</key>
+      <value>Are you sure you want to remove this tag?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.delete_payment_method</key>
+      <value>Are you sure you want to remove this payment method?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.delete_transaction</key>
+      <value>Are you sure you want to delete this transaction?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.delete_user</key>
+      <value>Are you sure you want to un-register from Pibi?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.discarding_editor_changes</key>
+      <value>You will lose all unsaved changes by closing the editor, are you sure you want to continue?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.logging_out</key>
+      <value>Are you sure you want to logout?</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.long_operation</key>
+      <value>This operation may take a long time to complete. Pibi will not be able to respond to your input in the meantime. \n\nAre you sure you want to do this?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_confirmations.reset_account</key>
+      <value>Are you sure you want to reset your account?
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.about.heading</key>
+      <value>About</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.all_changes.heading</key>
+      <value>Changes</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.auth_failure.heading</key>
+      <value>Authentication Failure</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.change_log.heading</key>
+      <value>What's new in __version__</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.close_dialog</key>
+      <value>Close</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.connectivity_error.actions.continue_offline</key>
+      <value>Continue Offline</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.connectivity_error.heading</key>
+      <value>Connectivity Error</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.connectivity_error.message</key>
+      <value>Your connection to the Pibi Cloud has been lost and could not be re-established. Please verify that you are connected to the Internet.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.connectivity_error.offline_available</key>
+      <value>You can choose to continue in Offline mode. You will be able to make transactions, but they will be synced only when you're connected to the Internet again.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.date_period.heading</key>
+      <value>Choose a time period</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.email_delivery_failure.address</key>
+      <value>The address we attempted to contact: &lt;code&gt;__address__&lt;/code&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.email_delivery_failure.contact_support</key>
+      <value>You can try again later, and if the issue still persists, feel free to open a ticket at the &lt;a href="http://support.pibiapp.com"&gt;Support Center&lt;/a&gt;.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.email_delivery_failure.heading</key>
+      <value>Email Delivery Failed</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.email_delivery_failure.message</key>
+      <value>We were unable to deliver the email to your inbox. This might mean that your address is currently unreachable, or that we're having issues with our courier service.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.faq.heading</key>
+      <value>Frequently Asked Questions</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.actions.reload</key>
+      <value>Reload</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.actions.report_issue</key>
+      <value>Report issue</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.actions.wait</key>
+      <value>Wait some more</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.heading</key>
+      <value>Something doesn't look right.</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.message</key>
+      <value>It seems like it's taking too long to load the application data. This could mean one of few things:
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.possible_actions</key>
+      <value>In case of #2 and #3, reloading the page might help, but if it doesn't, please do report this as a bug by pushing the Reload button below.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.possible_cause_1</key>
+      <value>connection to the Pibi Cloud failed while loading
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.possible_cause_2</key>
+      <value>your Internet connection is slow
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.possible_cause_3</key>
+      <value>there's a lot of data to be downloaded
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.frozen.possible_cause_4</key>
+      <value>a bug in the current version of Pibi
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.internal_error.actions.report_issue</key>
+      <value>Notify us</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.internal_error.heading</key>
+      <value>Internal Error</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.internal_error.message</key>
+      <value>An unexpected error has occured while processing your last action. Unfortunately, we were unable to recover from it.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.internal_error.suggestion</key>
+      <value>You can report this issue and notify us about it, or choose to ignore it.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.keyboard.action</key>
+      <value>Action</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.keyboard.context</key>
+      <value>Context</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.keyboard.heading</key>
+      <value>Keyboard Shortcuts</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.keyboard.shortcut</key>
+      <value>Keybinding</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.oauth_failure.actions.signup</key>
+      <value>Sign Up</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.oauth_failure.alternatives</key>
+      <value>Alternatively, you can still sign up by creating a Pibi account or by choosing a different service to sign-up with.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.oauth_failure.message</key>
+      <value>Our servers had an issue authenticating you using your __provider__ account. This could be caused by certain privacy settings which prevented us from creating an account for you, such as your email address not being provided.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.update_available.actions.update</key>
+      <value>Install Update</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.update_available.heading</key>
+      <value>Update Available</value>
+    </phrase>
+    <phrase>
+      <key>ns_dialogs.update_available.message</key>
+      <value>A new version of Pibi is available and has been downloaded, but a restart is required for the changes to take effect.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.heading_monthly</key>
+      <value>Activity for __segment__, &lt;a href="/drilldown/__year__"&gt;__year__&lt;/a&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.heading_yearly</key>
+      <value>Activity for __segment__
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.jump_to_current</key>
+      <value>Go to the current month
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.jump_to_report</key>
+      <value>Go to the Report view for this __segment__
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.title_monthly</key>
+      <value>__month__/__year__ Feed - Pibi
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.title_yearly</key>
+      <value>__year__ Feed - Pibi
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.compact_mode</key>
+      <value>Compact mode</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.editor_options</key>
+      <value>Editor Options</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.filter</key>
+      <value>Filter and search through transactions.</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.group_by_dates</key>
+      <value>Group by dates</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.large_tagbox</key>
+      <value>Large Tagbox</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.options</key>
+      <value>Feed Options</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.show_payment_methods</key>
+      <value>Show payment methods</value>
+    </phrase>
+    <phrase>
+      <key>ns_drilldown.toolbar.use_currency_symbols</key>
+      <value>Use currency symbols (ie: $ and not USD)</value>
+    </phrase>
+    <phrase>
+      <key>ns_filters.by_category</key>
+      <value>Filter By Category</value>
+    </phrase>
+    <phrase>
+      <key>ns_filters.by_month_days</key>
+      <value>Filter By Days Of Month</value>
+    </phrase>
+    <phrase>
+      <key>ns_filters.by_note</key>
+      <value>Filter By Note</value>
+    </phrase>
+    <phrase>
+      <key>ns_filters.by_payment_method</key>
+      <value>Filter By Payment Method</value>
+    </phrase>
+    <phrase>
+      <key>ns_filters.by_type</key>
+      <value>Filter By Type</value>
+    </phrase>
+    <phrase>
+      <key>ns_filters.by_week_days</key>
+      <value>Filter By Days Of Week</value>
+    </phrase>
+    <phrase>
+      <key>ns_filters.inverted</key>
+      <value>Invert results</value>
+    </phrase>
+    <phrase>
+      <key>ns_journal.clean</key>
+      <value>Idle.</value>
+    </phrase>
+    <phrase>
+      <key>ns_journal.committed</key>
+      <value>Synced.</value>
+    </phrase>
+    <phrase>
+      <key>ns_journal.dirty</key>
+      <value>Pending. (1)</value>
+    </phrase>
+    <phrase>
+      <key>ns_journal.dirty_plural</key>
+      <value>Pending. (__count__)</value>
+    </phrase>
+    <phrase>
+      <key>ns_journal.failed</key>
+      <value>Sync failed.</value>
+    </phrase>
+    <phrase>
+      <key>ns_journal.syncing</key>
+      <value>Syncing...</value>
+    </phrase>
+    <phrase>
+      <key>ns_journal.syncing_plural</key>
+      <value>Syncing...</value>
+    </phrase>
+    <phrase>
+      <key>ns_keybindings.delete_transaction</key>
+      <value>Remove the selected transaction.</value>
+    </phrase>
+    <phrase>
+      <key>ns_keybindings.edit_tx</key>
+      <value>Edit the selected transaction.</value>
+    </phrase>
+    <phrase>
+      <key>ns_keybindings.next_tx</key>
+      <value>Select the next transaction.</value>
+    </phrase>
+    <phrase>
+      <key>ns_keybindings.previous_tx</key>
+      <value>Select the previous transaction.</value>
+    </phrase>
+    <phrase>
+      <key>ns_keybindings.undo</key>
+      <value>Undo.</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.motto</key>
+      <value>Personal financing - simple and &lt;em&gt;stylish&lt;/em&gt;.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_cloud.heading</key>
+      <value>Where-ever &lt;strong&gt;you&lt;/strong&gt; are...
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_cloud.p1</key>
+      <value>Whether you're on-the-go using your mobile phone, or on your desktop computer, Pibi is there for you.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_cloud.p2</key>
+      <value>Your devices will automatically sync to the
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_cloud.p3</key>
+      <value>Sigur și simplu</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.currencies.body</key>
+      <value>Choose from up to 166 currencies with exchange rates synchronized on a daily basis.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.currencies.heading</key>
+      <value>Currencies</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.heading</key>
+      <value>&lt;strong&gt;Features&lt;/strong&gt; you'll really dig.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.multiple_accounts.body</key>
+      <value>Manage expenses across multiple accounts, hassle-free.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.multiple_accounts.heading</key>
+      <value>Multiple Accounts</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.offline_mode.body</key>
+      <value>Even if you're not currently connected to the Internet, you can still track expenses and sync them later.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.offline_mode.heading</key>
+      <value>Offline Mode</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.organize.body</key>
+      <value>Stay on top of your financial activity by organizing transactions using tags and payment methods.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.organize.heading</key>
+      <value>Organize</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.recurrings.body</key>
+      <value>Track your rent, car loan, or salary.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.recurrings.heading</key>
+      <value>Recurring Transactions</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.reports.body</key>
+      <value>Find out where most of your money is coming from and going.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.reports.heading</key>
+      <value>Insights and Reports</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.transactions.body</key>
+      <value>Whether you've bought a pair of shiny shoes or have just cashed in from your super-secret client, Pibi helps you track the money easily.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_features.transactions.heading</key>
+      <value>Expenses, incomes, you name it</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.ns_getting_started.heading</key>
+      <value>Get started. It's &lt;strong&gt;free&lt;/strong&gt;!
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_landing.welcome</key>
+      <value>Welcome to &lt;strong&gt;Pibi&lt;/strong&gt;.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_main_menu.changelog</key>
+      <value>Changelog</value>
+    </phrase>
+    <phrase>
+      <key>ns_main_menu.keyboard_shortcuts</key>
+      <value>Keyboard Shortcuts</value>
+    </phrase>
+    <phrase>
+      <key>ns_main_menu.refresh</key>
+      <value>Refresh</value>
+    </phrase>
+    <phrase>
+      <key>ns_main_menu.settings</key>
+      <value>Settings</value>
+    </phrase>
+    <phrase>
+      <key>ns_main_menu.sync</key>
+      <value>Sync</value>
+    </phrase>
+    <phrase>
+      <key>ns_main_menu.undo</key>
+      <value>Undo</value>
+    </phrase>
+    <phrase>
+      <key>ns_navigation.Reports</key>
+      <value>Insights</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_activated</key>
+      <value>Account '__account__' is now active.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_created</key>
+      <value>Contul a fost creat.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_data_fetching_failed</key>
+      <value>Unable to retrieve the account listing. Please verify your Internet connectivity and try again.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_deleted</key>
+      <value>Contul a fost șters.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_deletion_failed</key>
+      <value>Unable to remove account at this time, please try again later.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_reset</key>
+      <value>Your account has been reset, you can now start over.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_reset_failed</key>
+      <value>Your account could not be reset, please try again later, or file a bug ticket in our &lt;a href="http://support.pibiapp.com"&gt;Support Center&lt;/a&gt;.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.account_updated</key>
+      <value>Contul a fost actualizat.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.authorized</key>
+      <value>V-ați autentificat deja!</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.bug_submission_failed</key>
+      <value>We were unable to submit the issue possibly because of a connectivity error. Please take the time to file a bug report via our &lt;a href="http://support.pibiapp.com"&gt;Support Center&lt;/a&gt;.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.bug_submitted</key>
+      <value>Thank you for reporting the issue, our developers have been notified.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.cannot_remove_all_accounts</key>
+      <value>You must have at least one account.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.capture.failed</key>
+      <value>Something went wrong generating the report for you, please try again later.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.capture.generated</key>
+      <value>Your report is ready. Click to save.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.capture.mailed</key>
+      <value>Your report is ready and has been delivered to your email inbox.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.capture.mailing_failed</key>
+      <value>The report could not be emailed to your inbox. Please try again later.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.capture.requested</key>
+      <value>Please wait while we generate the report for you.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.default_currency_changed</key>
+      <value>Your default currency now is __currency__.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.default_currency_changing_failed</key>
+      <value>We were not able to update your default currency, please try again later.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.filters.applied</key>
+      <value>Filters applied.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.filters.reset</key>
+      <value>Filters reset.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.offline_mode</key>
+      <value>Unable to connect to Pibi Cloud, you are now in offline mode.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.password_changed</key>
+      <value>Your password has been updated.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.password_reset.bad_email</key>
+      <value>That email is not registered to any Pibi account.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.password_reset.sent</key>
+      <value>An email is being delivered to your inbox with further instructions, please check your inbox in a minute.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.preferences_updated</key>
+      <value>Updated.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.recurring_activated</key>
+      <value>Recurring __name__ is now active.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.recurring_deactivated</key>
+      <value>Recurring __name__ is now inactive.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.signing_up_failed</key>
+      <value>Something went wrong signing you up, please make sure you've filled out all the required fields and try again.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.transaction_created</key>
+      <value>Transaction created.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.transaction_data_fetching_failed</key>
+      <value>We were unable to retrieve the transaction listing, please try later.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.transaction_offline_data_unavailable</key>
+      <value>No offline data is available for this transaction period.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.transaction_removed</key>
+      <value>Transaction removed.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.transaction_restored</key>
+      <value>Transaction restored.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.transaction_updated</key>
+      <value>Transaction updated.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.unauthorized</key>
+      <value>You must log in first.</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.user_account_deleted</key>
+      <value>You are no longer registered to Pibi. We hope you come back!
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_notifications.user_account_deletion_failed</key>
+      <value>Unable to remove your registration at this time, please try again later.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_queries.feedback_or_help</key>
+      <value>Give feedback or ask for help.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_queries.issue.description</key>
+      <value>To help us help you, please describe in detail what the issue is, and what you were doing when the issue occured.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_queries.issue.include_dump</key>
+      <value>Attach application diagnostic data
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_queries.issue.notify_me</key>
+      <value>Notify me of any follow-ups on this issue
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_queries.issue.summary</key>
+      <value>Brief issue description</value>
+    </phrase>
+    <phrase>
+      <key>ns_recurrings.editor.deactive_warning</key>
+      <value>This recurring transaction is de-activated, choosing to update will automatically re-activate it.</value>
+    </phrase>
+    <phrase>
+      <key>ns_recurrings.editor.flow_type</key>
+      <value>Flow type</value>
+    </phrase>
+    <phrase>
+      <key>ns_recurrings.editor.name</key>
+      <value>Name &amp;amp; Amount</value>
+    </phrase>
+    <phrase>
+      <key>ns_recurrings.editor.name_example</key>
+      <value>Salary</value>
+    </phrase>
+    <phrase>
+      <key>ns_recurrings.heading</key>
+      <value>Recurring Transactions</value>
+    </phrase>
+    <phrase>
+      <key>ns_recurrings.new_recurring</key>
+      <value>New Recurring</value>
+    </phrase>
+    <phrase>
+      <key>ns_recurrings.toolbar.all_frequencies</key>
+      <value>All Frequencies</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.balance_chart_tip_heading</key>
+      <value>How is this useful?</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.balance_chart_tip_monthly</key>
+      <value>&lt;em&gt; This chart plots your balance during the month. A healthy finance state would be represented by the bar being above 0. &lt;/em&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.balance_chart_tip_yearly</key>
+      <value>&lt;em&gt; This chart shows the &lt;strong&gt;difference between incomes and expenses&lt;/strong&gt;. A healthy finance state would be represented by a minimal difference, ie: the height of the red bars should be close to the height of the green ones. &lt;/em&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.heading_monthly</key>
+      <value>Reports for __segment__, &lt;a href="/reports/__year__"&gt;__year__&lt;/a&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.heading_yearly</key>
+      <value>Reports for __segment__
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.payment_methods</key>
+      <value>This table shows how much of your finances were done using each payment method.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.summary_average_monthly</key>
+      <value>Avg. Per Day</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.summary_average_yearly</key>
+      <value>Avg. Per Month</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.summary_monthly</key>
+      <value>This is a summary of the total amount of expenses, incomes, and savings through the month, as well as their average values across the days.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_reports.summary_yearly</key>
+      <value>This is a summary of the total amount of expenses, incomes, and savings through the year, as well as their average values across the months.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.actions.reset_password</key>
+      <value>Reset my password</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.actions.use_existing_account</key>
+      <value>Use an existing account</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.change_password.form.confirm_password</key>
+      <value>Confirm new password</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.change_password.form.new_password</key>
+      <value>Enter new password</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.change_password.form.reset_code</key>
+      <value>Enter RESET CODE</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.change_password.form.submit</key>
+      <value>Change Password</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.change_password.heading</key>
+      <value>Change Password</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.change_password.links</key>
+      <value>&lt;a href="/signup"&gt;Sign up&lt;/a&gt; or back to &lt;a href="/login"&gt;Login&lt;/a&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.login.form.submit</key>
+      <value>Log In</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.login.heading</key>
+      <value>Sign in to Pibi</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.login.link_to_signup</key>
+      <value>Don't have an account? &lt;a href="/signup"&gt;Sign up&lt;/a&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.login.use_account</key>
+      <value>Or, use your Pibi account.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.reset_password.form.email</key>
+      <value>your@email.com</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.reset_password.form.submit</key>
+      <value>Send</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.reset_password.heading</key>
+      <value>Reset Your Password</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.reset_password.links</key>
+      <value>&lt;a href="/signup"&gt;Sign up&lt;/a&gt; or back to &lt;a href="/login"&gt;Login&lt;/a&gt;</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.signup.create_account</key>
+      <value>Or, create one.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.signup.form.email</key>
+      <value>Email</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.signup.form.name</key>
+      <value>Your name</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.signup.form.password</key>
+      <value>Password (7 characters min.)</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.signup.form.submit</key>
+      <value>Sign up</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.signup.heading</key>
+      <value>Sign up to Pibi</value>
+    </phrase>
+    <phrase>
+      <key>ns_sessions.signup.link_to_login</key>
+      <value>Already have an account? &lt;a href="/login"&gt;Log in&lt;/a&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_settings.danger_zone_warning</key>
+      <value>These actions cannot be un-done!
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_settings.delete_user.caption</key>
+      <value>Delete user account</value>
+    </phrase>
+    <phrase>
+      <key>ns_settings.delete_user.description</key>
+      <value>Delete your Pibi user account entirely.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_settings.reset_account.caption</key>
+      <value>Reset account</value>
+    </phrase>
+    <phrase>
+      <key>ns_settings.reset_account.description</key>
+      <value>Taking this action will remove all transactions tracked in your account and allow you to start from a blank state.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tooltips.delete_account</key>
+      <value>Delete this account</value>
+    </phrase>
+    <phrase>
+      <key>ns_tooltips.edit_account</key>
+      <value>Edit this account</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.around_the_interface.description</key>
+      <value>Learn about Pibi's interface elements, how to get to important places, and what the buttons do.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.account.text</key>
+      <value>&lt;p&gt;You can change your email and password here.&lt;/p&gt; &lt;p&gt;You can also link your account to your Facebook and Google accounts so you can log-in to Pibi using any of them!&lt;/p&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.currencies.caption</key>
+      <value>Currencies</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.currencies.text</key>
+      <value>&lt;p&gt;You can track expenses and incomes in many currencies in Pibi, but you must also choose a main currency as explained earlier in the Wizard.&lt;/p&gt; &lt;p&gt;In here you can manage everything related to those currencies.&lt;/p&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.description</key>
+      <value>&lt;p&gt;This tour takes you through your account settings.&lt;/p&gt; &lt;p&gt;See you how you can personalize your account and take advantage of Pibi's customization features.&lt;/p&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.main_menu.text</key>
+      <value>Your account settings can be reached via the Main Menu, right here.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.new_payment_method.text</key>
+      <value>&lt;p&gt;To add a new payment method, you need to:&lt;/p&gt; &lt;ul&gt;
+  &lt;li&gt;choose a meaningful name for it; like MasterCard, or PDA&lt;/li&gt;
+  &lt;li&gt;choose a color to use when reporting transactions made using
+      that payment method&lt;/li&gt;
+&lt;/ul&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.new_tag.text</key>
+      <value>Adding a new tag is as simple as clicking this button, choosing a name, and an icon.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.payment_methods.text</key>
+      <value>Here you get to customize your payment methods.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.settings_link.text</key>
+      <value>Clicking this link will take us to the settings page.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.customizing_your_account.tags.text</key>
+      <value>This section lets you add and customize the tags you use.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.amount</key>
+      <value>Fill this in with how much money you spent.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.currency</key>
+      <value>&lt;p&gt;Choose the currency that you spent the money with.&lt;/p&gt; &lt;p&gt;You can change the available currencies in your &lt;a href="/settings/currencies"&gt;settings&lt;/a&gt;.&lt;/p&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.description</key>
+      <value>Get the action started by learning how to track some money you spent using Pibi.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.editor.caption</key>
+      <value>The Transaction Editor</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.editor.text</key>
+      <value>The editor lets you fill in a number of details, but only the amount of the transaction is required.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.new_expense.text</key>
+      <value>Push the &lt;strong&gt;Expense&lt;/strong&gt; button to show the editor.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.note.caption</key>
+      <value>A note for the future.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.note.text</key>
+      <value>Write a small note to remind you of the expense, like 'Lunch with Pibi'.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.occurence.caption</key>
+      <value>When it happened.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.occurence.text</key>
+      <value>Specify the day you made the expense in. By default, Pibi chooses today's date for you.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.payment_method.caption</key>
+      <value>Specifying a payment method.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.payment_method.text</key>
+      <value>&lt;p&gt;Mark how you paid the money, like by using Cash or a Credit Card.&lt;/p&gt; &lt;p&gt;You can add and change your payment methods in your &lt;a href="/settings/payment_methods"&gt;settings&lt;/a&gt;.&lt;/p&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.save</key>
+      <value>We're done, push this button to save the expense.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.tags.caption</key>
+      <value>Tagging the expense.</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.tags.text</key>
+      <value>&lt;p&gt;Since we've just had lunch together, you should tag the expense as a Food expense.&lt;/p&gt; &lt;p&gt;&lt;em&gt;Tip: you can choose more than one tag when it makes sense.&lt;/em&gt;&lt;/p&gt; &lt;p&gt;Just like currencies and payment methods, you can customize your tags in your &lt;a href="/settings/tags"&gt;settings&lt;/a&gt;.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_tours.tracking_an_expense.view</key>
+      <value>&lt;p&gt;Congratulations! You've now added the expense to your activity feed.&lt;/p&gt; &lt;p&gt;Double-clicking on the transaction allows you to edit or remove it, using the editor we just learned how to use.&lt;/p&gt; &lt;p&gt;&lt;em&gt;On mobile and tablet, you can perform a swipe gesture to the left or right instead of clicking.&lt;/em&gt;&lt;/p&gt;
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_transfers.source_account</key>
+      <value>From</value>
+    </phrase>
+    <phrase>
+      <key>ns_transfers.target_account</key>
+      <value>To</value>
+    </phrase>
+    <phrase>
+      <key>ns_transfers.transfer</key>
+      <value>Transfer</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.bad_amount</key>
+      <value>Amount must be a positive number.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.bad_amount</key>
+      <value>Amount must be a positive number.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.missing_every</key>
+      <value>You must specify how often the recurrence pattern should be applied.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.missing_frequency</key>
+      <value>No recurrence pattern specified. Available patterns are: daily, weekly, monthly, and yearly.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.missing_monthly_days</key>
+      <value>Monthly recurrence pattern requires at least one day of the month to track the transaction on.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.missing_note</key>
+      <value>You must assign a name to this recurring.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.missing_weekly_days</key>
+      <value>Weekly recurrence pattern requires the days of the week the transaction should be tracked on.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.missing_yearly_day</key>
+      <value>Yearly recurrence pattern requires the day of the month to track the transaction on.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_validations.recurrings.missing_yearly_months</key>
+      <value>Yearly recurrence pattern requires at least one month of the year to track the transaction on.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.account_picker.manage</key>
+      <value>Manage Accounts</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.bug_reporter.details</key>
+      <value>Details</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.bug_reporter.form.details</key>
+      <value>To help us help you, please describe in detail what the issue is, and what you were doing when the issue occured.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.bug_reporter.form.include_dump</key>
+      <value>Attach application diagnostic data
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.bug_reporter.form.notify_me</key>
+      <value>Notify me of any follow-ups on this issue
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.bug_reporter.form.summary</key>
+      <value>Brief issue description</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.bug_reporter.heading</key>
+      <value>Report an Issue</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.bug_reporter.summary</key>
+      <value>Summary</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.category_editor.add_another</key>
+      <value>Add another tag</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.currency_listing.exchange_rate</key>
+      <value>Exchange Rate</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.currency_listing.filter_by_iso</key>
+      <value>Filter (by ISO code): USD</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.currency_listing.heading</key>
+      <value>Available Currencies</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.currency_listing.iso_code</key>
+      <value>ISO Code</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.currency_listing.selection_message</key>
+      <value>Select the currencies you wish to use for your transactions. Currently, we support __count__ currencies.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.currency_listing.symbol</key>
+      <value>Symbol</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.currency_listing.sync_message</key>
+      <value>Our servers synchronize currency exchange rates &lt;strong&gt;on a daily basis &lt;/strong&gt;. You can find the current exchange rates beside the currency ISO code and symbol.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.default_currency.description</key>
+      <value>The default currency you choose will be used to display your balance as well as be automatically selected whenever you create a new transaction.
+</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.default_currency.heading</key>
+      <value>Default Account Currency</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.password_changer.confirm_password</key>
+      <value>Confirm new password</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.password_changer.current_password</key>
+      <value>Enter current password</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.password_changer.new_password</key>
+      <value>Enter new password</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.password_changer.submit</key>
+      <value>Change Password</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.payment_method_editor.choose_color</key>
+      <value>Choose a color</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.payment_method_editor.choose_name</key>
+      <value>Choose a name</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.payment_method_editor.edit_payment_method</key>
+      <value>Edit Payment Method</value>
+    </phrase>
+    <phrase>
+      <key>ns_widgets.payment_method_editor.new_payment_method</key>
+      <value>New Payment Method</value>
+    </phrase>
+    <phrase>
+      <key>number_of_transactions</key>
+      <value>Number of Transactions</value>
+    </phrase>
+    <phrase>
+      <key>occured_on</key>
+      <value>Occured on</value>
+    </phrase>
+    <phrase>
+      <key>offline_data</key>
+      <value>This data is as accurate and up-to-date as the last time you viewed it online on this device.
+</value>
+    </phrase>
+    <phrase>
+      <key>partners</key>
+      <value>Pibi's delightful partners:
+</value>
+    </phrase>
+    <phrase>
+      <key>payment_method</key>
+      <value>Payment Method</value>
+    </phrase>
+    <phrase>
+      <key>payment_methods</key>
+      <value>Payment Methods</value>
+    </phrase>
+    <phrase>
+      <key>pibi</key>
+      <value>Pibi</value>
+    </phrase>
+    <phrase>
+      <key>pibi_cloud</key>
+      <value>Pibi Cloud</value>
+    </phrase>
+    <phrase>
+      <key>previous_segment</key>
+      <value>Go to the previous __segment__</value>
+    </phrase>
+    <phrase>
+      <key>privacy</key>
+      <value>Privacy</value>
+    </phrase>
+    <phrase>
+      <key>recurrence</key>
+      <value>Recurrence</value>
+    </phrase>
+    <phrase>
+      <key>recurrence_daily</key>
+      <value>Zile</value>
+    </phrase>
+    <phrase>
+      <key>recurrence_monthly</key>
+      <value>Luni</value>
+    </phrase>
+    <phrase>
+      <key>recurrence_weekly</key>
+      <value>Săptămâni</value>
+    </phrase>
+    <phrase>
+      <key>recurrence_yearly</key>
+      <value>Ani</value>
+    </phrase>
+    <phrase>
+      <key>resend</key>
+      <value>(Resend)</value>
+    </phrase>
+    <phrase>
+      <key>reset</key>
+      <value>Reset</value>
+    </phrase>
+    <phrase>
+      <key>saturday</key>
+      <value>Saturday</value>
+    </phrase>
+    <phrase>
+      <key>save</key>
+      <value>Save</value>
+    </phrase>
+    <phrase>
+      <key>save_expense</key>
+      <value>Save Expense</value>
+    </phrase>
+    <phrase>
+      <key>save_income</key>
+      <value>Save Income</value>
+    </phrase>
+    <phrase>
+      <key>savings</key>
+      <value>Savings</value>
+    </phrase>
+    <phrase>
+      <key>security</key>
+      <value>Security</value>
+    </phrase>
+    <phrase>
+      <key>select_months</key>
+      <value>Select month(s)</value>
+    </phrase>
+    <phrase>
+      <key>sign_up</key>
+      <value>Sign up</value>
+    </phrase>
+    <phrase>
+      <key>signup</key>
+      <value>Sign Up</value>
+    </phrase>
+    <phrase>
+      <key>social_pibi</key>
+      <value>Social Pibi</value>
+    </phrase>
+    <phrase>
+      <key>summary</key>
+      <value>Summary</value>
+    </phrase>
+    <phrase>
+      <key>sunday</key>
+      <value>Sunday</value>
+    </phrase>
+    <phrase>
+      <key>support</key>
+      <value>Support</value>
+    </phrase>
+    <phrase>
+      <key>support_center</key>
+      <value>Support Center</value>
+    </phrase>
+    <phrase>
+      <key>tag</key>
+      <value>Tag</value>
+    </phrase>
+    <phrase>
+      <key>tags</key>
+      <value>Tags</value>
+    </phrase>
+    <phrase>
+      <key>this_month</key>
+      <value>Luna curentă</value>
+    </phrase>
+    <phrase>
+      <key>thursday</key>
+      <value>Thursday</value>
+    </phrase>
+    <phrase>
+      <key>to</key>
+      <value>To</value>
+    </phrase>
+    <phrase>
+      <key>tos</key>
+      <value>Terms of Service</value>
+    </phrase>
+    <phrase>
+      <key>total</key>
+      <value>Total</value>
+    </phrase>
+    <phrase>
+      <key>transactions</key>
+      <value>1 transaction</value>
+    </phrase>
+    <phrase>
+      <key>transactions_plural</key>
+      <value>__count__ tranzacții</value>
+    </phrase>
+    <phrase>
+      <key>transfer_complete</key>
+      <value>Transfer complet.</value>
+    </phrase>
+    <phrase>
+      <key>transfer_updated</key>
+      <value>Transfer actualizat.</value>
+    </phrase>
+    <phrase>
+      <key>true</key>
+      <value>adevărat</value>
+    </phrase>
+    <phrase>
+      <key>tuesday</key>
+      <value>Tuesday</value>
+    </phrase>
+    <phrase>
+      <key>untagged</key>
+      <value>Untagged</value>
+    </phrase>
+    <phrase>
+      <key>update</key>
+      <value>Update</value>
+    </phrase>
+    <phrase>
+      <key>update_expense</key>
+      <value>Update Expense</value>
+    </phrase>
+    <phrase>
+      <key>update_income</key>
+      <value>Update Income</value>
+    </phrase>
+    <phrase>
+      <key>user_account</key>
+      <value>User Account</value>
+    </phrase>
+    <phrase>
+      <key>warning</key>
+      <value>Atenție</value>
+    </phrase>
+    <phrase>
+      <key>web_recurrings</key>
+      <value>You can set up transactions that recur automatically, like your salary, loans, and bills. Visit Pibi on the Web from a desktop computer or a laptop to manage your recurrings.
+</value>
+    </phrase>
+    <phrase>
+      <key>web_reports</key>
+      <value>Visit Pibi on the Web from a desktop computer or a laptop to gain access to financial insights and reports.
+</value>
+    </phrase>
+    <phrase>
+      <key>wednesday</key>
+      <value>Wednesday</value>
+    </phrase>
+    <phrase>
+      <key>week</key>
+      <value>Săptămâna__number__</value>
+    </phrase>
+    <phrase>
+      <key>weekdays</key>
+      <value>Weekdays</value>
+    </phrase>
+    <phrase>
+      <key>weekly</key>
+      <value>Weekly</value>
+    </phrase>
+    <phrase>
+      <key>yearly</key>
+      <value>Yearly</value>
+    </phrase>
+    <phrase>
+      <key>yes</key>
+      <value>Yes</value>
+    </phrase>
+  </phrases>
+</locale>

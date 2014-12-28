@@ -1,0 +1,72 @@
+@toolbar-font-size: 11px;
+@toolbar-icon-size: 16px;
+
+.toolbar {
+  // line-height: 28px;
+  // height: @desktop-actionbar-height;
+
+
+  .pull-right {
+    float: right;
+  }
+
+  [disabled] {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .dropdown-toggle.with-caret {
+    &:after {
+      .iconify(@icon-arrow-down);
+      font-size: @toolbar-icon-size;
+    }
+  }
+
+  .spacer {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+.toolbar-btn {
+  .appearance(none);
+
+  display: inline-block;
+  text-align: center;
+  border: none;
+  padding: 0 @whitespace;
+  height: @toolbar-button-height;
+  line-height: @toolbar-button-height - 1px;
+  margin: 0 5px 0 0;
+  background: #f4f4f4;
+  // box-shadow: -1px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  color: inherit;
+
+  &.active {
+    text-decoration: none;
+    background: #fff;
+  }
+
+  &:active, &.active {
+    box-shadow: 0 0 1px #888 inset;
+    outline: none;
+    cursor: auto;
+  }
+
+  [class*="icon"]:before,
+  [class*="emblem"]:before {
+    font-size: @toolbar-icon-size;
+  }
+
+  .icon-plus:before { font-size: 11px; }
+
+  .desktop-only({
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      background: #fff;
+    }
+  });
+}

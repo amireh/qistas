@@ -1,0 +1,286 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+@aboveandbeyond-x: 24px;
+@aboveandbeyond-y: 0px;
+@aboveandbeyond-offset-x: -24px;
+@aboveandbeyond-offset-y: 0px;
+@aboveandbeyond-width: 20px;
+@aboveandbeyond-height: 20px;
+@aboveandbeyond-total-width: 116px;
+@aboveandbeyond-total-height: 116px;
+@aboveandbeyond-image: '/assets/images/theme-sprite.png';
+@aboveandbeyond: 24px 0px -24px 0px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@abstract1-x: 0px;
+@abstract1-y: 72px;
+@abstract1-offset-x: 0px;
+@abstract1-offset-y: -72px;
+@abstract1-width: 20px;
+@abstract1-height: 20px;
+@abstract1-total-width: 116px;
+@abstract1-total-height: 116px;
+@abstract1-image: '/assets/images/theme-sprite.png';
+@abstract1: 0px 72px 0px -72px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@abstract2-x: 0px;
+@abstract2-y: 24px;
+@abstract2-offset-x: 0px;
+@abstract2-offset-y: -24px;
+@abstract2-width: 20px;
+@abstract2-height: 20px;
+@abstract2-total-width: 116px;
+@abstract2-total-height: 116px;
+@abstract2-image: '/assets/images/theme-sprite.png';
+@abstract2: 0px 24px 0px -24px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@abstract3-x: 24px;
+@abstract3-y: 24px;
+@abstract3-offset-x: -24px;
+@abstract3-offset-y: -24px;
+@abstract3-width: 20px;
+@abstract3-height: 20px;
+@abstract3-total-width: 116px;
+@abstract3-total-height: 116px;
+@abstract3-image: '/assets/images/theme-sprite.png';
+@abstract3: 24px 24px -24px -24px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@abstract4-x: 48px;
+@abstract4-y: 0px;
+@abstract4-offset-x: -48px;
+@abstract4-offset-y: 0px;
+@abstract4-width: 20px;
+@abstract4-height: 20px;
+@abstract4-total-width: 116px;
+@abstract4-total-height: 116px;
+@abstract4-image: '/assets/images/theme-sprite.png';
+@abstract4: 48px 0px -48px 0px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@abstract5-x: 48px;
+@abstract5-y: 24px;
+@abstract5-offset-x: -48px;
+@abstract5-offset-y: -24px;
+@abstract5-width: 20px;
+@abstract5-height: 20px;
+@abstract5-total-width: 116px;
+@abstract5-total-height: 116px;
+@abstract5-image: '/assets/images/theme-sprite.png';
+@abstract5: 48px 24px -48px -24px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@abstract6-x: 0px;
+@abstract6-y: 48px;
+@abstract6-offset-x: 0px;
+@abstract6-offset-y: -48px;
+@abstract6-width: 20px;
+@abstract6-height: 20px;
+@abstract6-total-width: 116px;
+@abstract6-total-height: 116px;
+@abstract6-image: '/assets/images/theme-sprite.png';
+@abstract6: 0px 48px 0px -48px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@alone-x: 24px;
+@alone-y: 48px;
+@alone-offset-x: -24px;
+@alone-offset-y: -48px;
+@alone-width: 20px;
+@alone-height: 20px;
+@alone-total-width: 116px;
+@alone-total-height: 116px;
+@alone-image: '/assets/images/theme-sprite.png';
+@alone: 24px 48px -24px -48px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@azura-x: 48px;
+@azura-y: 48px;
+@azura-offset-x: -48px;
+@azura-offset-y: -48px;
+@azura-width: 20px;
+@azura-height: 20px;
+@azura-total-width: 116px;
+@azura-total-height: 116px;
+@azura-image: '/assets/images/theme-sprite.png';
+@azura: 48px 48px -48px -48px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@diet-x: 72px;
+@diet-y: 0px;
+@diet-offset-x: -72px;
+@diet-offset-y: 0px;
+@diet-width: 20px;
+@diet-height: 20px;
+@diet-total-width: 116px;
+@diet-total-height: 116px;
+@diet-image: '/assets/images/theme-sprite.png';
+@diet: 72px 0px -72px 0px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@eternal-x: 72px;
+@eternal-y: 24px;
+@eternal-offset-x: -72px;
+@eternal-offset-y: -24px;
+@eternal-width: 20px;
+@eternal-height: 20px;
+@eternal-total-width: 116px;
+@eternal-total-height: 116px;
+@eternal-image: '/assets/images/theme-sprite.png';
+@eternal: 72px 24px -72px -24px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@frostbite-x: 72px;
+@frostbite-y: 48px;
+@frostbite-offset-x: -72px;
+@frostbite-offset-y: -48px;
+@frostbite-width: 20px;
+@frostbite-height: 20px;
+@frostbite-total-width: 116px;
+@frostbite-total-height: 116px;
+@frostbite-image: '/assets/images/theme-sprite.png';
+@frostbite: 72px 48px -72px -48px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@gaze-x: 0px;
+@gaze-y: 0px;
+@gaze-offset-x: 0px;
+@gaze-offset-y: 0px;
+@gaze-width: 20px;
+@gaze-height: 20px;
+@gaze-total-width: 116px;
+@gaze-total-height: 116px;
+@gaze-image: '/assets/images/theme-sprite.png';
+@gaze: 0px 0px 0px 0px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@oli-x: 24px;
+@oli-y: 72px;
+@oli-offset-x: -24px;
+@oli-offset-y: -72px;
+@oli-width: 20px;
+@oli-height: 20px;
+@oli-total-width: 116px;
+@oli-total-height: 116px;
+@oli-image: '/assets/images/theme-sprite.png';
+@oli: 24px 72px -24px -72px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@passion-x: 48px;
+@passion-y: 72px;
+@passion-offset-x: -48px;
+@passion-offset-y: -72px;
+@passion-width: 20px;
+@passion-height: 20px;
+@passion-total-width: 116px;
+@passion-total-height: 116px;
+@passion-image: '/assets/images/theme-sprite.png';
+@passion: 48px 72px -48px -72px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@saucywood-x: 72px;
+@saucywood-y: 72px;
+@saucywood-offset-x: -72px;
+@saucywood-offset-y: -72px;
+@saucywood-width: 20px;
+@saucywood-height: 20px;
+@saucywood-total-width: 116px;
+@saucywood-total-height: 116px;
+@saucywood-image: '/assets/images/theme-sprite.png';
+@saucywood: 72px 72px -72px -72px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@space-x: 96px;
+@space-y: 0px;
+@space-offset-x: -96px;
+@space-offset-y: 0px;
+@space-width: 20px;
+@space-height: 20px;
+@space-total-width: 116px;
+@space-total-height: 116px;
+@space-image: '/assets/images/theme-sprite.png';
+@space: 96px 0px -96px 0px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@vanilla-x: 96px;
+@vanilla-y: 24px;
+@vanilla-offset-x: -96px;
+@vanilla-offset-y: -24px;
+@vanilla-width: 20px;
+@vanilla-height: 20px;
+@vanilla-total-width: 116px;
+@vanilla-total-height: 116px;
+@vanilla-image: '/assets/images/theme-sprite.png';
+@vanilla: 96px 24px -96px -24px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@vibrant1-x: 96px;
+@vibrant1-y: 48px;
+@vibrant1-offset-x: -96px;
+@vibrant1-offset-y: -48px;
+@vibrant1-width: 20px;
+@vibrant1-height: 20px;
+@vibrant1-total-width: 116px;
+@vibrant1-total-height: 116px;
+@vibrant1-image: '/assets/images/theme-sprite.png';
+@vibrant1: 96px 48px -96px -48px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@vibrant2-x: 96px;
+@vibrant2-y: 72px;
+@vibrant2-offset-x: -96px;
+@vibrant2-offset-y: -72px;
+@vibrant2-width: 20px;
+@vibrant2-height: 20px;
+@vibrant2-total-width: 116px;
+@vibrant2-total-height: 116px;
+@vibrant2-image: '/assets/images/theme-sprite.png';
+@vibrant2: 96px 72px -96px -72px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@vibrant3-x: 0px;
+@vibrant3-y: 96px;
+@vibrant3-offset-x: 0px;
+@vibrant3-offset-y: -96px;
+@vibrant3-width: 20px;
+@vibrant3-height: 20px;
+@vibrant3-total-width: 116px;
+@vibrant3-total-height: 116px;
+@vibrant3-image: '/assets/images/theme-sprite.png';
+@vibrant3: 0px 96px 0px -96px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@vibrant4-x: 24px;
+@vibrant4-y: 96px;
+@vibrant4-offset-x: -24px;
+@vibrant4-offset-y: -96px;
+@vibrant4-width: 20px;
+@vibrant4-height: 20px;
+@vibrant4-total-width: 116px;
+@vibrant4-total-height: 116px;
+@vibrant4-image: '/assets/images/theme-sprite.png';
+@vibrant4: 24px 96px -24px -96px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@vibrant5-x: 48px;
+@vibrant5-y: 96px;
+@vibrant5-offset-x: -48px;
+@vibrant5-offset-y: -96px;
+@vibrant5-width: 20px;
+@vibrant5-height: 20px;
+@vibrant5-total-width: 116px;
+@vibrant5-total-height: 116px;
+@vibrant5-image: '/assets/images/theme-sprite.png';
+@vibrant5: 48px 96px -48px -96px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+@woody-x: 72px;
+@woody-y: 96px;
+@woody-offset-x: -72px;
+@woody-offset-y: -96px;
+@woody-width: 20px;
+@woody-height: 20px;
+@woody-total-width: 116px;
+@woody-total-height: 116px;
+@woody-image: '/assets/images/theme-sprite.png';
+@woody: 72px 96px -72px -96px 20px 20px 116px 116px '/assets/images/theme-sprite.png';
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: ~`"@{sprite}".split(', ')[4]`;
+}
+
+.sprite-height(@sprite) {
+  height: ~`"@{sprite}".split(', ')[5]`;
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: ~`"@{sprite}".split(', ')[2]`;
+  @sprite-offset-y: ~`"@{sprite}".split(', ')[3]`;
+  background-position: @sprite-offset-x  @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: ~`"@{sprite}".split(', ')[8].slice(1, -2)`;
+  background-image: url(@sprite-image);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}

@@ -1,0 +1,58 @@
+@media screen and (max-width: 480px) {
+  #content {
+    position: absolute;
+    top: @mobile-content-offset-top;
+    right: @mobile-content-offset-right;
+    bottom: @mobile-content-offset-bottom;
+    left: @mobile-content-offset-left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 @mobile-whitespace;
+  }
+
+  body.with-sidebar #content {
+    display: none;
+  }
+}
+
+body.guest #content {
+  .container;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+  body.member #content {
+    padding: @whitespace;
+    padding-top: @desktop-content-top-offset;
+  }
+}
+
+.alert {
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  white-space: normal;
+
+  > i[class^="icon"] {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.qtip .alert {
+  line-height: 1.4;
+}
+
+.alert-warning {
+  background: beige;
+  color: #555;
+}
+
+footer.actions {
+  border-top: 1px solid #ddd;
+  padding: 10px 0 0 0;
+  margin: 10px 0 0 0;
+  text-align: right;
+}

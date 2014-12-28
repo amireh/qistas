@@ -1,0 +1,55 @@
+@media screen and (min-width: 769px) {
+  #MainMenu {
+    .statusbar-btn {
+      padding: 0 @whitespace 0 0;
+      margin-right: 0;
+    }
+
+    .MainMenu_Gravatar {
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+      vertical-align: middle;
+      position: relative;
+      box-shadow: -1px 2px 3px 0 rgba(0, 0,0,0.25);
+      border-radius: 3px;
+      overflow: hidden;
+
+      img {
+        position: relative;;
+        z-index: -1;
+      }
+    }
+
+    .MainMenu_FirstName {
+      .inline();
+      .ellipsify();
+      max-width: 100px;
+      vertical-align: middle;
+    }
+
+    .dropdown-menu {
+      border-radius: 3px;
+    }
+
+    .dropdown.open {
+      .statusbar-btn {
+        padding-right: 0;
+        background-color: transparent;
+      }
+
+      .MainMenu_Gravatar {
+        background-color: transparent;
+      }
+
+      .MainMenu_FirstName {
+        color: white;
+        max-width: 15px;
+      }
+    }
+
+    .dropdown-item[disabled] {
+      .disabled();
+    }
+  }
+}

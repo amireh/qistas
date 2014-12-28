@@ -1,0 +1,9 @@
+{
+  "note": "Dropbox",
+  "type": "expense",
+  "amount": 10,
+  "currency": "JOD",
+  "currency_rate": 0.7,
+  "category_ids": [],
+  "payment_method_id": null
+}

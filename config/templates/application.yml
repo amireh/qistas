@@ -1,0 +1,8 @@
+development: &common
+  application:
+
+production:
+  <<: *common
+
+test:
+  <<: *common

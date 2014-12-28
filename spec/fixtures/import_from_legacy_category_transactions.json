@@ -1,0 +1,64 @@
+{
+  "category_transactions": [
+    {
+      "category_id": 125,
+      "transaction_id": 1851
+    },
+    {
+      "category_id": 125,
+      "transaction_id": 1854
+    },
+    {
+      "category_id": 125,
+      "transaction_id": 1857
+    },
+    {
+      "category_id": 125,
+      "transaction_id": 2803
+    },
+    {
+      "category_id": 125,
+      "transaction_id": 2998
+    },
+    {
+      "category_id": 162,
+      "transaction_id": 10216
+    },
+    {
+      "category_id": 124565,
+      "transaction_id": 13321
+    },
+    {
+      "category_id": 47,
+      "transaction_id": 19127
+    },
+    {
+      "category_id": 7,
+      "transaction_id": 25447
+    },
+    {
+      "category_id": 356,
+      "transaction_id": 13321
+    },
+    {
+      "category_id": 125,
+      "transaction_id": 30351
+    },
+    {
+      "category_id": 6,
+      "transaction_id": 34833
+    },
+    {
+      "category_id": 279,
+      "transaction_id": 35683
+    },
+    {
+      "category_id": 6,
+      "transaction_id": 36027
+    },
+    {
+      "category_id": 162,
+      "transaction_id": 36233
+    }
+  ]
+}

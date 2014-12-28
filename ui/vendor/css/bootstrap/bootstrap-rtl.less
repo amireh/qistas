@@ -1,0 +1,46 @@
+body.rtl {
+  .dropdown .caret {
+    margin-right: 2px;
+    margin-left: 0;
+  }
+  .dropdown-submenu > .dropdown-menu {
+    right: 100%;
+    left: auto;
+    margin-right: -1px;
+    margin-left: 0;
+  }
+  .dropdown-submenu > a:after,
+  .dropdown-submenu > label:after {
+    content: "\e009";
+    right: auto;
+    left: 0;
+  }
+
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+
+    &:before {
+      right: 9px;
+      left: auto;
+    }
+    &:after {
+      right: 10px;
+      left: auto;
+    }
+
+    &.pull-right {
+      right: auto;
+      left: 0;
+
+      &:before {
+        left: 7px;
+        right: auto;
+      }
+      &:after {
+        left: 8px;
+        right: auto;
+      }
+    }
+  }
+}

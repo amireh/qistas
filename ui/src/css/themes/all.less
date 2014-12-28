@@ -1,0 +1,55 @@
+body.member {
+  &:before {
+    content: '';
+    background-color: #fafafa;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* fades the wallpaper out a bit */
+.fade-fill {
+  // &:after {
+  //   .fullscreen();
+  //   content: "";
+  //   background: rgba(0,0,0,0.5);
+  //   z-index: -99;
+  // }
+}
+
+@import "themes/diet";
+@import "themes/sprite";
+@import "themes/compiled";
+
+body.member {
+  &.theme-aboveandbeyond {
+    .fade-fill;
+  }
+
+  &.theme-alone {
+    .fade-fill;
+  }
+
+  &.theme-eternal {
+    .fade-fill;
+  }
+
+  &.theme-vanilla {
+    .desktop-only({
+      #statusbar, #toolbar {
+        // background-color: rgba(255,255,255,0.8);
+      }
+    });
+  }
+}
+
+body.member.theme-vanilla:before {
+  background-image: none;
+}

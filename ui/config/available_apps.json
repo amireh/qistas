@@ -1,0 +1,30 @@
+[
+  {
+    "name": "dashboard",
+    "title": "Dashboard",
+    "href": "/dashboard",
+    "navigation_link": false
+  },
+  {
+    "name": "guest",
+    "title": "Guest",
+    "href": "/",
+    "navigation_link": false,
+    "top_level": true,
+    "entry_scripts": [
+      "welcome",
+      "about",
+      "privacy",
+      "terms",
+      "security",
+      "login",
+      "signup",
+      "reset_password",
+      "change_password"
+    ]
+  },
+  {
+    "name": "development",
+    "development_only": true
+  }
+]

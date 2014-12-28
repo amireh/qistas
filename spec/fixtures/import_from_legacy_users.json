@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ahmad Amireh",
+      "provider": "pibi",
+      "uid": "49d184d0-3b20-0130-05bd-723c91df1bbd",
+      "password": "f90359b22e2552b420ec8f8c672208865b8bc737",
+      "email": "ahmad@amireh.net",
+      "email_verified": true,
+      "settings": "{\"workspace\":{\"animable\":true},\"drilldown\":{\"show_segment_headings\":true,\"show_payment_methods\":true,\"use_currency_symbols\":false,\"compact_mode\":false,\"large_cpicker\":true},\"keybindings\":{\"drilldown\":{\"new_deposit\":\"ctrl+alt+d\",\"new_withdrawal\":\"ctrl+alt+e\",\"next\":\"ctrl+alt+right\",\"back\":\"ctrl+alt+left\",\"toggle_headings\":\"ctrl+alt+t\"},\"editor\":{\"save\":\"ctrl+alt+s\"}},\"skin\":\"skin-classic\",\"currencies\":[\"EUR\",\"JOD\",\"USD\"],\"guidelings\":{\"drilldown\":{\"tx_committed\":true}},\"hsw\":true,\"theme\":\"theme-classic\"}",
+      "auto_password": false,
+      "created_at": "2013-01-07T12:47:54+00:00",
+      "link_id": null
+    },
+    {
+      "id": 2,
+      "name": "hanimorrar",
+      "provider": "pibi",
+      "uid": "506e7680-3b20-0130-05bd-723c91df1bbd",
+      "password": "7f3b4bddb31a3906c4a8923d413244f63fdd4cbd",
+      "email": "hanimorrar@gmail.com",
+      "email_verified": true,
+      "settings": "{\"hsw\":true,\"drilldown\":{\"show_segment_headings\":true,\"show_payment_methods\":true,\"use_currency_symbols\":false,\"compact_mode\":false,\"large_cpicker\":false},\"theme\":\"theme-woody theme-dark\",\"guidelings\":{\"drilldown\":{\"tx_committed\":true}},\"currencies\":[\"EUR\",\"JOD\",\"USD\"]}",
+      "auto_password": false,
+      "created_at": "2013-01-07T12:48:05+00:00",
+      "link_id": null
+    }
+  ]
+}
