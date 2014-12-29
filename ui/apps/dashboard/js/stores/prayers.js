@@ -4,17 +4,11 @@ define(function(require) {
   var K = require('constants');
   var _ = require('lodash');
   var convertCase = require('util/convert_case');
+  var PrayerModel = require('../models/prayer');
   var pick = _.pick;
   var range = _.range;
   var where = _.where;
 
-  var PrayerModel = Pixy.Model.extend({
-    parse: function(payload) {
-      payload.normalized_date = moment.utc(payload.date).format(K.API_DATE_FORMAT);
-
-      return payload;
-    }
-  });
 
   var PrayerCollection = Pixy.Collection.extend({
     model: PrayerModel,
@@ -103,6 +97,18 @@ define(function(require) {
           collection.sort();
           onChange();
         }, onError);
+      },
+
+      destroy: function(payload, onChange, onError) {
+        var collection = this.state.prayers;
+        var type = payload.type.toLowerCase();
+        var model = collection.findByDate(payload.date, { type: type });
+
+        if (!model) {
+          return onError("No prayer tracked of type " + payload.type + " in " + payload.date);
+        }
+
+        model.destroy({ wait: true, validate: false }).then(onChange, onError);
       }
     }
   });

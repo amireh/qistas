@@ -6,6 +6,10 @@ define(function(require) {
   var moment = require('moment');
   var PrayerEditorMixin = require('jsx!../mixins/prayer_editor');
   var Emblem = require('jsx!./index/prayer_emblem');
+  var Today = require('jsx!./index/today');
+  var ScoreGraph = require('jsx!./index/score_graph');
+  var Score = require('jsx!./index/score');
+  var t = require('i18n!dashboard');
 
   var findWhere = _.findWhere;
 
@@ -14,8 +18,12 @@ define(function(require) {
 
     getDefaultProps: function() {
       return {
+        prayers: [],
         monthPrayers: [],
-        meta: {}
+        meta: {
+          daysInMonth: 1
+        },
+        user: {}
       };
     },
 
@@ -26,10 +34,28 @@ define(function(require) {
 
     render: function() {
       var props = this.props;
+      var meta = props.meta;
 
       return(
         <div>
           {this.renderEditor()}
+
+          <Today
+            prayers={this.props.todayPrayers}
+            date={moment().format(K.API_DATE_FORMAT)} />
+
+          <h2>
+            {t('headers.this_month', 'This Month')}
+            {' '}
+
+            <Score
+              prayers={props.prayers}
+              nrDays={meta.daysInMonth} />
+          </h2>
+
+          <ScoreGraph
+            prayers={this.props.prayers}
+            maxScore={meta.maxDailyPrayerScore} />
 
           <table className="table">
             <thead>

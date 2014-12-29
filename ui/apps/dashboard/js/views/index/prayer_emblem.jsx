@@ -10,7 +10,7 @@ define(function(require) {
 
       if (this.props.score) {
         className['is-scored'] = true;
-        normalizedScore = normalizedScore * 100;
+        normalizedScore = Math.round(normalizedScore * 100);
 
         if (normalizedScore < 25) {
           className['score-poor'] = true;
@@ -31,7 +31,7 @@ define(function(require) {
 
       return (
         <span className={classSet(className)}>
-          {this.props.score || 0}
+          {normalizedScore || 0}
         </span>
       );
     }

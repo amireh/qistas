@@ -41,6 +41,9 @@ define(function(require) {
       if (this.props.icon) {
         klasses[this.props.icon] = true;
       }
+      else {
+        klasses['no-icon'] = true;
+      }
 
       return (
         <a
@@ -89,12 +92,10 @@ define(function(require) {
       return(
         <div className="group">
           <Link
-            icon="icon-home"
             href={linkTo('/dashboard')}
             children={t('overview', 'Overview')} />
 
           <Link
-            icon="icon-calendar"
             href={linkTo('/scoreboard')}
             children={t('scoreboard', 'Scoreboard')} />
 

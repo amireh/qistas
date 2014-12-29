@@ -5,7 +5,6 @@ define(function(require) {
   var SessionStore = require('stores/sessions');
   var Notifications = require('stores/notifications');
   var ActionCenter = require('stores/action_center');
-  var Operations = require('stores/operations');
   var UserStore = require('stores/users');
   var RealtimeStore = require('stores/realtime');
   var PopupStore = require('stores/popups');
@@ -159,7 +158,6 @@ define(function(require) {
       Responsifier.on('change', this.updateProps, this);
       Notifications.addChangeListener(this.updateProps, this);
       ActionCenter.addChangeListener(this.updateProps, this);
-      Operations.addChangeListener(this.updateProps, this);
       UserStore.addChangeListener(this.updateProps, this);
       RealtimeStore.addChangeListener(this.updateProps, this);
       PopupStore.addChangeListener(this.updateProps, this);
@@ -212,7 +210,6 @@ define(function(require) {
         user: User.toProps(),
         notifications: Notifications.getAll(),
         actionCenter: ActionCenter.getAll(),
-        operations: Operations.getAll(),
         realtime: RealtimeStore.toProps(),
         platform: Responsifier.platform,
         activePopupId: PopupStore.getActiveId(),

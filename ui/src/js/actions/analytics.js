@@ -2,7 +2,6 @@ define(function(require) {
   var Analytics = require('modules/analytics');
   var convertCase = require('util/convert_case');
   var User = require('core/current_user');
-  var privacyPolicy = User.privacyPolicy;
 
   var trackers = {};
   var meta = [];
@@ -13,10 +12,7 @@ define(function(require) {
   // @options and @name are passed implicitly by the defineMetric() helper,
   // while @properties are accepted from the caller.
   var track = function(options, name, properties) {
-    if (!privacyPolicy.isMetricAllowed(name)) {
-      return;
-    }
-    else if (options.onlyOnce) {
+    if (options.onlyOnce) {
       if (alreadyTracked[name]) {
         return;
       }
@@ -233,7 +229,7 @@ define(function(require) {
 
   trackers.getMetrics = function() {
     return meta.map(function(metric) {
-      metric.active = privacyPolicy.isMetricAllowed(metric.name);
+      metric.active = true;
 
       return metric;
     });

@@ -46,7 +46,7 @@ define(function(require) {
     loadRoute: function(url, onLoad) {
       var appName = url.split(/\/|\?/)[1];
 
-      console.log(appName);
+      console.debug('Checking if we have an app that hosts "%s"', appName);
 
       if (AppLoader.hasApp(appName) && !AppLoader.isLoaded(appName)) {
         console.debug('Loading app %s', appName);

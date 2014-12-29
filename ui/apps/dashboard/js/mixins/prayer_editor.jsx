@@ -37,11 +37,7 @@ define(function(require) {
         this.state.editedPrayerDate !== prevState.editedPrayerDate
       ) {
         if (this.state.editedPrayerType && this.state.editedPrayerDate) {
-          this.showEditor(
-            this.state.editedPrayerType,
-            this.state.editedPrayerDate,
-            this.state.editedElement
-          );
+          this.showEditor(this.state.editedElement);
         }
       }
     },
@@ -63,27 +59,33 @@ define(function(require) {
         date: this.state.editedPrayerDate,
         children: <span hidden />,
         prayer: editedPrayer,
+        canUntrack: !!editedPrayer,
         onClose: this.stopEditing,
         onChange: this.repositionPopup
       });
     },
 
-    edit: function(prayerId, date, e) {
+    edit: function(type, date, e) {
+      var target = e.currentTarget || e.target;
+
       e.preventDefault();
 
-      if (this.state.editedElement === e.target) {
+      if (this.state.editedElement === target) {
+        this.stopEditing();
+      }
+      else if (type === this.state.editedPrayerType && date === this.state.editedPrayerDate) {
         this.stopEditing();
       }
       else {
         this.setState({
-          editedPrayerType: prayerId,
+          editedPrayerType: type,
           editedPrayerDate: date,
-          editedElement: e.target
+          editedElement: target
         });
       }
     },
 
-    showEditor: function(prayerId, date, el) {
+    showEditor: function(el) {
       var popup = this.refs.editorPopup;
       var api = popup.proxy('getApi');
 

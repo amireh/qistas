@@ -1,5 +1,8 @@
-#PrayerEditor {
+@editor-header-height: 30px;
 
+#PrayerEditor {
+  padding-top: @editor-header-height;
+  min-width: 100px;
 }
 
 .PrayerEditor__DateController {
@@ -22,11 +25,11 @@
   }
 }
 
-.PrayerEditor__PrayerTypes,
-.PrayerEditor__PrayerOptions {
-  display: inline-block;
-  vertical-align: top;
-}
+// .PrayerEditor__PrayerTypes,
+// .PrayerEditor__PrayerOptions {
+//   display: inline-block;
+//   vertical-align: top;
+// }
 
 .PrayerEditor__PrayerOptions:not(:empty) + .PrayerEditor__Actions {
   margin-top: @whitespace;
@@ -36,6 +39,28 @@
 
 .PrayerEditor__Actions {
   text-align: right;
+
+  .btn + .btn {
+    margin-left: @whitespace/2;
+  }
+}
+
+.PrayerEditor__Header {
+  position: absolute;
+  top: -@whitespace;
+  left: -@whitespace;
+  right: -@whitespace;
+  line-height: @editor-header-height;
+  padding: 0 @whitespace;
+  background: #f4f4f4;
+}
+
+.PrayerEditor__CloseButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1;
+  box-shadow: none;
 }
 
 .ig-indent {
@@ -44,12 +69,11 @@
 
 .PrayerScore {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   text-align: center;
-  line-height: 16px;
+  line-height: 24px;
   border-radius: 2px;
-  color: white;
   font-size: 10px;
   font-weight: bold;
 
@@ -60,6 +84,111 @@
   }
 
   &.is-scored {
-    background: @green;
+    color: white;
+
+    &.score-poor {
+      background: @red;
+    }
+
+    &.score-good {
+      background: @orange;
+    }
+
+    &.score-excellent {
+      background: @blue;
+    }
+
+    &.score-perfect {
+      background: @green;
+    }
   }
+
+  &:hover {
+    .PrayerScore--is-active();
+  }
+}
+
+.PrayerScore--is-active() {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.5) inset, 0 0 0 2px white inset;
+}
+
+.TodayPrayers {
+  .PrayerScore {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: @whitespace/2;
+    border-radius: 50%;
+  }
+}
+
+.TodayPrayers__Prayer {
+  margin-right: @whitespace;
+  padding-right: @whitespace/2;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+
+
+  &:hover {
+    .PrayerScore {
+      .PrayerScore--is-active();
+    }
+  }
+
+  &.is-upcoming {
+    &:before {
+      .iconify(@icon-arrow-down);
+      font-size: 16px;
+      position: absolute;
+      left: 0;
+      width: 32px;
+      text-align: center;
+      top: -16px;
+    }
+    &:after {
+      .iconify(@icon-arrow-up);
+      font-size: 16px;
+      position: absolute;
+      left: 0;
+      width: 32px;
+      text-align: center;
+      bottom: -16px;
+    }
+  }
+}
+
+.ScoreGraph {
+  font-size: 10px;
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: @teal;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis path {
+    // display: none;
+  }
+
+  .axis {
+    text {
+      fill: @foreground;
+    }
+  }
+
+  .line {
+    fill: none;
+    stroke: @blue;
+    stroke-width: 1.5px;
+  }
+}
+
+.PrayerPeriodScore {
+  color: @mute-fg;
+  font-size: 0.9rem;
+  line-height: 90%;
+  // vertical-align: middle;
+  // display: inline-block;
 }

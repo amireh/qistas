@@ -4,7 +4,7 @@ define(function(require) {
   RSVP.configure('onerror', function(e) {
     console.error(">>> Error caught in async promise handler. <<<");
 
-    if (e.stack) {
+    if (e && e.stack) {
       console.error(e.stack);
     }
     else {

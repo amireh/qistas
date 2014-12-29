@@ -6,6 +6,7 @@ define(function(require) {
   var Promise = require('promise');
   var moment = require('moment');
   var PrayerStore = require('./stores/prayers');
+  var User = require('core/current_user');
 
   return new Route('app:dashboard', {
     views: [
@@ -32,12 +33,18 @@ define(function(require) {
 
     updateProps: function() {
       var today = moment();
+      var thisMonthPrayers = PrayerStore.getPrayersInMonth(today.year(), today.month());
 
       this.update({
-        monthPrayers: PrayerStore.getPrayersInMonth(today.year(), today.month()),
+        monthPrayers: thisMonthPrayers,
+        todayPrayers: thisMonthPrayers[today.date()-1],
+        prayers: PrayerStore.getAll(),
+
         meta: {
           year: today.year(),
-          month: today.month()
+          month: today.month(),
+          daysInMonth: today.daysInMonth(),
+          maxDailyPrayerScore: User.get('max_daily_prayer_score')
         }
       });
     }

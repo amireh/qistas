@@ -8,5 +8,12 @@ define(function(require) {
     Dispatcher.dispatch('prayers:save', params);
   };
 
+  Actions.destroy = function(type, date) {
+    Dispatcher.dispatch('prayers:destroy', {
+      type: type,
+      date: date
+    });
+  };
+
   return Actions;
 });

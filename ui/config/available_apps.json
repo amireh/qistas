@@ -3,7 +3,12 @@
     "name": "dashboard",
     "title": "Dashboard",
     "href": "/dashboard",
-    "navigation_link": false
+    "navigation_link": false,
+    "top_level": true,
+    "entry_scripts": [
+      "dashboard",
+      "scoreboard"
+    ]
   },
   {
     "name": "guest",

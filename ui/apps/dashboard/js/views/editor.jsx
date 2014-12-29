@@ -17,6 +17,7 @@ define(function(require) {
   var moment = require('moment');
   var Popup = require('jsx!components/popup');
   var Actions = require('../actions');
+  var PrayerModel = require('../models/prayer');
   var outboundAttrs = K.PRAYER_OUTBOUND_ATTRS.map(function(attr) {
     return attr.camelize(true);
   });
@@ -60,6 +61,15 @@ define(function(require) {
     render: function() {
       return(
         <form id="PrayerEditor" onSubmit={this.consume}>
+          <header className="PrayerEditor__Header">
+            {PrayerModel.prototype.labelFor(this.props.type)}
+
+            <button
+              type="button"
+              onClick={this.props.onClose}
+              className="btn btn-default PrayerEditor__CloseButton"
+              children={<i className="icon-close" />} />
+          </header>
 
           <div className="PrayerEditor__PrayerOptions">
             {this.renderPrayer()}
@@ -67,11 +77,12 @@ define(function(require) {
 
           <div className="PrayerEditor__Actions">
             <input type="reset" ref="resetButton" hidden />
-            <button
+            {this.props.canUntrack && <button
               type="button"
-              onClick={this.props.onClose}
-              className="btn btn-default"
-              children={<i className="icon-close" />} />
+              onClick={this.destroy}
+              className="btn btn-link"
+              children={t('untrack', 'Untrack')} />
+            }
 
             <button
               type="submit"
@@ -135,6 +146,10 @@ define(function(require) {
       params.date = this.props.date;
 
       Actions.save(params);
+    },
+
+    destroy: function(e) {
+      Actions.destroy(this.props.type, this.props.date);
     }
   });
 

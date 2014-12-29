@@ -29,7 +29,8 @@ class PrayerSerializer < ActiveModel::Serializer
     :with_subsequent_sunnah,
     :with_sunnah_on_time,
     :in_last_third,
-    :normalized_score
+    :normalized_score,
+    :max_score
 
   def type
     object.type.sub('Prayer::', '').underscore

@@ -5,7 +5,6 @@ define(function(require) {
   var $ = require('ext/jquery/CORS');
   var ajax = require('core/ajax');
   var user = require('core/current_user');
-  var RealtimeStore = require('stores/realtime');
   var AnalyticsAdapter = require('modules/analytics');
   var analytics = require('actions/analytics');
 
@@ -47,10 +46,6 @@ define(function(require) {
       }
     },
 
-    getRealtimeChannel: function() {
-      return user.get('realtime_channel');
-    },
-
     reset: function() {
       user.clear();
       tearingDown = false;
@@ -74,9 +69,6 @@ define(function(require) {
         }
 
         user.fetch({ url: '/users/self' }).then(function() {
-          var channelUrl = store.getRealtimeChannel();
-          var accessToken = store.getAccessToken();
-
           AnalyticsAdapter.login(user.get('id'), user.get('name'),
             user.firstName(),
             user.lastName(),
@@ -85,7 +77,7 @@ define(function(require) {
 
           analytics.login('pibi');
 
-          return RealtimeStore.connect(channelUrl, accessToken).finally(onChange);
+          onChange();
         }, function(error) {
           analytics.loginFailed(error);
           onError();
@@ -106,11 +98,9 @@ define(function(require) {
           tearingDown = true;
           user.clear();
           AnalyticsAdapter.logout();
-          RealtimeStore.disconnect().finally(function() {
-            tearingDown = false;
-            console.warn('Done.');
-            onChange();
-          });
+          tearingDown = false;
+          console.warn('Done.');
+          onChange();
         });
       }
     }

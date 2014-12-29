@@ -23,6 +23,7 @@ class UserSerializer < Rack::API::Serializer
     linked_providers
     email_verified
     realtime_channel
+    max_daily_prayer_score
   ].map(&:to_sym)
 
   hypermedia only: %w[], links: {
@@ -52,5 +53,9 @@ class UserSerializer < Rack::API::Serializer
 
   def realtime_channel
     "/channels/#{object.id}"
+  end
+
+  def max_daily_prayer_score
+    Prayer::MAX_DAILY_SCORE
   end
 end
