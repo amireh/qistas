@@ -30,21 +30,14 @@ define(function(require) {
       return(
         <Dialog
           onClose={this.props.onClose}
-          title={t('title', 'Sign up to Pibi')}
+          title={t('title', 'Sign up to Salati')}
           autoFocus='[name="name"]'
           className="signup-dialog"
-          thin={true}>
-          <i className="icon-pibi-framed icon-64"> </i>
-
-          <p>{t('use_existing_account', 'Use an existing account.')}</p>
-
-          <OauthLinks />
-
-          <hr />
-
-          <p>{t('use_account', 'Or, create one.')}</p>
+          scrollable={false}
+          thin>
 
           <form ref="form" onSubmit={this.signup} noValidate className="vertical-form">
+            <p>{t('signup_intro', 'All you need to get started is to provide an email and a password for your new account.')}</p>
             <input
               type="text"
               name="name"
@@ -66,18 +59,6 @@ define(function(require) {
               valueLink={this.linkState('password')}
               className="form-input" />
 
-            <label className="skinned-checkbox formatted-checkbox">
-              <input
-                type="checkbox"
-                name="subscribe"
-                checkedLink={this.linkState('subscribe')} />
-
-              <span>
-                {t.htmlSafe('labels.subscribe',
-                  'Notify me of the latest updates <br /> (no spam, not ever)')}
-              </span>
-            </label>
-
             <SaveButton
               ref="saveButton"
               onClick={this.signup}
@@ -86,17 +67,6 @@ define(function(require) {
               paddedOverlay={true}
               children={t('buttons.signup', 'Sign Up')} />
           </form>
-
-          <hr />
-
-          <nav>
-            <p>
-              {t.htmlSafe('links.link_to_login',
-                'Already have an account? <a href="/login">Log in</a>')
-              }
-            </p>
-          </nav>
-
         </Dialog>
       );
     },

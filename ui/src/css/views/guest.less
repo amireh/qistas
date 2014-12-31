@@ -5,9 +5,9 @@
 }
 
 
-// body.guest {
-//   overflow-x: hidden;
-// }
+body.guest {
+  background: #f4f4f4;
+}
 
 .guest {
   .loader {
@@ -76,15 +76,15 @@
     background: none;
     text-align: center;
     font-size: 15px;
-    /*.calc(min-height, percentage(1));*/
+    width: 320px;
 
     h1 {
       position: relative;
     }
 
     hr {
-      box-shadow: 0 4px 15px 0 #ddd;
-      border-color: #EEE;
+      box-shadow: 0 4px 15px 0 #ccc;
+      border-color: #e4e4e4;
     }
 
     .auth-actions {
@@ -264,6 +264,7 @@
   }
 
   #guest_footer {
+    display: none;
     padding: @whitespace 0;
 
     .copyright {
@@ -391,4 +392,13 @@
   .tx-pm-color {
     display: none;
   }
+}
+
+.PrimaryLoginForm {
+  // width: 320px;
+  margin: 0 auto;
+}
+
+.ForgotPasswordLink {
+  margin-top: -@whitespace;
 }

@@ -4,8 +4,15 @@ define(function(require) {
   var t = require('i18n!guest/index');
   var Environment = require('core/environment');
   var TransactionListing = require('jsx!components/transaction_listing');
+  var SaveButton = require('jsx!components/save_button');
 
   var GuestIndex = React.createClass({
+    mixins: [
+      React.addons.LinkedStateMixin,
+      React.addons.FormErrorsMixin,
+      React.addons.ActorMixin
+    ],
+
     render: function() {
       var isMobile = this.props.platform === 'mobile';
       var logo = <div className="header-logo">
@@ -21,21 +28,69 @@ define(function(require) {
 
             <h2 className="landing-meme">
               <strong>
-                {t('motto', 'Track your prayers, plan a better life.')}
+                {t('motto', 'Plan for a better (after)life.')}
               </strong>
             </h2>
 
-            <div className="auth-actions">
-              <a href="/signup" className="btn btn-huge btn-success">
-                {t('signup', 'Sign Up')}
-              </a>
-              <a className="btn btn-default sign-in" href="/login">
-                {t('login', 'Login')}
-              </a>
-            </div>
+            <form
+              ref="form"
+              onSubmit={this.login}
+              noValidate
+              className="PrimaryLoginForm vertical-form">
+
+              <input
+                type="email"
+                name="email"
+                ref="email"
+                placeholder={t('placeholders.email', 'Email')}
+                autoFocus
+                className="form-input" />
+
+              <input
+                type="password"
+                name="password"
+                ref="password"
+                placeholder={t('placeholders.password', 'Password')}
+                className="form-input" />
+
+              <SaveButton ref="saveButton" onClick={this.login}
+                className="primary" overlay={true} paddedOverlay={true}>
+                {t('buttons.login', 'Log In')}
+              </SaveButton>
+            </form>
+
+            <hr />
+
+            <nav>
+              <p>
+                {t.htmlSafe('links.link_to_signup',
+                  'Don\'t have an account? <a href="/signup">Sign up</a>')
+                }
+              </p>
+
+              <p className="ForgotPasswordLink">
+                <em className="type-small">
+                  {t.htmlSafe('links.to_reset_password',
+                    "Forgot your password? <a href=\"/reset_password\">Reset it</a>")
+                  }
+                </em>
+              </p>
+            </nav>
           </section>
         </div>
       );
+    },
+
+    login: function(e) {
+      var service;
+
+      e.preventDefault();
+
+      this.refs.saveButton.markLoading();
+      this.sendAction('session:login', {
+        email: this.refs.email.getDOMNode().value,
+        password: this.refs.password.getDOMNode().value
+      });
     }
   });
 

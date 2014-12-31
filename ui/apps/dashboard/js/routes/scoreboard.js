@@ -4,6 +4,7 @@ define(function(require) {
   var View = require('jsx!../views/scoreboard');
   var K = require('constants');
   var PrayerStore = require('../stores/prayers');
+  var moment = require('moment');
 
   return new Route('app:dashboard/scoreboard', {
     views: [{ component: View }],
@@ -12,14 +13,21 @@ define(function(require) {
       return t('window_title', 'Scoreboard - Salati');
     },
 
+    model: function() {
+      return PrayerStore.load();
+    },
+
     enter: function() {
       PrayerStore.addChangeListener(this.updateProps, this);
       this.updateProps();
     },
 
     updateProps: function() {
+      var today = moment();
+
       this.update({
-        prayers: PrayerStore.getAll()
+        prayers: PrayerStore.getAll(),
+        monthPrayers: PrayerStore.getPrayersInMonth(today.year(), today.month())
       });
     }
   });

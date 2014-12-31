@@ -22,7 +22,7 @@ define(function(require) {
 
       return(
         <span className="PrayerPeriodScore">
-          ({score.toFixed(2)}%)
+          {score.toFixed(2)}%
         </span>
       );
     }

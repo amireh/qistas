@@ -114,7 +114,7 @@ define(function(require) {
         <td key={'cell-'+context.cursor} className={classSet(className)}>
           <span className="day-index pika-button" children={day} />
           <div className="day-content">
-            {this.props.children[day]}
+            {this.props.children[day-1]}
           </div>
         </td>
       );

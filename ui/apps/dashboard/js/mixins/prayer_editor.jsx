@@ -85,6 +85,12 @@ define(function(require) {
       }
     },
 
+    editOnReturn: function(type, date, e) {
+      if (e.which === 13) {
+        this.edit(type, date, e);
+      }
+    },
+
     showEditor: function(el) {
       var popup = this.refs.editorPopup;
       var api = popup.proxy('getApi');

@@ -3,7 +3,6 @@ define(function(require) {
   var t = require('i18n!dashboard/index');
   var View = require('jsx!./views/index');
   var K = require('constants');
-  var Promise = require('promise');
   var moment = require('moment');
   var PrayerStore = require('./stores/prayers');
   var User = require('core/current_user');

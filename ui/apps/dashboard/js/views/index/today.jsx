@@ -65,6 +65,7 @@ define(function(require) {
         <div
           className={classSet(className)}
           onClick={this.edit.bind(null, type, this.props.date)}
+          onKeyUp={this.editOnReturn.bind(null, type, this.props.date)}
           key={"prayer-"+type}>
           {Emblem(record)}
           {PrayerModel.prototype.labelFor(type)}

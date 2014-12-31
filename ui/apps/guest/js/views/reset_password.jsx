@@ -26,10 +26,9 @@ define([
           autoFocus='[name="email"]'
           thin>
           <div className="vertical-form">
-            <i className="icon-pibi-framed icon-64"> </i>
             <p className="dialog-section">
               {t('message',
-                "Write down the email you used for signing up to Pibi and " +
+                "Write down the email you used for signing up to Salati and " +
                 "we'll send you further instructions on how to change your " +
                 "password.")
               }
@@ -70,7 +69,7 @@ define([
 
           <p className="dialog-section">
             {t.htmlSafe('links.link_to_login',
-              'Back to <a href="/login">log-in</a>')
+              'Back to <a href="/">log-in</a>')
             }
           </p>
         </Dialog>
