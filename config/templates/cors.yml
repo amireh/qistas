@@ -1,0 +1,19 @@
+development:
+  cors: &common
+    origin: '*'
+    preflight_age: 1728000
+    headers:
+      - Content-Type
+      - Accept
+      - Origin
+      - Authorization
+      - Cache-Control
+      - X-Requested-With
+      - X-Algol-Client
+    exposed:
+      - Link
+      - X-Total-Count
+
+production:
+  cors:
+    <<: *common
